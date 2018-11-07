@@ -11,14 +11,24 @@
     <div id="wraper">
     <header id="header">
     <div class="wrap">
-        <div class="logo">
+        <!-- <div class="logo">
             <img src="aset/images/logose.svg" alt="">
-        </div>
+        </div> -->
         <ul>
-            <li><a href="Acceuil.php">Acceuil</a></li>
-            <li><a href="MesVaccins.php">Mes vaccins</a></li>
+            <li><a href="index.php">Acceuil</a></li>
+            <li><a href="<?php if (isLogged()) {
+              echo "MesVaccins.php";
+            }else {
+              echo "connection.php";
+            } ?>">Mes vaccins</a></li>
             <li><a href="Quisommesnous.php">Qui sommes-nous?</a></li>
             <li><a href="Contact.php">Contact</a></li>
+            <?php if (isLogged()) {
+              ?><li><a href="deconnexion.php">Deconnexion</a></li><?php
+            }else {
+              ?><li><a href="connection.php">Connexion</a></li>
+              <li><a href="inscription.php">Inscription</a></li><?php
+            } ?>
         </ul>
     </div>
     <div class="clear"></div>

@@ -1,4 +1,4 @@
-<?php 
+<?php
 function br(){
     echo('<br>');
 }
@@ -21,9 +21,51 @@ function veriftext($error,$data,$key,$min,$max,$empty = true)
       if($empty) {
         $error[$key] = 'veuillez renseigner ce champ';
       }
-  
+
     }
-  
+
     return $error;
   }
-  
+
+  // affiche les errors dans le html
+  function afficheErrors($errors,$key){
+  ?>
+  <span class="errors"><?php if (!empty($errors[$key])) { echo $errors[$key]; } ?></span>
+  <?php
+  }
+
+  // generation token
+  function generateRandomString($length = 10) {
+      $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      $charactersLength = strlen($characters);
+      $randomString = '';
+      for ($i = 0; $i < $length; $i++) {
+          $randomString .= $characters[rand(0, $charactersLength - 1)];
+      }
+      return $randomString;
+  }
+
+  // connecter ou pas
+  function isLogged(){
+    if (!empty($_SESSION['user'])) {
+      if (!empty($_SESSION['user']['id'])) {
+        if (!empty($_SESSION['user']['email'])) {
+          if (!empty($_SESSION['user']['role'])) {
+            if (!empty($_SESSION['user']['ip'])) {
+              if ($_SESSION['user']['ip'] == $_SERVER['REMOTE_ADDR']) {
+                return true;
+              }
+            }
+          }
+        }
+      }
+    }
+    return false;
+  }
+
+  // remplissage de Value
+  function remplissageValue($post,$key){
+    if (!empty($post)) {
+    echo $post[$key];
+    }
+  }
