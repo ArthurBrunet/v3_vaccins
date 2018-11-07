@@ -1,0 +1,60 @@
+@import 'reset.css';
+
+#wraper {
+    max-width: 1920px;
+    width: 100%;
+}
+/* HEADER */
+#header{
+    background-color: rgb(89, 187, 182);
+    height: 100px;
+}
+.logo{
+    position: absolute;
+    left: 300px;
+    margin: -65px 600px 0 0px;
+}
+.logo img{
+    width: 75%;
+}
+#header ul {
+    float: right;
+}
+#header ul li{
+    float: left;
+    margin-top: 45px;
+}
+
+#header ul li a{
+    text-decoration: none;  
+    padding: 15px;
+    margin: 0 75px 0 0;
+    background-color: rgb(228, 128, 13);
+    color: white;
+    border-radius: 15px 15px;
+}
+
+#header ul li a:hover{
+    background-color: yellow;
+    color: red;
+}
+
+
+/*Page Acceuil*/
+
+.acceuil{
+    background-color: red;
+    height: 800px;
+}
+
+
+
+
+
+
+
+/*Le Footer*/
+
+#footer{
+    background-color: lime;
+}
