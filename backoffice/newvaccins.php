@@ -18,16 +18,16 @@ $error=array();
 
         $categorievac = $_POST['categorievac'];
 
-        $obligation = $_POST['obligation'];
-
+        $statuts = $_POST['statuts'];
+        //Requete pour remplir notre base de données des vaccins
         if (count($error)==0) {
-        $sql="INSERT INTO vac_vaccins(nom, content, categorie, obligatoire, numerolot, created_at) VALUES ( :nom, :content, :categorievac, :obligation, :numerolot, NOW())";
+        $sql="INSERT INTO vac_vaccins(nom, content, categorie, statuts, numerolot, created_at) VALUES ( :nom, :content, :categorievac, :statuts, :numerolot, NOW())";
         $query = $pdo->prepare($sql);
         $query->bindValue(':nom', $nomvaccin, PDO::PARAM_STR);
         $query->bindValue(':content', $contentvaccin, PDO::PARAM_STR);
         $query->bindValue(':numerolot', $numerolot, PDO::PARAM_STR);
         $query->bindValue(':categorievac', $categorievac, PDO::PARAM_STR);
-        $query->bindValue(':obligation', $obligation, PDO::PARAM_STR);
+        $query->bindValue(':statuts', $statuts, PDO::PARAM_STR);
         $query->execute();
         }
 
@@ -61,9 +61,9 @@ $error=array();
         <br><input type="radio" name="categorievac" id="categorievac" value="vivant"><label for="Vivant">Vivant</label>
         <input type="radio" name="categorievac" id="categorievac" value="inactive"><label for="Inactive">Inactive</label>
 
-        <br><label for="categorievac">Obligatoire ou non: </label>
-        <br><input type="radio" name="obligation" id="obligation" value="recommande"><label for="recommande">Recommandé</label>
-        <input type="radio" name="obligation" id="obligation" value="obligatoire"><label for="obligatoire">Obligatoire</label>
+        <br><label for="statuts">Obligatoire ou non: </label>
+        <br><input type="radio" name="statuts" id="statuts" value="recommande"><label for="recommande">Recommandé</label>
+        <input type="radio" name="statuts" id="statuts" value="obligatoire"><label for="obligatoire">Obligatoire</label>
 
         <br><input type="submit" name="submittedvaccin" id="submittedvaccin" value="Envoyer">
 
