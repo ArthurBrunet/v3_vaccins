@@ -2,7 +2,14 @@
 <?php include('../inc/pdo.php'); ?>
 
 <!-- Requete pour appeler la table de la vaccination -->
+<?php 
+    $sql = "SELECT * FROM vac_vaccins";
+    $query = $pdo->prepare($sql);
+    $query->execute();
+    $listvaccins = $query->fetchAll();
+    // debug($listvaccins);
 
+?>
 
 <?php include('inc/headerb.php'); ?>
 <h1>Listing des vaccins</h1>
@@ -13,10 +20,16 @@
     <tr>
         <td>Nom du vaccin</td>
         <td>Numéro de lot</td>
-        <td>Voie administrative</td>
-        <td>Modification</td>
-        <td>Statut</td>
+        <td>Catégorie</td>
+        <td>Statuts</td>
+        <td>Détail</td>
     </tr>
+    <?php 
+        //boucle pour integrer nos données pour remplir notre liste 
+        foreach ($listvaccins as $listvaccin) {
+            echo('<tr><td>'.$listvaccin['nom'].'</td><td>'.$listvaccin['numerolot'].'</td><td>'.$listvaccin['categorie'].'</td><td>'.$listvaccin['statuts'].'</td></tr>');
+        }
+    ?>
 </table>
 
 
