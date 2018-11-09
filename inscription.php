@@ -14,7 +14,7 @@ if (!empty($_POST['submitted'])) {
 
   if (!empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
-    $sql = "SELECT email FROM vac_users WHERE email = :Email ";
+    $sql = "SELECT email FROM v3_vac_users WHERE email = :Email ";
         $query = $pdo -> prepare($sql);
         $query -> bindValue(':Email',$email);
         $query -> execute();
@@ -52,7 +52,7 @@ if (count($errors) == 0) {
   $token = generateRandomString(255);
 
 
-  $sql = "INSERT INTO vac_users ( email, password, token, created_at) VALUES ( :Email, :Password, '$token', NOW()) ";
+  $sql = "INSERT INTO v3_vac_users ( email, password, token, created_at) VALUES ( :Email, :Password, '$token', NOW()) ";
       $query = $pdo->prepare($sql);
       $query->bindValue(':Email',$email);
       $query->bindValue(':Password',$hash);

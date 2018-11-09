@@ -12,7 +12,7 @@ if (!empty($_POST)) {
   $password = trim(strip_tags($_POST['password']));
 
 
-  $sql = "SELECT * FROM vac_users
+  $sql = "SELECT * FROM v3_vac_users
           WHERE email = :login";
           $query = $pdo->prepare($sql);
           $query->bindvalue(':login',$login);
@@ -23,8 +23,8 @@ if (!empty($_POST)) {
 
     if (password_verify($password,$user['password'])) {
       if (count($errors) == 0) {
-        $_SESSION['user'] = array(
-          'id' => $user['id'], 'email' => $user['email'], 'role' => $user['role'], 'ip' => $_SERVER['REMOTE_ADDR']
+        $_SESSION['v3_user'] = array(
+          'v3_id' => $user['id'], 'v3_email' => $user['email'], 'v3_role' => $user['role'], 'v3_ip' => $_SERVER['REMOTE_ADDR']
         );
         header('Location: index.php');
       }

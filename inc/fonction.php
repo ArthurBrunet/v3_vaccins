@@ -47,12 +47,12 @@ function veriftext($error,$data,$key,$min,$max,$empty = true)
 
   // connecter ou pas
   function isLogged(){
-    if (!empty($_SESSION['user'])) {
-      if (!empty($_SESSION['user']['id'])) {
-        if (!empty($_SESSION['user']['email'])) {
-          if (!empty($_SESSION['user']['role'])) {
-            if (!empty($_SESSION['user']['ip'])) {
-              if ($_SESSION['user']['ip'] == $_SERVER['REMOTE_ADDR']) {
+    if (!empty($_SESSION['v3_user'])) {
+      if (!empty($_SESSION['v3_user']['v3_id'])) {
+        if (!empty($_SESSION['v3_user']['v3_email'])) {
+          if (!empty($_SESSION['v3_user']['v3_role'])) {
+            if (!empty($_SESSION['v3_user']['v3_ip'])) {
+              if ($_SESSION['v3_user']['v3_ip'] == $_SERVER['REMOTE_ADDR']) {
                 return true;
               }
             }
@@ -63,9 +63,36 @@ function veriftext($error,$data,$key,$min,$max,$empty = true)
     return false;
   }
 
+  function isadmin(){
+  if (!empty($_SESSION['v3_user'])) {
+    if (!empty($_SESSION['v3_user']['id'])) {
+      if (!empty($_SESSION['v3_user']['email'])) {
+        if (!empty($_SESSION['v3_user']['role'])&&$_SESSION['v3_user']['role']=='admin') {
+          if (!empty($_SESSION['v3_user']['ip'])) {
+            if ($_SESSION['v3_user']['ip'] == $_SERVER['REMOTE_ADDR']) {
+              return true;
+            }
+          }
+        }
+      }
+    }
+  }
+  return false;
+}
+
   // remplissage de Value
   function remplissageValue($post,$key){
     if (!empty($post)) {
     echo $post[$key];
     }
   }
+
+
+// function requestSelect($from,$where1){
+//   global $pdo;
+//
+// $sql ="SELECT * FROM $from WHERE ";
+//
+//
+//
+// }

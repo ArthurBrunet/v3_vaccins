@@ -6,7 +6,7 @@
 <?php include('inc/header.php'); ?>
 
 
-<?php print_r($_SESSION); ?>
+<?php print_r($_SESSION['v3_user']); ?>
 
 
 
