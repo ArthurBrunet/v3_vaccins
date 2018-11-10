@@ -28,7 +28,7 @@
     <?php 
         //boucle pour integrer nos données pour remplir notre liste 
         foreach ($listvaccins as $listvaccin) {
-            echo('<tr><td>'.$listvaccin['nom'].'</td><td>'.$listvaccin['numerolot'].'</td><td>'.$listvaccin['categorie'].'</td><td>'.$listvaccin['statuts'].'</td><td><a href="detailvaccins.php?id='.$listvaccin['id'].'">Détail</a></td></tr>');
+            echo('<tr><td>'.$listvaccin['nom'].'</td><td>'.$listvaccin['numerolot'].'</td><td>'.$listvaccin['categorie'].'</td><td>'.$listvaccin['statuts'].'</td><td><a href="detailvaccins.php?id='.$listvaccin['id'].'">Détail</a></td><td><a href="modifvaccins.php?id='.$listvaccin['id'].'">Modifier</a></td></tr>');
         }
     ?>
 </table>

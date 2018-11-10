@@ -1,0 +1,10 @@
+# ignore le fichier pdo
+pdo.php
+posters\
+
+# ignore les fichiers .jpg
+*.jpg
+# ignore les fichiers sql
+*.sql
+# ignore les fichiers ds_store
+*.DS_Store
