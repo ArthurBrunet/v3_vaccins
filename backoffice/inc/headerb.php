@@ -10,6 +10,12 @@
 <body>
     <div id="wraper">
         <header id="headerb">
-            <h1>Ceci est mon header</h1>
+            <nav>
+                <ul>
+                    <li><a href="acceuilb.php">Acceuil</a></li>
+                    <li><a href="listvaccins.php">Les Vaccins</a></li>
+                    <li><a href="listuser.php">Les Utilisateurs</a></li>
+                </ul>
+            </nav>
         </header>
             

@@ -16,16 +16,19 @@ $error=array();
         $numerolot = trim(strip_tags($_POST['numerolot']));
         $error = veriftext($error,$numerolot,'numerolot',3,8);
 
+        $qui =  $_POST['qui'];
+
         $categorievac = $_POST['categorievac'];
 
         $statuts = $_POST['statuts'];
         //Requete pour remplir notre base de données des vaccins
         if (count($error)==0) {
-        $sql="INSERT INTO vac_vaccins(nom, content, categorie, statuts, numerolot, created_at) VALUES ( :nom, :content, :categorievac, :statuts, :numerolot, NOW())";
+        $sql="INSERT INTO v3_vac_vaccins(nom, content, categorie, statuts, numerolot, qui, created_at) VALUES ( :nom, :content, :categorievac, :statuts, :numerolot, :qui, NOW())";
         $query = $pdo->prepare($sql);
         $query->bindValue(':nom', $nomvaccin, PDO::PARAM_STR);
         $query->bindValue(':content', $contentvaccin, PDO::PARAM_STR);
         $query->bindValue(':numerolot', $numerolot, PDO::PARAM_STR);
+        $query->bindValue(':qui', $qui, PDO::PARAM_STR);
         $query->bindValue(':categorievac', $categorievac, PDO::PARAM_STR);
         $query->bindValue(':statuts', $statuts, PDO::PARAM_STR);
         $query->execute();
@@ -56,6 +59,17 @@ $error=array();
         <br><label for="numerolot">Numero du lot: </label>
         <span> <?php if (!empty($error['numerolot'])) { echo($error['numerolot']); } ?></span>
         <br><input type="text" name="numerolot" id="numerolot" placeholder="G215468">
+
+        <br><label for="qui">Pour qui?</label>
+        <br><input type="checkbox" name="qui" value="nourisson" id="qui">
+        <label for="natation"> Nourisson </label>
+        <br><input type="checkbox" name="qui" value="enfant" id="qui">
+        <label for="boxe"> Enfant </label>
+        <br><input type="checkbox" name="qui" value="adolescent" id="qui">
+        <label for="course"> Adolescent </label>
+        <br><input type="checkbox" name="qui" value="adulte" id="qui">
+        <label for="aviron"> Adulte </label>
+
         
         <br><label for="categorievac">Catégorie du vaccin: </label>
         <br><input type="radio" name="categorievac" id="categorievac" value="vivant"><label for="Vivant">Vivant</label>
