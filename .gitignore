@@ -4,7 +4,7 @@ posters\
 
 # ignore les fichiers .jpg
 *.jpg
-# ignore les fichiers sql
-*.sql
+# ignore les fichiers zip
+*.zip
 # ignore les fichiers ds_store
 *.DS_Store
