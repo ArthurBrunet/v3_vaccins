@@ -1,5 +1,5 @@
-<?php include('../inc/fonction.php'); ?>
 <?php include('../inc/pdo.php'); ?>
+<?php include('../inc/fonction.php'); ?>
 
 <!-- Soumission du formulaire -->
 <?php 
@@ -16,7 +16,10 @@ $error=array();
         $numerolot = trim(strip_tags($_POST['numerolot']));
         $error = veriftext($error,$numerolot,'numerolot',3,8);
 
-        $categorievac = $_POST['categorievac']; 
+        $categorievac = $_POST['categorievac'];
+        if (empty($categorievac) && $categorievac == 'Vivant' || 'Inactive') {
+            $error['categorievac'] = ('veuillez rentrer une des deux propositions');
+        } 
 
         $statuts = $_POST['statuts'];
         //Requete pour remplir notre base de données des vaccins
