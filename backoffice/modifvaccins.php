@@ -3,37 +3,46 @@
 
 <!-- Soumission du formulaire -->
 <?php 
-$error=array();
-// debug($error);
-    if (!empty($_POST['submittedvaccin'])) {
+if (!empty($_GET['id']) && is_numeric($_GET['id'])) {
+    $id = $_GET['id'];
+    $sql = "SELECT * FROM v3_vac_vaccins WHERE id = :id";
+    $query = $pdo->prepare($sql);
+    $query->bindValue(':id', $id, PDO::PARAM_STR);
+    $query->execute();
+    $modifvaccins = $query->fetch();
+    debug($modifvaccins);
+}
+$error = array();
+debug($error);
+if (!empty($_POST['submittedmodif'])) {
+    $modifnom = $_POST['nom'];
+    $error = veriftext($error,$modifnom,'nom',3,50,$empty = true);
 
-        $nomvaccin=trim(strip_tags($_POST['nom']));
-        $error = veriftext($error,$nomvaccin,'nom',3,50);
+    $modifcontent = $_POST['content'];
+    $error = veriftext($error,$modifcontent,'content',3,1000,$empty = true);
 
-        $contentvaccin=trim(strip_tags($_POST['content']));
-        $error = veriftext($error,$contentvaccin,'content',3,1000);
+    $modifnumerolot = $_POST['numerolot'];
+    $error = veriftext($error,$modifnumerolot,'numerolot',3,8,$empty = true);
 
-        $numerolot = trim(strip_tags($_POST['numerolot']));
-        $error = veriftext($error,$numerolot,'numerolot',3,8);
+    $modifcategorie = $_POST['categorievac'];
+    $error =  remplir($modifcategorie);
 
-        $categorievac = $_POST['categorievac'];
-        
-        $statuts = $_POST['statuts'];
-        if (!empty($categorievac) && !empty($satuts)) {
-            //Requete pour remplir notre base de données des vaccins
-            if (count($error)==0) {
-            $sql="UPDATE v3_vac_vaccins SET nom = :nom, content = :content, numerolot = :numerolot, categorie = :categorievac, statuts = :statuts";
-            $query = $pdo->prepare($sql);
-            $query->bindValue(':nom', $nomvaccin, PDO::PARAM_STR);
-            $query->bindValue(':content', $contentvaccin, PDO::PARAM_STR);
-            $query->bindValue(':numerolot', $numerolot, PDO::PARAM_STR);
-            $query->bindValue(':categorievac', $categorievac, PDO::PARAM_STR);
-            $query->bindValue(':statuts', $statuts, PDO::PARAM_STR);
-            $query->execute();
-            }
+    $modifstatuts = $_POST['statuts'];
 
-        }
+    if (count($error)==0) {
+        $sql2 = "UPDATE `v3_vac_vaccins` SET `nom`= :nom,`content`= :content,`numerolot`= :numerolot,`updated_at`= NOW(),`categorie`= :categorievac,`statuts`= :statutsvac WHERE id = :id";
+        $query2 = $pdo->prepare($sql2);
+        $query2->bindValue(':nom', $modifnom, PDO::PARAM_STR);
+        $query2->bindValue(':content', $modifcontent, PDO::PARAM_STR);
+        $query2->bindValue(':numerolot', $modifnumerolot, PDO::PARAM_STR);
+        $query2->bindValue(':categorievac', $modifcategorie, PDO::PARAM_STR);
+        $query2->bindValue(':statutsvac', $modifstatuts, PDO::PARAM_STR);
+        $query2->bindValue(':id', $id, PDO::PARAM_INT);
+        $query2->execute();
     }
+}
+
+
 
 ?>
 
@@ -45,28 +54,24 @@ $error=array();
 
 <?php include('inc/headerb.php'); ?>
 
-<form action="" method="post" class="newvaccin">
+<form action="" method="post" class="form-horizontal">
         <label for="nom">Nom du vaccin: </label>
-        <span> <?php if (!empty($error['nom'])) { echo($error['nom']); } ?></span>
+        <span><?php if (!empty($error['nom'])) { echo($error['nom']);} ?></span>
         <br><input type="text" name="nom" id="nom" value="">
 
         <br><label for="content">Description: </label>
-        <span> <?php if (!empty($error['content'])) { echo($error['content']); } ?></span>
         <br><input type="text" name="content" id="content" value="">
 
         <br><label for="numerolot">Numero du lot: </label>
-        <span> <?php if (!empty($error['numerolot'])) { echo($error['numerolot']); } ?></span>
         <br><input type="text" name="numerolot" id="numerolot" placeholder="G215468">
         
         <br><label for="categorievac">Catégorie du vaccin: </label>
-        <br><input type="radio" name="categorievac" id="categorievac" value="vivant"><label for="Vivant">Vivant</label>
-        <input type="radio" name="categorievac" id="categorievac" value="inactive"><label for="Inactive">Inactive</label>
+        <br><input type="text" name="categorievac" id="categorievac" placeholder="Vivant ou Inactive">
 
         <br><label for="statuts">Obligatoire ou non: </label>
-        <br><input type="radio" name="statuts" id="statuts" value="recommande"><label for="recommande">Recommandé</label>
-        <input type="radio" name="statuts" id="statuts" value="obligatoire"><label for="obligatoire">Obligatoire</label>
+        <br><input type="text" name="statuts" id="statuts" placeholder="Obligatoire ou Recommande">
 
-        <br><input type="submit" name="submittedvaccin" id="submittedvaccin" value="Envoyer">
+        <br><input type="submit" name="submittedmodif" id="submittedmodif" value="Envoyer">
 
 </form>
 

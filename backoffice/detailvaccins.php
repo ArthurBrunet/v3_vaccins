@@ -9,9 +9,9 @@
         $query->bindValue(':id', $id, PDO::PARAM_INT);
         $query->execute();
         $detailvaccins = $query->fetchAll();
-        // debug($detailvaccins);
     }
 
+    
 ?>
 
 
@@ -20,20 +20,23 @@
 
 <?php include('inc/headerb.php'); ?>
 
-    <h1>Détail du vaccin <?php foreach ($detailvaccins as $detailvaccin) { echo($detailvaccin['nom']) ?>: </h1>
-        <table class="detailvaccins">
+    <h1>Détail du vaccin <?php foreach ($detailvaccins as $detailvaccin) { 
+        $datecreation =  date('d/m/Y', strtotime($detailvaccin['created_at'])); //Création de la variable pour afficher la date de création en français
+        echo($detailvaccin['nom']) ?>: </h1>
+        
+        <table id="defaultTable" class="table responsive-table">
             <tr>
-                <td>Nom</td>
-                <td>Description</td>
-                <td>Numero de lot</td>
-                <td>Date d'entrée dans la BDD</td>
-                <td>Date de modification dans la BDD</td>
-                <td>Catégorie</td>
-                <td>Statuts</td>
+                <th>Nom</th>
+                <th>Description</th>
+                <th>Numero de lot</th>
+                <th>Date d'entrée</th>
+                <th>Date de modification</th>
+                <th>Catégorie</th>
+                <th>Statuts</th>
             </tr>
             
             <?php 
-                    echo('<tr><td>'.$detailvaccin['nom'].'</td><td>'.$detailvaccin['content'].'</td><td>'.$detailvaccin['numerolot'].'</td><td>'.$detailvaccin['created_at'].'</td><td>'.$detailvaccin['updated_at'].'</td><td>'.$detailvaccin['categorie'].'</td><td>'.$detailvaccin['statuts'].'</td></tr>');
+                    echo('<tr><td>'.$detailvaccin['nom'].'</td><td>'.$detailvaccin['content'].'</td><td>'.$detailvaccin['numerolot'].'</td><td>'.$datecreation.'</td><td>'.$detailvaccin['updated_at'].'</td><td>'.$detailvaccin['categorie'].'</td><td>'.$detailvaccin['statuts'].'</td></tr>');
                 }
             ?>
         </table>

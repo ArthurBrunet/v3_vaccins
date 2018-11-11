@@ -19,8 +19,6 @@ $error=array();
         $categorievac = $_POST['categorievac']; 
 
         $statuts = $_POST['statuts'];
-        if ($categorievac === 'vivant' || 'inactive') {
-            if ($statuts === 'obligatoire' || 'recommander') {
         //Requete pour remplir notre base de données des vaccins
                 if (count($error)==0) {
                 $sql="INSERT INTO v3_vac_vaccins(nom, content, categorie, statuts, numerolot, created_at) VALUES ( :nom, :content, :categorievac, :statuts, :numerolot, NOW())";
@@ -32,10 +30,6 @@ $error=array();
                 $query->bindValue(':statuts', $statuts, PDO::PARAM_STR);
                 $query->execute();
                 }
-            }
-        }else {
-            echo('Vous devez remplir une des deux valeurs et pas une autre');
-        }
     }
 
 
@@ -49,7 +43,7 @@ $error=array();
 
 <?php include('inc/headerb.php'); ?>
 
-<form action="" method="post" class="newvaccin">
+<form action="" method="post" class="form-horizontal">
         <label for="nom">Nom du vaccin: </label>
         <span> <?php if (!empty($error['nom'])) { echo($error['nom']); } ?></span>
         <br><input type="text" name="nom" id="nom" value="">
@@ -63,12 +57,12 @@ $error=array();
         <br><input type="text" name="numerolot" id="numerolot" placeholder="G215468">
         
         <br><label for="categorievac">Catégorie du vaccin: </label>
-        <br><input type="text" name="categorievac" id="categorievac">
+        <br><input type="text" name="categorievac" id="categorievac" placeholder="Vivant ou Inactive">
 
         <br><label for="statuts">Statuts: </label>
-        <br><input type="text" name="statuts" id="statuts">
+        <br><input type="text" name="statuts" id="statuts" placeholder="Obligatoire ou Recommande">
 
-        <br><input type="submit" name="submittedvaccin" id="submittedvaccin" value="Envoyer">
+        <br><input type="submit" name="submittedvaccin" id="submittedvaccin" value="Envoyer" class="btn btn-metis-5 btn-round">
 
 </form>
 
