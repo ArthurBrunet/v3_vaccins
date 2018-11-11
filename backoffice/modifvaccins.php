@@ -25,7 +25,7 @@ if (!empty($_POST['submittedmodif'])) {
     $error = veriftext($error,$modifnumerolot,'numerolot',3,8,$empty = true);
 
     $modifcategorie = $_POST['categorievac'];
-    $error =  remplir($modifcategorie);
+    // $error =  remplir($modifcategorie);
 
     $modifstatuts = $_POST['statuts'];
 

@@ -11,7 +11,11 @@
         $detailvaccins = $query->fetchAll();
     }
 
-    
+        $sql2 = "SELECT updated_at FROM v3_vac_vaccins WHERE id = $id ";
+        $query2 = $pdo->prepare($sql2);
+        $query2->execute();
+        $guit = $query2->fetch();
+        debug($guit);
 ?>
 
 
