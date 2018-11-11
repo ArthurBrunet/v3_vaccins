@@ -10,10 +10,11 @@
 <body>
     <div id="wraper">
     <header id="header">
-    <div class="wrap">
-        <!-- <div class="logo">
+      <a href="#" class="header-hamburger"></a>
+        <div class="logo">
             <img src="aset/images/logose.svg" alt="">
-        </div> -->
+        </div>
+        <div class="nav">
         <ul>
             <li><a href="index.php">Acceuil</a></li>
             <li><a href="<?php if (isLogged()) {
