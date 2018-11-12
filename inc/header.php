@@ -33,6 +33,11 @@
               ?><li><a href="connection.php">Connexion</a></li>
               <li><a href="inscription.php">Inscription</a></li><?php
             } ?>
+            <li><a href="<?php if (isadmin()) {
+              echo "../projetvaccination/backoffice/dashboard.php";
+            }else {
+              
+            } ?>">BackOffice</a></li>
           </ul>
 
         </div>
