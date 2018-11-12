@@ -12,9 +12,9 @@
             $query = $pdo->prepare($sql);
             $query->bindValue(':id',$id, PDO::PARAM_STR);
             $query->execute();
-            // header('Location: listusers.php');
+            header('Location: listusers.php');
         }elseif (!empty($_POST['submittednon'])) {
-            // header('Location: films.php');
+            header('Location: listusers.php');
         }             
     }else {
         header('Location: ../404.php');
