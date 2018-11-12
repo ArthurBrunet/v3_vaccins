@@ -1,7 +1,5 @@
 # ignore le fichier pdo
 pdo.php
-# ignore les fichiers .jpg
-*.jpg
 # ignore les fichiers zip
 *.zip
 # ignore les fichiers ds_store
