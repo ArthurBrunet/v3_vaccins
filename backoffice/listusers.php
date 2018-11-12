@@ -1,6 +1,15 @@
 <?php include('../inc/fonction.php'); ?>
 <?php include('../inc/pdo.php'); ?>
 
+<?php 
+    $sql = "SELECT * FROM v3_vac_users";
+    $query = $pdo->prepare($sql);
+    $query->execute();
+    $listusers = $query->fetchAll();
+    // debug($listusers);
+
+?>
+
 
 
 
@@ -12,9 +21,16 @@
         <th style="text-align: center;">Adresse Mail</th>
         <th style="text-align: center;">Les Vaccins</th>
         <th style="text-align: center;">Rôle</th>
+        <th style="text-align: center;">Création du compte</th>
         <th style="text-align: center;">Modifier</th>
         <th style="text-align: center;">Supprimer</th>
     </tr>
+
+    <?php 
+        foreach ($listusers as $listuser) {
+            # code...
+        }
+    ?>
 </table>
 
 
