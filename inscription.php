@@ -69,7 +69,7 @@ if (count($errors) == 0) {
 include('inc/header.php');
 ?>
 
-<div class="wrap">
+<div class="wrapper">
   <form class="" method="post">
     <p>Email</p>
     <input type="text" name="email" value="<?php remplissageValue($_POST,'email'); ?>"><?php afficheErrors($errors,'email') ?>
@@ -80,6 +80,7 @@ include('inc/header.php');
     <input type="submit" name="submitted" value="S'incrire !">
   </form>
 </div>
+
 
 
 <?php

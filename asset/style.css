@@ -7,12 +7,17 @@ body{
 }
 
 #wraper {
-    max-width: 1920px;
-    width: 100%;
+  max-width: 1600px;
+  width: 100%;
 }
 /* HEADER */
 #header{
-    background-color: #1B4B5B;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#606c88+0,3f4c6b+81,3f4c6b+81,3f4c6b+97,3f4c6b+97 */
+  background: rgb(96,108,136); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(96,108,136,1) 0%, rgba(63,76,107,1) 81%, rgba(63,76,107,1) 81%, rgba(63,76,107,1) 97%, rgba(63,76,107,1) 97%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(96,108,136,1) 0%,rgba(63,76,107,1) 81%,rgba(63,76,107,1) 81%,rgba(63,76,107,1) 97%,rgba(63,76,107,1) 97%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(96,108,136,1) 0%,rgba(63,76,107,1) 81%,rgba(63,76,107,1) 81%,rgba(63,76,107,1) 97%,rgba(63,76,107,1) 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=0 ); /* IE6-9 */
     height: 100px;
     width: 100%;
     position: fixed;
@@ -29,37 +34,38 @@ body{
     margin: -65px 600px 0 0px;
 } */
 #header .logo img{
-    width: auto;
-    /* max-width: 20%; */
-    height: 100px;
-    padding-left: 10px;
-    float: left;
+  width: auto;
+  /* max-width: 20%; */
+  height: 100px;
+  padding-left: 10px;
+  float: left;
 }
 
 #header ul {
-    float: right;
+  float: right;
 
 }
 #header ul li{
-    float: left;
-    margin-top: 45px;
+  float: left;
+  margin-top: 45px;
 
 }
 
 #header ul li a{
-    text-decoration: none;
-    padding: 15px;
-    margin: 0 10px 0 0;
-    background-color: #1B4B5B;
-    color: white;
-    border-radius: 15px 15px;
-    font-size: 1.3em;
+  text-decoration: none;
+  padding: 15px;
+  margin: 0 10px 0 0;
+
+  color: white;
+  border-radius: 15px 15px;
+  font-size: 1.3em;
 
 }
 
 #header ul li a:hover{
-    background-color: #317982;
-    color: white;
+
+  color: white;
+  opacity: 0.5;
 }
 .nav {
   height: 66px;
@@ -109,7 +115,217 @@ body{
 	display:none;
 }
 
-@media screen and (max-width: 1031px) {
+
+
+
+
+/*Page Acceuil*/
+
+.accueil{
+    background-color: white;
+    height: auto;
+}
+.background img{
+  height: auto;
+  width: 100%;
+}
+
+/* Page Connection */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+
+
+
+*, *:after, *:before{
+  box-sizing:border-box;
+}
+
+html, body {background:$bg;font-family: 'Roboto', sans-serif;}
+
+.clear {clear:both;}
+
+#man-people-user, #lock-locker {
+  fill:black;
+}
+
+.wrapper{
+  max-width: 300px;
+  width:100%;
+  margin:20px auto;
+}
+
+form {position:relative;}
+
+.clear {clear:both;}
+.sign-in {
+  float:left;
+  color:black;
+  font-size:1.3em;
+}
+.button {
+  float:right;
+  color:#7f8084;
+  border:1px solid $border;
+  padding:7px 15px;
+  border-radius:3px;
+  font-size:0.8em;
+  cursor:pointer;
+}
+.button:hover {color:#d3d3d3}
+.lock {
+  position:absolute;
+  width:30px;
+  height:30px;
+  margin-top:10px;
+  padding:7px;
+  left:5px;
+  &::after {
+    content:"";
+    width:1px;
+    height:30px;
+    position:absolute;
+    background:$border;
+    top:0px;
+    left:100%;
+  }
+}
+.user {
+
+  position:absolute;
+  width:30px;
+  height:30px;
+  margin-top:10px;
+  padding:7px;
+  left:5px;
+  &::after {
+    content:"";
+    width:1px;
+    height:30px;
+    position:absolute;
+    background:$border;
+    top:0px;
+    left:100%;
+  }
+}
+
+input {
+  width:100%;
+  padding:5px;
+  height:40px;
+  border-radius:3px;
+  margin:5px 0;
+  outline: none;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+  border:1px solid white;
+  box-shadow:none;
+}
+.user-input:focus .user{
+  background:white !important;
+
+}
+
+
+input[type="text"]{
+  background:transparent;
+  border:2px solid $border;
+  padding-left:45px;
+  color:red;
+}
+input[type="password"]{
+  background:transparent;
+  border:2px solid $border;
+  padding-left:45px;
+  color:red;
+}
+input[type="submit"]{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#606c88+0,3f4c6b+81,3f4c6b+81,3f4c6b+97,3f4c6b+97 */
+  background: rgb(96,108,136); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(96,108,136,1) 0%, rgba(63,76,107,1) 81%, rgba(63,76,107,1) 81%, rgba(63,76,107,1) 97%, rgba(63,76,107,1) 97%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(96,108,136,1) 0%,rgba(63,76,107,1) 81%,rgba(63,76,107,1) 81%,rgba(63,76,107,1) 97%,rgba(63,76,107,1) 97%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(96,108,136,1) 0%,rgba(63,76,107,1) 81%,rgba(63,76,107,1) 81%,rgba(63,76,107,1) 97%,rgba(63,76,107,1) 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=0 ); /* IE6-9 */
+  border:none;
+  color:white;
+  text-align:center;
+  font-size:0.8em;
+  cursor:pointer;
+}
+
+input[type="radio"]{
+  display:none;
+}
+.radio-check {
+  width:50px;
+  height:20px;
+  border:1px solid $border;
+  border-radius:30px;
+  margin-top:10px;
+  float:left;
+  text-align:center;
+  padding:4px 0;
+  color:black;
+  font-size:0.65em;
+  position:relative;
+  label{
+    margin:0 2px;
+    cursor:pointer;
+  }
+  .switch-selection{
+    display: block;
+    position: absolute;
+    width:11px;
+    height:11px;
+    border-radius:50%;
+    background:black;
+    margin-top:-11px;
+    margin-left:11px;
+    transition: 0.2s ease-out;
+  }
+
+}
+
+ .radio-yes:checked ~ .switch-selection{
+    margin-left:25px !important;
+  }
+
+
+.check-label {
+  font-size:0.8em;
+  color:black;
+  margin-top:10px;
+  float:left;
+  padding:3px 0;
+  margin-left:10px;
+}
+
+
+.forgot-label {
+  font-size:0.8em;
+  color:black;
+  margin-top:10px;
+  float:right;
+  padding:3px 0;
+  cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+/*Le Footer*/
+
+#footer{
+    background-color: lime;
+}
+
+
+@media screen and (max-width: 1095px) {
 	/* #menu is the original menu */
 	#menu {
 		display:none;
@@ -131,30 +347,6 @@ body{
 		display:block;
     position: fixed;
     width: 100%;
+    z-index: 9999999999999;
 	}
-}
-
-
-
-/*Page Acceuil*/
-
-.acceuil{
-    background-color: white;
-    height: auto;
-}
-.background img{
-  height: auto;
-  width: 100%;
-}
-
-
-
-
-
-
-
-/*Le Footer*/
-
-#footer{
-    background-color: lime;
 }

@@ -4,7 +4,7 @@
 <?php include('inc/header.php'); ?>
 
 
-    <section class="acceuil">
+    <section class="accueil">
         <div class="wrap">
           <div class="background">
             <img src="asset/images/bg-banner.jpg" alt="">

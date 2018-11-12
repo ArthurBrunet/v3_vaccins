@@ -30,12 +30,15 @@ if (!empty($_POST['submitted'])) {
 include('inc/header.php');
 
 ?>
+<div class="wrapper">
+
 
 <form class="" method="post">
   <label for="">email *</label>
   <input type="email" name="email" value="<?php if (!empty($_POST['email'])) {echo $_POST['email']; } ?>">
   <input type="submit" name="submitted" value="Modifier mot de passe">
 </form>
+</div>
 
 <?php
 include('inc/footer.php');
