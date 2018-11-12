@@ -98,8 +98,8 @@ if (islogged()) {
     <select name="vaccins"><?php afficheErrors($errors,'vaccins'); ?>
       <?php
 
+        
 
-      
 
       ?>
     </select>
