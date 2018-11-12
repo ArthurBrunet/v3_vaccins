@@ -15,11 +15,11 @@
     <header id="header">
       <a href="#" class="header-hamburger"></a>
         <div class="logo">
-            <img src="asset/images/logose.svg" alt="">
+            <img src="asset/images/logose.png" alt="">
         </div>
         <div class="nav">
           <ul id="menu">
-            <li><a href="index.php">Acceuil</a></li>
+            <li><a href="index.php">Accueil</a></li>
             <li><a href="<?php if (isLogged()) {
               echo "MesVaccins.php";
             }else {
@@ -36,7 +36,7 @@
             <li><?php if (isadmin()) {
               echo '<a href ="../projetvaccination/backoffice/dashboard.php">Backoffice</a>';
             }else {
-              
+
             } ?></li>
           </ul>
 
