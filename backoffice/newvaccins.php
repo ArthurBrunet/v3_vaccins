@@ -1,8 +1,13 @@
 <?php include('../inc/pdo.php'); ?>
 <?php include('../inc/fonction.php'); ?>
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 4141abe35e2bd7e93fe40586723719b7f53cf079
 
 <!-- Soumission du formulaire -->
-<?php 
+<?php
 $error=array();
 // debug($error);
     if (!empty($_POST['submittedvaccin'])) {
@@ -16,6 +21,22 @@ $error=array();
         $numerolot = trim(strip_tags($_POST['numerolot']));
         $error = veriftext($error,$numerolot,'numerolot',3,8);
 
+<<<<<<< HEAD
+        $categorievac = $_POST['categorievac'];
+
+        $statuts = $_POST['statuts'];
+        //Requete pour remplir notre base de données des vaccins
+                if (count($error)==0) {
+                $sql="INSERT INTO v3_vac_vaccins(nom, content, categorie, statuts, numerolot, created_at) VALUES ( :nom, :content, :categorievac, :statuts, :numerolot, NOW())";
+                $query = $pdo->prepare($sql);
+                $query->bindValue(':nom', $nomvaccin, PDO::PARAM_STR);
+                $query->bindValue(':content', $contentvaccin, PDO::PARAM_STR);
+                $query->bindValue(':numerolot', $numerolot, PDO::PARAM_STR);
+                $query->bindValue(':categorievac', $categorievac, PDO::PARAM_STR);
+                $query->bindValue(':statuts', $statuts, PDO::PARAM_STR);
+                $query->execute();
+                }
+=======
         if (isset($_POST['categorievac'])){
             $categorievac = $_POST['categorievac'];
         }else {
@@ -41,6 +62,7 @@ $error=array();
                     }
             
         
+>>>>>>> 4141abe35e2bd7e93fe40586723719b7f53cf079
     }
 
 
@@ -62,7 +84,7 @@ $error=array();
         <br><label for="numerolot">Numero du lot: </label>
         <span> <?php if (!empty($error['numerolot'])) { echo($error['numerolot']); } ?></span>
         <br><input type="text" name="numerolot" id="numerolot" placeholder="G215468">
-        
+
         <br><label for="categorievac">Catégorie du vaccin: </label>
         <span><?php if (!empty($error['categorievac'])) { echo($error['categorievac']);} ?></span>
         <br><input type="radio" name="categorievac" id="categorievac" value="1"><label for="categorievac">Vivant</label>

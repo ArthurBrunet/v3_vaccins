@@ -16,9 +16,12 @@ debug($_SESSION);
 
 
 <?php include('inc/footerb.php'); ?>
+<<<<<<< HEAD
 
  <?php }
 //  else {
 //      header('Location: ../403.php');
 //  } 
  ?>
+=======
+>>>>>>> 9486687eb1130e960e411f265d13b8cd3e80fe2c

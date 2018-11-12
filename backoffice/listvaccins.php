@@ -2,7 +2,7 @@
 <?php include('../inc/fonction.php'); ?>
 
 <!-- Requete pour appeler la table de la vaccination -->
-<?php 
+<?php
     $sql = "SELECT * FROM v3_vac_vaccins";
     $query = $pdo->prepare($sql);
     $query->execute();
@@ -27,8 +27,8 @@
         <th style="text-align: center;">Supprimer</th>
 
     </tr>
-    <?php 
-        //boucle pour integrer nos données pour remplir notre liste 
+    <?php
+        //boucle pour integrer nos données pour remplir notre liste
         foreach ($listvaccins as $listvaccin) {
             if($listvaccin['categorie'] == 1){ //Condition pour transformer les chiffres en BDD en variables sur la liste des vaccins
                 $listvaccinc = 'Vivant';
