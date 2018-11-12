@@ -1,5 +1,6 @@
 <?php include('../inc/pdo.php'); ?>
 <?php include('../inc/fonction.php'); ?>
+<?php if (isadmin()) { ?>
 
 <!-- Requete pour appeler la table de la vaccination -->
 <?php
@@ -58,3 +59,9 @@
 
 
 <?php include('inc/footerb.php'); ?>
+
+ <?php }
+ else {
+     header('Location: ../403.php');
+ } 
+ ?>

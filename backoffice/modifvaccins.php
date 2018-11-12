@@ -1,5 +1,6 @@
 <?php include('../inc/pdo.php'); ?>
 <?php include('../inc/fonction.php'); ?>
+<?php if (isadmin()) { ?>
 
 <!-- Soumission du formulaire -->
 <?php
@@ -76,13 +77,8 @@ if (!empty($_POST['submittedmodif'])) {
         <br><input type="text" name="nom" id="nom" value="<?php if (!empty($_POST['nom'])) { echo($_POST['nom']);} else{ echo($modifvaccinsnom);} ?>">
 
         <br><label for="numerolot">Numero du lot: </label>
-<<<<<<< HEAD
-        <br><input type="text" name="numerolot" id="numerolot" placeholder="G215468">
-
-=======
         <br><input type="text" name="numerolot" id="numerolot" value="<?php if (!empty($_POST['numerolot'])) { echo($_POST['numerolot']);} else{ echo($modifvaccinslot);} ?>">
         
->>>>>>> 4141abe35e2bd7e93fe40586723719b7f53cf079
         <br><label for="categorievac">Catégorie du vaccin: </label>
         <span><?php if (!empty($error['categorievac'])) { echo($error['categorievac']);} ?></span>
         <br><input type="radio" name="categorievac" id="categorievac" value="1"><label for="categorievac">Vivant</label>
@@ -106,3 +102,9 @@ if (!empty($_POST['submittedmodif'])) {
 
 
 <?php include('inc/footerb.php'); ?>
+
+ <?php }
+ else {
+     header('Location: ../403.php');
+ } 
+ ?>

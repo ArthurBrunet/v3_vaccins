@@ -1,6 +1,6 @@
 <?php include('../inc/pdo.php'); ?>
 <?php include('../inc/fonction.php'); ?>
-
+<?php if (isadmin()) { ?>
 
 
 <!-- Soumission du formulaire -->
@@ -87,3 +87,9 @@ $error=array();
 
 
 <?php include('inc/footerb.php'); ?>
+
+ <?php }
+ else {
+     header('Location: ../403.php');
+ } 
+ ?>
