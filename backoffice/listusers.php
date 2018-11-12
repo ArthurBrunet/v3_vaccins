@@ -9,8 +9,12 @@
     $listusers = $query->fetchAll();
     // debug($listusers);
 
-    $sql2 = "SELECT * FROM v3_users_vaccins AS "
-
+    $sql2 = "SELECT * FROM v3_users_vaccins AS u, v3_vac_vaccins AS v WHERE v.id = u.id_vaccins";
+    $query2 = $pdo->prepare($sql2);
+    $query2->execute();
+    $vacusers = $query2->fetchAll();
+    // debug($vacusers);
+    
 ?>
 
 

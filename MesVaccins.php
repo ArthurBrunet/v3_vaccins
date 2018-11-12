@@ -102,7 +102,7 @@ if (islogged()) {
       foreach ($vaccins as $key) {
 
         if(!in_array($key['id'],$vaccinUser)){
-          ?><option value="<?= $key['id'] ?>"><?php echo $key['nom'].'||'.$key['statuts']; ?></option><?php
+          ?><option value="<?= $key['id'] ?>"><?php echo $key['nom']; ?></option><?php
         }
       }
 
@@ -122,11 +122,17 @@ if (islogged()) {
       <?php
           //boucle pour integrer nos données pour remplir notre liste
           foreach ($verifVacId as $vvi) {
+            if ($vvi['statuts'] == 1) { //Condition pour transformer les chiffres en BDD en variables sur la liste des vaccins
+              $vvist = 'Obligatoire';
+          }else {
+              $vvist = 'Recommander';
+          }
+
             if (!empty($vvi['fait']) && $vvi['fait'] == 'no') {
               ?><tr>
                 <td><?= $vvi['nom'] ?></td>
-                <td><?= $vvi['content'] ?></td>
-                <td><?= $vvi['statuts'] ?></td>
+                <td><?= nl2br($vvi['content']) ?></td>
+                <td><?= $vvist ?></td>
                 <td>A faire le : <?= $vvi['date'] ?></td>
               </tr> <?php
             }
@@ -136,8 +142,8 @@ if (islogged()) {
             if (!empty($vvi['fait']) && $vvi['fait'] == 'yes') {
               ?><tr>
                 <td><?= $vvi['nom'] ?></td>
-                <td><?= $vvi['content'] ?></td>
-                <td><?= $vvi['statuts'] ?></td>
+                <td><?= nl2br($vvi['content']) ?></td>
+                <td><?= $vvist ?></td>
                 <td>Fais le : <?= $vvi['date'] ?></td>
               </tr> <?php
             }
