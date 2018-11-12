@@ -21,8 +21,6 @@ if (islogged()) {
       $query->bindValue(':iduser',$iduser);
       $query->execute();
   $vaccinsUser = $query->fetchall();
-
-
   $vaccinUser = array();
   foreach ($vaccinsUser as $k) {
     $vaccinUser[] = $k['id_vaccins'];
@@ -73,8 +71,9 @@ if (islogged()) {
             $query->bindValue(':iduser',$iduser);
             $query->bindValue(':idvaccins',$idVac);
             $query->bindValue(':date',$dateVAC);
-            $query->bindValue(':tr',$dateVAC);
+            $query->bindValue(':tr',$dede);
             $query->execute();
+
         header('Location: MesVaccins.php');
 
       }else{
@@ -96,12 +95,20 @@ if (islogged()) {
     <input type="date" name="date" value=""><?php afficheErrors($errors,'date'); ?>
     <p>vaccins</p>
     <select name="vaccins"><?php afficheErrors($errors,'vaccins'); ?>
+
       <?php
 
 
-      
+      foreach ($vaccins as $key) {
+
+        if(!in_array($key['id'],$vaccinUser)){
+          ?><option value="<?= $key['id'] ?>"><?php echo $key['nom'].'||'.$key['statuts']; ?></option><?php
+        }
+      }
 
       ?>
+
+
     </select>
     <input type="submit" name="submitted" value="Ajouter">
   </form>
