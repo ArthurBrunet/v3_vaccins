@@ -7,7 +7,7 @@
     <section class="acceuil">
         <div class="wrap">
           <div class="background">
-            <img src="aset/images/bg-banner.jpg" alt="">
+            <img src="asset/images/bg-banner.jpg" alt="">
           </div>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis convallis quam vel tincidunt. Praesent ullamcorper tempus enim sit amet semper. Sed pharetra risus diam, a eleifend felis scelerisque eu. Duis sed egestas lorem. Proin blandit elit non arcu faucibus, dapibus interdum magna semper. Sed sit amet pretium lectus. Ut semper rhoncus turpis bibendum tincidunt. Phasellus sed aliquet lorem. Praesent quis arcu ut justo mattis tempor sed eget dolor. Praesent molestie, lacus sed laoreet facilisis, quam urna lacinia massa, sed bibendum dolor risus quis neque. Aliquam molestie, ipsum vel efficitur fringilla, orci nibh dapibus sem, vitae commodo mauris sapien sagittis tortor. Maecenas id turpis augue. Suspendisse sit amet orci eget leo pulvinar vehicula.
 
