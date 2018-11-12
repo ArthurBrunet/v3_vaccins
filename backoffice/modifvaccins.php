@@ -1,8 +1,8 @@
-<?php include('../inc/fonction.php'); ?>
 <?php include('../inc/pdo.php'); ?>
+<?php include('../inc/fonction.php'); ?>
 
 <!-- Soumission du formulaire -->
-<?php 
+<?php
 if (!empty($_GET['id']) && is_numeric($_GET['id'])) {
     $id = $_GET['id'];
     $sql = "SELECT * FROM v3_vac_vaccins WHERE id = :id";
@@ -64,7 +64,7 @@ if (!empty($_POST['submittedmodif'])) {
 
         <br><label for="numerolot">Numero du lot: </label>
         <br><input type="text" name="numerolot" id="numerolot" placeholder="G215468">
-        
+
         <br><label for="categorievac">Catégorie du vaccin: </label>
         <br><input type="text" name="categorievac" id="categorievac" placeholder="Vivant ou Inactive">
 

@@ -87,6 +87,12 @@ function veriftext($error,$data,$key,$min,$max,$empty = true)
     }
   }
 
+function validateDate($date, $format = 'Y-m-d H:i:s')
+{
+    $d = DateTime::createFromFormat($format, $date);
+    return $d && $d->format($format) == $date;
+}
+
 
 // function requestSelect($from,$where1){
 //   global $pdo;

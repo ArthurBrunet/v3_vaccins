@@ -1,8 +1,10 @@
-<?php include('../inc/fonction.php'); ?>
 <?php include('../inc/pdo.php'); ?>
+<?php include('../inc/fonction.php'); ?>
+
+
 
 <!-- Soumission du formulaire -->
-<?php 
+<?php
 $error=array();
 // debug($error);
     if (!empty($_POST['submittedvaccin'])) {
@@ -16,7 +18,7 @@ $error=array();
         $numerolot = trim(strip_tags($_POST['numerolot']));
         $error = veriftext($error,$numerolot,'numerolot',3,8);
 
-        $categorievac = $_POST['categorievac']; 
+        $categorievac = $_POST['categorievac'];
 
         $statuts = $_POST['statuts'];
         //Requete pour remplir notre base de données des vaccins
@@ -55,7 +57,7 @@ $error=array();
         <br><label for="numerolot">Numero du lot: </label>
         <span> <?php if (!empty($error['numerolot'])) { echo($error['numerolot']); } ?></span>
         <br><input type="text" name="numerolot" id="numerolot" placeholder="G215468">
-        
+
         <br><label for="categorievac">Catégorie du vaccin: </label>
         <br><input type="text" name="categorievac" id="categorievac" placeholder="Vivant ou Inactive">
 

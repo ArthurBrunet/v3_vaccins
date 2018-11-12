@@ -1,8 +1,8 @@
-<?php include('../inc/fonction.php'); ?>
 <?php include('../inc/pdo.php'); ?>
+<?php include('../inc/fonction.php'); ?>
 
 <!-- Requete pour appeler la table de la vaccination -->
-<?php 
+<?php
     $sql = "SELECT * FROM v3_vac_vaccins";
     $query = $pdo->prepare($sql);
     $query->execute();
@@ -25,8 +25,8 @@
         <th style="text-align: center;">Détail</th>
         <th style="text-align: center;">Modification</th>
     </tr>
-    <?php 
-        //boucle pour integrer nos données pour remplir notre liste 
+    <?php
+        //boucle pour integrer nos données pour remplir notre liste
         foreach ($listvaccins as $listvaccin) {
             echo('<tr><td>'.$listvaccin['nom'].'</td><td>'.$listvaccin['numerolot'].'</td><td>'.$listvaccin['categorie'].'</td><td>'.$listvaccin['statuts'].'</td><td><a href="detailvaccins.php?id='.$listvaccin['id'].'">Détail</a></td><td><a href="modifvaccins.php?id='.$listvaccin['id'].'">Modifier</a></td></tr>');
         }
