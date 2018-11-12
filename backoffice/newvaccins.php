@@ -71,8 +71,8 @@ $error=array();
 
         <br><label for="statuts">Statuts: </label>
         <span><?php if (!empty($error['statuts'])) { echo($error['statuts']);} ?></span>
-        <br><input type="radio" name="statuts" id="statuts" value="1"><label for="statuts">Obligatoire</label>
-        <br><input type="radio" name="statuts" id="statuts" value="0"><label for="statuts">Recommander</label>
+        <br><input type="radio" name="statuts" id="statuts" value="Obligatoire"><label for="statuts">Obligatoire</label>
+        <br><input type="radio" name="statuts" id="statuts" value="Recommander"><label for="statuts">Recommander</label>
 
         <br><label for="content">Description: </label>
         <span> <?php if (!empty($error['content'])) { echo($error['content']); } ?></span>
