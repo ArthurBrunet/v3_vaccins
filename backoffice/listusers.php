@@ -9,11 +9,6 @@
     $listusers = $query->fetchAll();
     // debug($listusers);
 
-    $sql2 = "SELECT * FROM v3_users_vaccins AS u, v3_vac_vaccins AS v WHERE v.id = u.id_vaccins";
-    $query2 = $pdo->prepare($sql2);
-    $query2->execute();
-    $vacusers = $query2->fetchAll();
-    // debug($vacusers);
     
 ?>
 
@@ -31,6 +26,7 @@
         <th style="text-align: center;">Création du compte</th>
         <th style="text-align: center;">Modification du compte</th>
         <th style="text-align: center;">Supprimer</th>
+        <th style="text-align: center;">Modifier</th>
     </tr>
 
     <?php 
@@ -40,18 +36,18 @@
                 $modifusers = date('d/m/Y', strtotime($listuser['updated_at']));
             }else{
                 $modifusers = 'Il n\'y a eu aucune modification pour l\'instant';
-            }
-    
+            } 
             echo('<tr>
                     <td>'.$listuser['email'].'</td>
-                    <td></td>
+                    <td><a href="detailusers.php?id='.$listuser['id'].'">Détail</a></td>
                     <td>'.$listuser['role'].'</td>
                     <td>'.$datecreationusers.'</td>
                     <td>'.$modifusers.'</td>
                     <td><a href="deleteusers.php?id='.$listuser['id'].'">Supprimer</a></td>
+                    <td><a href="modifusers.php?id='.$listuser['id'].'">Modifier</a></td>
             </tr>');
-        }
-    ?>
+        } ?>
+       
 </table>
 
 

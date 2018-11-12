@@ -13,7 +13,7 @@
             $query->execute();
             header('Location: listvaccins.php');
         }elseif (!empty($_POST['submittednon'])) {
-            // header('Location: films.php');
+            header('Location: listvaccins.php');
         }             
     }else {
         header('Location: ../404.php');

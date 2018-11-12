@@ -102,11 +102,7 @@ if (islogged()) {
       foreach ($vaccins as $key) {
 
         if(!in_array($key['id'],$vaccinUser)){
-<<<<<<< HEAD
           ?><option value="<?= $key['id'] ?>"><?= $key['nom']; ?></option><?php
-=======
-          ?><option value="<?= $key['id'] ?>"><?php echo $key['nom']; ?></option><?php
->>>>>>> 02afefdbf64822ef035e37f08af9d7d3314ac91d
         }
       }
 
@@ -134,17 +130,10 @@ if (islogged()) {
 
             if (!empty($vvi['fait']) && $vvi['fait'] == 'no') {
               ?><tr>
-<<<<<<< HEAD
                   <td><?= $vvi['nom'] ?></td>
                   <td><?= $vvi['content'] ?></td>
-                  <td><?= $vvi['statuts'] ?></td>
+                  <td><?= $vvist ?></td>
                   <td>A faire le : <?= $vvi['date'] ?></td>
-=======
-                <td><?= $vvi['nom'] ?></td>
-                <td><?= nl2br($vvi['content']) ?></td>
-                <td><?= $vvist ?></td>
-                <td>A faire le : <?= $vvi['date'] ?></td>
->>>>>>> 02afefdbf64822ef035e37f08af9d7d3314ac91d
               </tr> <?php
             }
           }
@@ -154,7 +143,7 @@ if (islogged()) {
               ?><tr>
                   <td><?= $vvi['nom'] ?></td>
                   <td><?= $vvi['content'] ?></td>
-                  <td><?= $vvi['statuts'] ?></td>
+                  <td><?= $vvist ?></td>
                   <td>Fais le : <?= $vvi['date'] ?></td>
                   </tr> <?php
             }
@@ -163,17 +152,10 @@ if (islogged()) {
           foreach ($verifVacId as $vvi) {
             if (!empty($vvi['fait']) && $vvi['fait'] == 'yes') {
               ?><tr>
-<<<<<<< HEAD
                   <td><?= $vvi['nom'] ?></td>
                   <td><?= $vvi['content'] ?></td>
-                  <td><?= $vvi['statuts'] ?></td>
+                  <td><?= $vvist ?></td>
                   <td>Fais le : <?= $vvi['date'] ?></td>
-=======
-                <td><?= $vvi['nom'] ?></td>
-                <td><?= nl2br($vvi['content']) ?></td>
-                <td><?= $vvist ?></td>
-                <td>Fais le : <?= $vvi['date'] ?></td>
->>>>>>> 02afefdbf64822ef035e37f08af9d7d3314ac91d
               </tr> <?php
             }
           }
