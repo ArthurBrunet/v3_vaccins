@@ -102,7 +102,20 @@ body{
 
 } */
 
+.slicknav_menu {
+	display:none;
+}
 
+@media screen and (max-width: 1300px) {
+	/* #menu is the original menu */
+	#menu {
+		display:none;
+	}
+
+	.slicknav_menu {
+		display:block;
+	}
+}
 
 
 
