@@ -7,12 +7,13 @@
 
 <?php include('inc/headerb.php'); ?>
 
-<table>
+<table class="table table-bordered table-condensed table-hover table-striped dataTable no-footer" style="text-align: center;">
     <tr>
-        <td>Nom</td>
-        <td>Prénom</td>
-        <td>Numéro de sécurité social</td>
-        <td>Adresse Mail</td>
+        <th style="text-align: center;">Adresse Mail</th>
+        <th style="text-align: center;">Les Vaccins</th>
+        <th style="text-align: center;">Rôle</th>
+        <th style="text-align: center;">Modifier</th>
+        <th style="text-align: center;">Supprimer</th>
     </tr>
 </table>
 
