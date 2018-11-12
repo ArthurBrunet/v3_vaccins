@@ -102,7 +102,7 @@ if (islogged()) {
       foreach ($vaccins as $key) {
 
         if(!in_array($key['id'],$vaccinUser)){
-          ?><option value="<?= $key['id'] ?>"><?php echo $key['nom'].'||'.$key['statuts']; ?></option><?php
+          ?><option value="<?= $key['id'] ?>"><?= $key['nom']; ?></option><?php
         }
       }
 
@@ -124,21 +124,32 @@ if (islogged()) {
           foreach ($verifVacId as $vvi) {
             if (!empty($vvi['fait']) && $vvi['fait'] == 'no') {
               ?><tr>
-                <td><?= $vvi['nom'] ?></td>
-                <td><?= $vvi['content'] ?></td>
-                <td><?= $vvi['statuts'] ?></td>
-                <td>A faire le : <?= $vvi['date'] ?></td>
+                  <td><?= $vvi['nom'] ?></td>
+                  <td><?= $vvi['content'] ?></td>
+                  <td><?= $vvi['statuts'] ?></td>
+                  <td>A faire le : <?= $vvi['date'] ?></td>
               </tr> <?php
+            }
+          }
+
+          foreach ($verifVacId as $vvi) {
+            if (!empty($vvi['fait']) && $vvi['fait'] == 'yeso') {
+              ?><tr>
+                  <td><?= $vvi['nom'] ?></td>
+                  <td><?= $vvi['content'] ?></td>
+                  <td><?= $vvi['statuts'] ?></td>
+                  <td>Fais le : <?= $vvi['date'] ?></td>
+                  </tr> <?php
             }
           }
 
           foreach ($verifVacId as $vvi) {
             if (!empty($vvi['fait']) && $vvi['fait'] == 'yes') {
               ?><tr>
-                <td><?= $vvi['nom'] ?></td>
-                <td><?= $vvi['content'] ?></td>
-                <td><?= $vvi['statuts'] ?></td>
-                <td>Fais le : <?= $vvi['date'] ?></td>
+                  <td><?= $vvi['nom'] ?></td>
+                  <td><?= $vvi['content'] ?></td>
+                  <td><?= $vvi['statuts'] ?></td>
+                  <td>Fais le : <?= $vvi['date'] ?></td>
               </tr> <?php
             }
           }
