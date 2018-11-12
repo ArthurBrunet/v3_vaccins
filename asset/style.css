@@ -58,8 +58,12 @@ body{
     background-color: #317982;
     color: white;
 }
+.nav {
+  height: 66px;
+  width: 100%;
+}
 /*REPONSIVE */
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) {
   .header-hamburger {
     display : block;
     position: relative;
@@ -69,16 +73,37 @@ body{
     margin-right: 5px;
     float: right;
   }
-  .header-ham
+  .header-hamburger:after{
+    content:'';
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 0px;
+    box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
+  }
+
 
   .nav{
-    display: none;
+    position : absolute;
+    right : 0;
+    width: 200px;
+    top: 50px;
+    bottom : 0;
+    background-color: #1B4B5B;
+    overflow: hidden;
+    height: 600px;
   }
-}
-.nav {
-  height: 66px;
-  width: 100%;
-}
+  .nav a {
+    display: block;
+    left: 50px;
+    text-align: right;
+    transform: translateX(50px);
+  }
+
+} */
+
+
+
 
 
 /*Page Acceuil*/
