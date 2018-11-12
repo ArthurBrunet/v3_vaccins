@@ -94,11 +94,18 @@ function validateDate($date, $format = 'Y-m-d H:i:s')
 }
 
 
-// function requestSelect($from,$where1){
-//   global $pdo;
-//
-// $sql ="SELECT * FROM $from WHERE ";
-//
-//
-//
-// }
+function requestSelect($from ='',$where1 ='',$fetch =''){
+  global $pdo;
+
+$sql ="SELECT * FROM $from WHERE $where1";
+    $query = $pdo->prepare($sql);
+    $query->execute();
+    if ($fetch == 'fetchall') {
+      $request = $query->fetchall();
+    }else {
+      $request = $query->fetch();
+    }
+
+return $request;
+
+}

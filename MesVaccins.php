@@ -102,11 +102,7 @@ if (islogged()) {
       foreach ($vaccins as $key) {
 
         if(!in_array($key['id'],$vaccinUser)){
-<<<<<<< HEAD
-          ?><option value="<?= $key['id'] ?>"><?= $key['nom']; ?></option><?php
-=======
-          ?><option value="<?= $key['id'] ?>"><?php echo $key['nom']; ?></option><?php
->>>>>>> 02afefdbf64822ef035e37f08af9d7d3314ac91d
+          ?><option value="<?= $key['id'] ?>"><?= $key['nom'] ?></option><?php
         }
       }
 
@@ -126,54 +122,35 @@ if (islogged()) {
       <?php
           //boucle pour integrer nos données pour remplir notre liste
           foreach ($verifVacId as $vvi) {
-            if ($vvi['statuts'] == 1) { //Condition pour transformer les chiffres en BDD en variables sur la liste des vaccins
-              $vvist = 'Obligatoire';
-          }else {
-              $vvist = 'Recommander';
-          }
-
             if (!empty($vvi['fait']) && $vvi['fait'] == 'no') {
               ?><tr>
-<<<<<<< HEAD
                   <td><?= $vvi['nom'] ?></td>
                   <td><?= $vvi['content'] ?></td>
                   <td><?= $vvi['statuts'] ?></td>
                   <td>A faire le : <?= $vvi['date'] ?></td>
-=======
-                <td><?= $vvi['nom'] ?></td>
-                <td><?= nl2br($vvi['content']) ?></td>
-                <td><?= $vvist ?></td>
-                <td>A faire le : <?= $vvi['date'] ?></td>
->>>>>>> 02afefdbf64822ef035e37f08af9d7d3314ac91d
               </tr> <?php
-            }
-          }
-
-          foreach ($verifVacId as $vvi) {
-            if (!empty($vvi['fait']) && $vvi['fait'] == 'yeso') {
-              ?><tr>
-                  <td><?= $vvi['nom'] ?></td>
-                  <td><?= $vvi['content'] ?></td>
-                  <td><?= $vvi['statuts'] ?></td>
-                  <td>Fais le : <?= $vvi['date'] ?></td>
-                  </tr> <?php
             }
           }
 
           foreach ($verifVacId as $vvi) {
             if (!empty($vvi['fait']) && $vvi['fait'] == 'yes') {
               ?><tr>
-<<<<<<< HEAD
                   <td><?= $vvi['nom'] ?></td>
                   <td><?= $vvi['content'] ?></td>
                   <td><?= $vvi['statuts'] ?></td>
                   <td>Fais le : <?= $vvi['date'] ?></td>
-=======
-                <td><?= $vvi['nom'] ?></td>
-                <td><?= nl2br($vvi['content']) ?></td>
-                <td><?= $vvist ?></td>
-                <td>Fais le : <?= $vvi['date'] ?></td>
->>>>>>> 02afefdbf64822ef035e37f08af9d7d3314ac91d
+                </tr>
+                  <?php
+            }
+          }
+
+          foreach ($verifVacId as $vvi) {
+            if (!empty($vvi['fait']) && $vvi['fait'] == 'yes') {
+              ?><tr>
+                  <td><?= $vvi['nom'] ?></td>
+                  <td><?= $vvi['content'] ?></td>
+                  <td><?= $vvi['statuts'] ?></td>
+                  <td>Fais le : <?= $vvi['date'] ?></td>
               </tr> <?php
             }
           }
