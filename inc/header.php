@@ -9,6 +9,7 @@
 </head>
 <body>
     <div id="wraper">
+
     <header id="header">
       <a href="#" class="header-hamburger"></a>
         <div class="logo">
@@ -32,5 +33,9 @@
             } ?>
         </ul>
     </div>
+
+    </div>
     <div class="clear"></div>
     </header>
+    <div class="block">
+    </div>
