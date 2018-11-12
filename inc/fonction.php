@@ -65,11 +65,11 @@ function veriftext($error,$data,$key,$min,$max,$empty = true)
 
   function isadmin(){
   if (!empty($_SESSION['v3_user'])) {
-    if (!empty($_SESSION['v3_user']['id'])) {
-      if (!empty($_SESSION['v3_user']['email'])) {
-        if (!empty($_SESSION['v3_user']['role'])&&$_SESSION['v3_user']['role']=='admin') {
-          if (!empty($_SESSION['v3_user']['ip'])) {
-            if ($_SESSION['v3_user']['ip'] == $_SERVER['REMOTE_ADDR']) {
+    if (!empty($_SESSION['v3_user']['v3_id'])) {
+      if (!empty($_SESSION['v3_user']['v3_email'])) {
+        if (!empty($_SESSION['v3_user']['v3_role'])&&$_SESSION['v3_user']['v3_role']=='admin') {
+          if (!empty($_SESSION['v3_user']['v3_ip'])) {
+            if ($_SESSION['v3_user']['v3_ip'] == $_SERVER['REMOTE_ADDR']) {
               return true;
             }
           }

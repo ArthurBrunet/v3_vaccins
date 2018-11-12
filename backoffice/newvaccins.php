@@ -1,10 +1,7 @@
 <?php include('../inc/pdo.php'); ?>
 <?php include('../inc/fonction.php'); ?>
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 4141abe35e2bd7e93fe40586723719b7f53cf079
 
 <!-- Soumission du formulaire -->
 <?php
@@ -21,22 +18,6 @@ $error=array();
         $numerolot = trim(strip_tags($_POST['numerolot']));
         $error = veriftext($error,$numerolot,'numerolot',3,8);
 
-<<<<<<< HEAD
-        $categorievac = $_POST['categorievac'];
-
-        $statuts = $_POST['statuts'];
-        //Requete pour remplir notre base de données des vaccins
-                if (count($error)==0) {
-                $sql="INSERT INTO v3_vac_vaccins(nom, content, categorie, statuts, numerolot, created_at) VALUES ( :nom, :content, :categorievac, :statuts, :numerolot, NOW())";
-                $query = $pdo->prepare($sql);
-                $query->bindValue(':nom', $nomvaccin, PDO::PARAM_STR);
-                $query->bindValue(':content', $contentvaccin, PDO::PARAM_STR);
-                $query->bindValue(':numerolot', $numerolot, PDO::PARAM_STR);
-                $query->bindValue(':categorievac', $categorievac, PDO::PARAM_STR);
-                $query->bindValue(':statuts', $statuts, PDO::PARAM_STR);
-                $query->execute();
-                }
-=======
         if (isset($_POST['categorievac'])){
             $categorievac = $_POST['categorievac'];
         }else {
@@ -60,9 +41,6 @@ $error=array();
                     $query->execute();
                     header('Location: listvaccins.php');
                     }
-            
-        
->>>>>>> 4141abe35e2bd7e93fe40586723719b7f53cf079
     }
 
 

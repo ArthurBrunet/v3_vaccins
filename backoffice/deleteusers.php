@@ -32,7 +32,7 @@
    width:300px; /* A toi de donner la bonne largeur */
    height:200px; /* A toi de donner la bonne hauteur */
    margin-left:-180px; /* -largeur/2 */
-   margin-top:-150px; /* -hauteur/2 */
+   margin-top:-170px; /* -hauteur/2 */
    text-align: center;">Êtes-vous sûr de vouloir supprimer cet utilisateur définitivement de la Base De Données?</p>
 <form action="" method="post" style="position:absolute;
    top:50%;

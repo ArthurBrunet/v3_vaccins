@@ -29,7 +29,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="dashboard.php">Acceuil</a></li>
                     <li><a href="listvaccins.php">Les Vaccins</a></li>
-                    <li><a href="listuser.php">Les Utilisateurs</a></li>
+                    <li><a href="listusers.php">Les Utilisateurs</a></li>
                 </ul>
             </nav>
         </header>
