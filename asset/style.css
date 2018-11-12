@@ -1,0 +1,130 @@
+@import 'reset.css';
+
+body{
+  height: 100%;
+  margin : 0;
+  padding : 0;
+}
+
+#wraper {
+    max-width: 1920px;
+    width: 100%;
+}
+/* HEADER */
+#header{
+    background-color: #1B4B5B;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    line-height: 100%;
+}
+.block{
+  height: 100px;
+  width: 100%;
+  /* background-color: red; */
+}
+/* .logo{
+    position: absolute;
+    left: 300px;
+    margin: -65px 600px 0 0px;
+} */
+#header .logo img{
+    width: auto;
+    /* max-width: 20%; */
+    height: 100px;
+    float: left;
+}
+
+#header ul {
+    float: right;
+
+}
+#header ul li{
+    float: left;
+    margin-top: 45px;
+
+}
+
+#header ul li a{
+    text-decoration: none;
+    padding: 15px;
+    margin: 0 75px 0 0;
+    background-color: #1B4B5B;
+    color: white;
+    border-radius: 15px 15px;
+}
+
+#header ul li a:hover{
+    background-color: #317982;
+    color: white;
+}
+.nav {
+  height: 66px;
+  width: 100%;
+}
+/*REPONSIVE */
+/* @media (max-width: 1300px) {
+  .header-hamburger {
+    display : block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+    margin-right: 5px;
+    float: right;
+  }
+  .header-hamburger:after{
+    content:'';
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 0px;
+    box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
+  }
+
+
+  .nav{
+    position : absolute;
+    right : 0;
+    width: 200px;
+    top: 50px;
+    bottom : 0;
+    background-color: #1B4B5B;
+    overflow: hidden;
+    height: 600px;
+  }
+  .nav a {
+    display: block;
+    left: 50px;
+    text-align: right;
+    transform: translateX(50px);
+  }
+
+} */
+
+
+
+
+
+/*Page Acceuil*/
+
+.acceuil{
+    background-color: white;
+    height: auto;
+}
+.background img{
+  height: auto;
+  width: 100%;
+}
+
+
+
+
+
+
+
+/*Le Footer*/
+
+#footer{
+    background-color: lime;
+}

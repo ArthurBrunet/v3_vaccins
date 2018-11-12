@@ -11,11 +11,7 @@
         $detailvaccins = $query->fetchAll();
     }
 
-        $sql2 = "SELECT updated_at FROM v3_vac_vaccins WHERE id = $id ";
-        $query2 = $pdo->prepare($sql2);
-        $query2->execute();
-        $guit = $query2->fetch();
-        debug($guit);
+        
 ?>
 
 
@@ -24,8 +20,24 @@
 
 <?php include('inc/headerb.php'); ?>
 
-    <h1>Détail du vaccin <?php foreach ($detailvaccins as $detailvaccin) { 
+    <h1>Détail du vaccin <?php foreach ($detailvaccins as $detailvaccin) { // Mon foreach est en haut car je voulais faire apparaitre le nom du vaccin dans le titre
         $datecreation =  date('d/m/Y', strtotime($detailvaccin['created_at'])); //Création de la variable pour afficher la date de création en français
+        if (!empty($detailvaccin['updated_at'])) { //Création de la variable modifier pour la date de modif dans la BDD et ne pas oublier que !empty veut dire la meeme chose que 'pas null'
+            $modifvaccin = date('d/m/Y', strtotime($detailvaccin['updated_at']));
+        }else{
+            $modifvaccin = 'Il n\'as pas encore été modifié';
+        }
+        if($detailvaccin['categorie'] == 1){ //Condition pour transformer les chiffres en BDD en variables sur la liste des vaccins
+            $detailvaccinc = 'Vivant';
+        }else {
+            $detailvaccinc = 'Inactive';
+        }
+        if ($detailvaccin['statuts'] == 1) { //Condition pour transformer les chiffres en BDD en variables sur la liste des vaccins
+            $detailvaccinst = 'Obligatoire';
+        }else {
+            $detailvaccinst = 'Recommander';
+        }
+
         echo($detailvaccin['nom']) ?>: </h1>
         
         <table id="defaultTable" class="table responsive-table">
@@ -40,7 +52,7 @@
             </tr>
             
             <?php 
-                    echo('<tr><td>'.$detailvaccin['nom'].'</td><td>'.$detailvaccin['content'].'</td><td>'.$detailvaccin['numerolot'].'</td><td>'.$datecreation.'</td><td>'.$detailvaccin['updated_at'].'</td><td>'.$detailvaccin['categorie'].'</td><td>'.$detailvaccin['statuts'].'</td></tr>');
+                    echo('<tr><td>'.$detailvaccin['nom'].'</td><td>'.$detailvaccin['content'].'</td><td>'.$detailvaccin['numerolot'].'</td><td>'.$datecreation.'</td><td>'.$modifvaccin.'</td><td>'.$detailvaccinc.'</td><td>'.$detailvaccinst.'</td></tr>');
                 }
             ?>
         </table>
