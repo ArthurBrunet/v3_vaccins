@@ -1,7 +1,7 @@
 <?php include('../inc/pdo.php'); ?>
 <?php include('../inc/fonction.php'); ?>
 <?php 
- if (isadmin()){ ?>
+  if (isadmin()){ ?>
 
 
 

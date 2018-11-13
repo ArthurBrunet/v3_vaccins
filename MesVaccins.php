@@ -102,11 +102,7 @@ if (islogged()) {
       foreach ($vaccins as $key) {
 
         if(!in_array($key['id'],$vaccinUser)){
-<<<<<<< HEAD
           ?><option value="<?= $key['id'] ?>"><?= $key['nom'] ?></option><?php
-=======
-          ?><option value="<?= $key['id'] ?>"><?= $key['nom']; ?></option><?php
->>>>>>> 24e86ad1a91a48bc1119404b2c3c0f653f05ea2e
         }
       }
 
