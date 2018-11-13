@@ -16,7 +16,7 @@
 <h1 class="text-primary">Listing des vaccins</h1>
 <p>Voici un listing de tout les vaccins figurant sur le site.</p>
 <p>Si vous souhaitez ajouter un nouveau alors il vous suffit de <a href="newvaccins.php">Cliquez ici</a> </p>
-
+<div class="col-lg-12 ui-sortable">
 <table class="table table-bordered table-condensed table-hover table-striped dataTable no-footer" style="text-align: center;">
     <tr>
         <th style="text-align: center;">Nom du vaccin</th>
@@ -53,6 +53,7 @@
         }
     ?>
 </table>
+</div>
 
 
 
