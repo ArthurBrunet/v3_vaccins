@@ -23,7 +23,7 @@
         <div class="nav">
           <ul id="menu">
             <li><a href="index.php">Accueil</a></li>
-            
+
             <li><a href="<?php if (isLogged()) {
               echo "MesVaccins.php";
             }else {
@@ -47,7 +47,7 @@
         </div>
         </div>
     </div>
-    <div class="clear"></div>
+    <!-- <div class="clear"></div> -->
     </header>
-    <div class="block">
-    </div>
+    <!-- <div class="block">
+    </div> -->
