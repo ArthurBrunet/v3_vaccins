@@ -44,13 +44,12 @@
             } ?></li>
           </ul>
 
-        </div>
-          <p>Nous sommes un site de vaccination electronique permettant de vous faciliter
-
-              <br>dans vos demarches de sante.</p>
-        </div>
-    </div>
+        
     <!-- <div class="clear"></div> -->
     </header>
-    <!-- <div class="block">
-    </div> -->
+    </div>
+    <div class="clear">
+
+    </div>
+    <div class="block">
+    </div>

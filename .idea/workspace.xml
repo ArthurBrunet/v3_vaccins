@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a14aeb6-afa7-4bb2-81b9-1e050bb4c7b0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MesVaccins.php" beforeDir="false" afterPath="$PROJECT_DIR$/MesVaccins.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quisommesnous.php" beforeDir="false" afterPath="$PROJECT_DIR$/Quisommesnous.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/asset/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/asset/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/connection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/inscription.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/passwordforget.php" beforeDir="false" afterPath="$PROJECT_DIR$/passwordforget.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/passwordmodif.php" beforeDir="false" afterPath="$PROJECT_DIR$/passwordmodif.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +23,7 @@
     <session id="-1759553824">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
@@ -68,20 +72,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="114" lean-forward="true" selection-start-line="14" selection-start-column="114" selection-end-line="14" selection-end-column="114" />
+            <state relative-caret-position="-1338">
+              <caret line="28" column="114" lean-forward="true" selection-start-line="28" selection-start-column="114" selection-end-line="28" selection-end-column="114" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/asset/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="81" column="12" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
+            <state relative-caret-position="5185">
+              <caret line="305" selection-start-line="305" selection-end-line="305" />
             </state>
           </provider>
         </entry>
@@ -188,16 +192,15 @@
       <workItem from="1542112852202" duration="832000" />
       <workItem from="1542113705961" duration="279000" />
       <workItem from="1542114725650" duration="771000" />
-      <workItem from="1542115519639" duration="5146000" />
+      <workItem from="1542115519639" duration="5616000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7338000" />
+    <option name="totallyTimeSpent" value="7808000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -249,17 +252,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/asset/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="114" lean-forward="true" selection-start-line="14" selection-start-column="114" selection-end-line="14" selection-end-column="114" />
+        <state relative-caret-position="5185">
+          <caret line="305" selection-start-line="305" selection-end-line="305" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/asset/style.css">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="81" column="12" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
+        <state relative-caret-position="-1338">
+          <caret line="28" column="114" lean-forward="true" selection-start-line="28" selection-start-column="114" selection-end-line="28" selection-end-column="114" />
         </state>
       </provider>
     </entry>
