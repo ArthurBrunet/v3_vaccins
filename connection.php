@@ -102,7 +102,9 @@ xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute">
 <!-- ICONS -->
 
 
-
+<div class="background">
+  <img src="asset/images/bg-banner1.png" alt="">
+</div>
 <div class="wrapper">
 
   <div class="header">
