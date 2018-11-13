@@ -6,3 +6,4 @@ pdo.php
 *.DS_Store
 #ignore fichiers xml et iml
 .idea
+
