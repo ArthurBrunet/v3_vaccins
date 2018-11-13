@@ -1,4 +1,5 @@
 <?php
+$title = "Erreur 403";
 include('inc/pdo.php');
 include('inc/fonction.php');
 include('inc/header.php');

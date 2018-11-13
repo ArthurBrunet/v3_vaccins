@@ -124,65 +124,73 @@ if (islogged()) {
     </select>
     <input type="submit" name="submitted" value="Ajouter">
   </form>
-  <table class="" style="text-align: center;">
-      <tr>
-          <th style="text-align: center;">Nom du vaccin</th>
-          <th style="text-align: center;">Le contenue</th>
-          <th style="text-align: center;">Statuts</th>
-          <th style="text-align: center;">Date</th>
-      </tr>
-      <?php
-          //boucle pour integrer nos données pour remplir notre liste
-          foreach ($verifVacId as $vvi) {
-            if (!empty($vvi['fait']) && $vvi['fait'] == 'no') {
-              ?><tr>
-                  <td><?= $vvi['nom'] ?></td>
-                  <td><?= $vvi['content'] ?></td>
-                  <td><?php if ($vvi['statuts'] == 0) {
-                    echo "recommander";
-                  }else {
-                    echo "Obligatoire";
-                  }?></td>
-                  <td>A faire le : <?= $vvi['date'] ?></td>
-              </tr> <?php
-            }
-          }
-
-          foreach ($verifVacId as $vvi) {
-            if (!empty($vvi['fait']) && $vvi['fait'] == 'yes') {
-              ?><tr>
-                  <td><?= $vvi['nom'] ?></td>
-                  <td><?= $vvi['content'] ?></td>
-                  <td><?php if ($vvi['statuts'] == 0) {
-                    echo "recommander";
-                  }else {
-                    echo "Obligatoire";
-                  }?></td>
-                  <td>Fais le : <?= $vvi['date'] ?></td>
-                </tr>
-                  <?php
-            }
-          }
-
-          foreach ($verifVacId as $vvi) {
-            if (!empty($vvi['fait']) && $vvi['fait'] == 'yes') {
-              ?><tr>
-                  <td><?= $vvi['nom'] ?></td>
-                  <td><?= $vvi['content'] ?></td>
-                  <td><?php if ($vvi['statuts'] == 0) {
-                    echo "recommander";
-                  }else {
-                    echo "Obligatoire";
-                  }?></td>
-                  <td>Fais le : <?= $vvi['date'] ?></td>
-              </tr> <?php
-            }
-          }
-          ?>
-  </table>
-  </div>
-
   <?php
+  if (!empty($verifVacId)) {
+    ?>
+    <table class="" style="text-align: center;">
+        <tr>
+            <th style="text-align: center;">Nom du vaccin</th>
+            <th style="text-align: center;">Le contenue</th>
+            <th style="text-align: center;">Statuts</th>
+            <th style="text-align: center;">Date</th>
+        </tr>
+        <?php
+            //boucle pour integrer nos données pour remplir notre liste
+            foreach ($verifVacId as $vvi) {
+              if (!empty($vvi['fait']) && $vvi['fait'] == 'no') {
+                ?><tr>
+                    <td><?= $vvi['nom'] ?></td>
+                    <td><?= $vvi['content'] ?></td>
+                    <td><?php if ($vvi['statuts'] == 0) {
+                      echo "recommander";
+                    }else {
+                      echo "Obligatoire";
+                    }?></td>
+                    <td>A faire le : <?= $vvi['date'] ?></td>
+                </tr> <?php
+              }
+            }
+
+            foreach ($verifVacId as $vvi) {
+              if (!empty($vvi['fait']) && $vvi['fait'] == 'yes') {
+                ?><tr>
+                    <td><?= $vvi['nom'] ?></td>
+                    <td><?= $vvi['content'] ?></td>
+                    <td><?php if ($vvi['statuts'] == 0) {
+                      echo "recommander";
+                    }else {
+                      echo "Obligatoire";
+                    }?></td>
+                    <td>Fais le : <?= $vvi['date'] ?></td>
+                  </tr>
+                    <?php
+              }
+            }
+
+            foreach ($verifVacId as $vvi) {
+              if (!empty($vvi['fait']) && $vvi['fait'] == 'yes') {
+                ?><tr>
+                    <td><?= $vvi['nom'] ?></td>
+                    <td><?= $vvi['content'] ?></td>
+                    <td><?php if ($vvi['statuts'] == 0) {
+                      echo "Recommander";
+                    }else {
+                      echo "Obligatoire";
+                    }?></td>
+                    <td>Fais le : <?= $vvi['date'] ?></td>
+                </tr> <?php
+              }
+            }
+            ?>
+    </table>
+
+    <?php
+
+
+  }
+
+
+
 }else{
   header('Location: connection.php');
 }

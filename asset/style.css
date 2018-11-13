@@ -14,9 +14,8 @@ body{
 #header{
     height: 100px;
     width: 100%;
-    position: absolute;
+    position: fixed;
     line-height: 100%;
-    font-size: 1.5em;
 }
 #header .center{
   width: 70%;
@@ -35,7 +34,7 @@ body{
 #header .logo img{
   width: auto;
   /* max-width: 20%; */
-  height: 120px;
+  height: 100px;
   padding-left: 10px;
   float: left;
 }
@@ -54,7 +53,7 @@ body{
   text-decoration: none;
   padding: 15px;
   margin: 0 10px 0 0;
-  font-family: 'Cinzel', serif;
+
   color: white;
   border-radius: 15px 15px;
   font-size: 1.3em;
@@ -70,9 +69,8 @@ body{
   height: 66px;
   width: 100%;
 }
-
-/* INDEX */
 .accueil{
+<<<<<<< HEAD
   /* background-color: #F7FBFF; */
 }
 
@@ -89,44 +87,33 @@ body{
   font-size: 1.7em;
   color: white;
   width: 50%;
+=======
+  background-color: #F7FBFF;
+>>>>>>> 3be62c56f1826c9fafb26fe15b47a8969a3701d3
 }
-
 .accueil .content{
   width: 100%;
   margin: 0 auto;
-}
-.accueil .container1{
-  width: 100%;
-}
-.accueil .container2{
-  width: 100%;
-  background-color: #F7FBFF;
-}
-.accueil .container3{
-  width: 100%;
-}
-.accueil .container4{
-  width: 100%;
 }
 .accueil .content1{
   height: 500px;
   margin: 0  auto;
   font-size: 1.5em;
-  width: 75%;
+  width: 80%;
   background-color: white;
 }
 
 .accueil .content2{
   height: 500px;
   margin: 0  auto;
-  width: 75%;
+  width: 80%;
   background-color: #F7FBFF;
 }
 
 .accueil .content3{
   height: 500px;
   margin: 0  auto;;
-  width: 75%;
+  width: 80%;
   background-color: white;
 }
 
@@ -223,12 +210,7 @@ html, body {background:white;font-family: 'Roboto', sans-serif;}
   max-width: 300px;
   width:100%;
   margin:20px auto;
-}
-
-.wrapper-vaccins{
-  max-width: 600px;
-  width:100%;
-  margin:20px auto;
+  position: relative;
 }
 
 form {position:relative;}
@@ -396,7 +378,7 @@ input[type="radio"]{
 }
 
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1100px) {
 	/* #menu is the original menu */
 	#menu {
 		display:none;
@@ -420,14 +402,4 @@ input[type="radio"]{
     width: 100%;
     z-index: 9999999999999;
 	}
-  .background .contenu-image{
-    position: absolute;
-    line-height: 50px;
-    top : 10%;
-    left : 25%;
-    font-size: 1.5em;
-    color: white;
-    width: 50%;
-  }
-
 }
