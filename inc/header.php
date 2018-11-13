@@ -7,6 +7,8 @@
     <title><?php $title ?></title>
     <link rel="stylesheet" href="asset/slicknav.css" />
     <link rel="stylesheet" href="asset/style.css">
+
+
 </head>
 <body>
 
