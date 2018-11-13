@@ -1,10 +1,11 @@
 <?php
+$title = "Inscription";
 include('inc/pdo.php');
 include('inc/fonction.php');
 
 
 $errors = array();
-
+if (!islogged()){
 if (!empty($_POST['submitted'])) {
 
   $email = trim(strip_tags($_POST['email']));
@@ -86,7 +87,9 @@ include('inc/header.php');
 
 
 <?php
-
+}else {
+  header('Location: index.php');
+}
 
 
 

@@ -1,5 +1,5 @@
 <?php
-
+$title = "Modif mot de passe";
 include('inc/pdo.php');
 include('inc/fonction.php');
 

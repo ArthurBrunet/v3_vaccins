@@ -1,11 +1,11 @@
 <?php
 
-
+$title = "Connexion";
 include('inc/pdo.php');
 include('inc/fonction.php');
 
 $errors = array();
-
+if (!islogged()) {
 if (!empty($_POST['submitted'])) {
 // faille xss
   $login = trim(strip_tags($_POST['login']));
@@ -156,4 +156,7 @@ xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute">
 
 
 <?php
+}else {
+  header('Location: index.php');
+}
 include('inc/footer.php');

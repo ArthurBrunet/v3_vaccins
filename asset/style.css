@@ -73,28 +73,28 @@ body{
   background-color: #F7FBFF;
 }
 .accueil .content{
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 .accueil .content1{
   height: 500px;
   margin: 0  auto;
   font-size: 1.5em;
-  width: 100%;
+  width: 80%;
   background-color: white;
 }
 
 .accueil .content2{
   height: 500px;
   margin: 0  auto;
-  width: 100%;
+  width: 80%;
   background-color: #F7FBFF;
 }
 
 .accueil .content3{
   height: 500px;
   margin: 0  auto;;
-  width: 100%;
+  width: 80%;
   background-color: white;
 }
 
@@ -191,6 +191,7 @@ html, body {background:white;font-family: 'Roboto', sans-serif;}
   max-width: 300px;
   width:100%;
   margin:20px auto;
+  position: relative;
 }
 
 form {position:relative;}

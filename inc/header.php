@@ -7,6 +7,8 @@
     <title><?php $title ?></title>
     <link rel="stylesheet" href="asset/slicknav.css" />
     <link rel="stylesheet" href="asset/style.css">
+    <link rel="stylesheet" href="/css/master.css">
+    <link rel="icon" type="image/ico" href="asset/images/medical-history.ico">
 
 
 </head>

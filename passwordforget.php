@@ -1,5 +1,5 @@
 <?php
-
+$title = "Mot de passe oublié";
 include('inc/pdo.php');
 include('inc/fonction.php');
 
