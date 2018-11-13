@@ -5,15 +5,22 @@
 
 
     <section class="accueil">
-        <div class="wrap">
+
           <div class="background">
             <img src="asset/images/bg-banner.jpg" alt="">
           </div>
+          <div class="content">
+            <div class="content1">
+
+
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis convallis quam vel tincidunt. Praesent ullamcorper tempus enim sit amet semper. Sed pharetra risus diam, a eleifend felis scelerisque eu. Duis sed egestas lorem. Proin blandit elit non arcu faucibus, dapibus interdum magna semper. Sed sit amet pretium lectus. Ut semper rhoncus turpis bibendum tincidunt. Phasellus sed aliquet lorem. Praesent quis arcu ut justo mattis tempor sed eget dolor. Praesent molestie, lacus sed laoreet facilisis, quam urna lacinia massa, sed bibendum dolor risus quis neque. Aliquam molestie, ipsum vel efficitur fringilla, orci nibh dapibus sem, vitae commodo mauris sapien sagittis tortor. Maecenas id turpis augue. Suspendisse sit amet orci eget leo pulvinar vehicula.
 
 Quisque congue malesuada consectetur. Mauris libero ligula, ultricies eu risus sed, dapibus varius sem. Quisque eros ex, cursus vitae malesuada at, bibendum nec dui. Proin luctus metus sit amet ex tincidunt, eget luctus sapien maximus. Curabitur purus mi, tristique vel orci nec, mattis dapibus metus. Aliquam erat volutpat. Aenean accumsan risus id scelerisque fermentum. Maecenas fringilla fringilla sapien, nec accumsan tortor commodo sit amet. Proin ut arcu nec erat hendrerit mollis. In in placerat lacus. Cras vel euismod libero. Donec vel fermentum tellus. Duis tincidunt accumsan nisi et dictum. Proin volutpat nulla nec sollicitudin porta. Phasellus sed diam nisi.
 
 Nunc ac purus at mauris venenatis pellentesque. Nam vel lectus vehicula, auctor risus elementum, commodo purus. Mauris egestas vestibulum tellus, ac gravida sapien rutrum id. Vestibulum feugiat metus quis ipsum convallis rhoncus. Curabitur pulvinar ac felis et volutpat. Fusce sed tempus magna. Integer eget enim vel magna tempor porta at at urna. Donec quis consequat dui, ut elementum dui. Nullam non velit egestas, venenatis est et, bibendum enim. Proin iaculis risus ante, id finibus nibh dictum id.
+</div>
+<div class="content2">
+
 
 Maecenas dignissim nunc consequat lorem bibendum, eget ultrices ipsum malesuada. Sed nisi justo, imperdiet eget ornare vel, mattis eget odio. Aenean tincidunt neque eu est pulvinar aliquet. Aliquam pulvinar nibh ut nulla viverra porttitor. In quis lacus condimentum, pretium metus non, maximus ligula. Phasellus malesuada faucibus pretium. Nam aliquam magna vitae sodales consectetur. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam eget nisl ipsum. Morbi et lorem sagittis, imperdiet justo nec, porta neque. Integer in odio ex. Curabitur et mauris turpis.
 
@@ -26,6 +33,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac purus eu 
 Praesent imperdiet a diam vel finibus. Curabitur imperdiet dui nec luctus volutpat. Quisque semper diam vel porta aliquam. Sed sodales lacinia orci at pulvinar. Pellentesque maximus diam non venenatis vestibulum. Nunc mattis metus id odio vehicula, vitae imperdiet ante scelerisque. Proin dolor felis, congue sit amet tincidunt et, posuere eu quam. Sed congue scelerisque lorem in tempus. Vestibulum a sem elit. Suspendisse vulputate, risus at varius tempus, mi nulla imperdiet massa, quis molestie odio quam a enim. Donec ac velit dapibus, elementum dolor id, egestas purus. Integer rhoncus imperdiet eros, ornare luctus nisi porta quis. Vestibulum bibendum dolor eget dapibus finibus.
 
 Mauris eu iaculis ex, lacinia mollis odio. Donec placerat metus pretium, ornare lacus ut, varius turpis. Curabitur mauris nisi, viverra aliquet eleifend pharetra, gravida vitae risus. In at massa tincidunt, rhoncus felis ac, faucibus ipsum. Sed mattis iaculis ante, eu condimentum augue porttitor nec. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ac erat non nulla sagittis accumsan non nec tortor. Praesent sagittis dignissim augue eu suscipit. Praesent porta lorem nec ipsum eleifend vehicula. Sed nec quam libero. Donec laoreet finibus purus vitae blandit. Sed semper magna orci, id mollis est gravida sed.
+</div>
+<div class="content3">
+
 
 Praesent sagittis euismod nisi a mollis. Ut sed orci tempor, suscipit urna eget, consectetur lacus. Duis ut auctor nisl. Duis fermentum fermentum mauris, non bibendum tortor cursus in. Maecenas maximus sodales fringilla. Nunc suscipit nunc libero, in fermentum ante malesuada nec. Quisque eget nulla sed tellus faucibus lobortis eget sagittis nisl. Nam blandit, eros non malesuada gravida, ligula turpis rutrum turpis, mattis volutpat elit purus auctor nisi.
 
@@ -40,6 +50,9 @@ Donec interdum risus dictum, tempus est ac, finibus quam. Cras finibus rutrum er
 Maecenas est tortor, interdum et dui quis, vehicula porttitor purus. Suspendisse tincidunt sed massa vel sagittis. Aenean maximus eleifend quam. Sed non risus et arcu euismod luctus. In hac habitasse platea dictumst. Pellentesque hendrerit at nunc eget imperdiet. Cras ut rhoncus dolor.
 
 Duis tempus elementum nulla, sit amet venenatis dui dapibus in. In sollicitudin sapien enim. Cras euismod, leo vitae posuere sodales, odio magna accumsan ante, in venenatis ipsum ipsum ac quam. Pellentesque sodales dolor at est commodo convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus quam ut nisl hendrerit, ut consectetur ipsum mollis. Nunc lobortis lorem non posuere rhoncus. Sed auctor at leo eu blandit.
+</div>
+<div class="content4">
+
 
 Duis euismod consequat leo, eu placerat nulla placerat sit amet. Aliquam erat volutpat. Morbi vel augue convallis, egestas libero dignissim, dictum magna. Phasellus et pharetra turpis. Sed ante enim, blandit eget cursus nec, aliquam fringilla eros. Duis faucibus erat volutpat tortor dignissim viverra. Donec vitae urna dictum, pretium enim non, aliquam tellus. Aliquam pretium id massa a gravida.
 
@@ -48,10 +61,13 @@ Morbi ut varius risus. Curabitur sed diam aliquam, sollicitudin risus malesuada,
 Integer quis augue ut sem vehicula molestie. Etiam tincidunt tristique egestas. Aliquam ut lacinia diam. Nunc varius felis porta, interdum turpis quis, condimentum libero. Aenean finibus eros mauris, non pharetra dui accumsan sed. Suspendisse mattis purus nunc, scelerisque efficitur sem pretium in. Sed finibus magna sit amet sagittis vehicula. Etiam quis magna placerat, ultrices ligula non, sollicitudin nulla. Integer dignissim dui vel arcu rhoncus condimentum. Sed in commodo libero, vitae tincidunt nunc. Duis vestibulum est at orci mattis lobortis. Maecenas luctus libero nec lobortis accumsan. Ut venenatis ante augue, non fermentum augue faucibus eget. Cras non lectus id neque vehicula sollicitudin. Nullam ac nibh finibus, rutrum est nec, pulvinar est.
 
 Proin gravida enim risus, nec ultricies sapien porta et. Maecenas suscipit libero ut quam auctor, eu faucibus libero egestas. Nunc turpis orci, varius porta velit id, semper finibus dui. Ut volutpat porttitor lacinia. Morbi maximus hendrerit orci, non consequat arcu volutpat sed. Cras tempus, mi id pretium porttitor, erat mi ultrices arcu, id tempor augue nisi non dolor. Etiam sed dignissim mauris. Donec consectetur viverra tincidunt. Praesent id velit tempor, ultricies ex quis, tristique ligula. In vel tempus mi. Donec interdum arcu ac risus ultrices, et hendrerit justo tristique. Ut quis orci in massa mattis blandit sit amet ut leo.
-
+</div>
 
         </div>
     </section>
+    <div class="clear">
+
+    </div>
 <!-- Nous mettrons tout les composants de l'acceuil dans ce commentaire et nous ferons la pratique quand tout sera décidé. -->
 
 
