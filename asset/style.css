@@ -12,7 +12,7 @@ body{
 }
 /* HEADER */
 #header{
-    height: 100px;
+    /* height: 100px; */
     width: 100%;
     position: fixed;
     line-height: 100%;
@@ -54,7 +54,7 @@ body{
   padding: 15px;
   margin: 0 10px 0 0;
 
-  color: #3065b5;
+  color: white;
   border-radius: 15px 15px;
   font-size: 1.3em;
 
@@ -382,4 +382,9 @@ input[type="radio"]{
     width: 100%;
     z-index: 9999999999999;
 	}
+}
+@media screen and (max-height: 790px){
+  #header{
+    display: none;
+  }
 }
