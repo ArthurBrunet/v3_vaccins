@@ -12,7 +12,7 @@ body{
 }
 /* HEADER */
 #header{
-    /* height: 100px; */
+    height: 100px;
     width: 100%;
     position: fixed;
     line-height: 100%;
@@ -80,21 +80,21 @@ body{
   height: 500px;
   margin: 0  auto;
   font-size: 1.5em;
-  width: 100%;
+  width: 80%;
   background-color: white;
 }
 
 .accueil .content2{
   height: 500px;
   margin: 0  auto;
-  width: 100%;
+  width: 80%;
   background-color: #F7FBFF;
 }
 
 .accueil .content3{
   height: 500px;
   margin: 0  auto;;
-  width: 100%;
+  width: 80%;
   background-color: white;
 }
 
