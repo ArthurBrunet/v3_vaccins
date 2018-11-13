@@ -6,7 +6,7 @@ include('inc/fonction.php');
 
 $errors = array();
 
-if (!empty($_POST)) {
+if (!empty($_POST['submitted'])) {
 // faille xss
   $login = trim(strip_tags($_POST['login']));
   $password = trim(strip_tags($_POST['password']));
@@ -18,6 +18,8 @@ if (!empty($_POST)) {
           $query->bindvalue(':login',$login);
           $query->execute();
       $user = $query->fetch();
+
+      debug($user);
 
   if (!empty($user)) {
 
@@ -105,13 +107,13 @@ xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute">
 
   <div class="header">
 
-    <h3 class="sign-in">Sign in</h3>
-    <div class="button"><a href="inscription.php">Register</a>
+    <h3 class="sign-in">Se connecter</h3>
+    <div class="button"><a href="inscription.php">S'inscrire</a>
 
     </div>
   </div>
    <div class="clear"></div>
-  <form action="#">
+  <form action="" method="post">
       <div>
          <label class="user" for="text">
            <svg viewBox="0 0 32 32">
@@ -120,7 +122,7 @@ xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute">
                     </g>
                   </svg>
          </label>
-        <input class="user-input" type="text" name="login" id="name" placeholder="My name is"  />
+        <input class="user-input" type="text" name="login" id="login" placeholder="Email"  />
       </div>
       <div>
         <label class="lock" for="password">
@@ -133,7 +135,7 @@ xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute">
         <input type="password" name="password" id="name" placeholder="" />
       </div>
      <div>
-      <input type="submit" value="Sign in" />
+      <input type="submit" name="submitted" value="Se connecter"  />
     </div>
     <div class="radio-check">
       <input type="radio" class="radio-no" id="no" name="remember" value="no" checked>
