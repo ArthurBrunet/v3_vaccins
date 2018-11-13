@@ -3,7 +3,8 @@
 
 <?php include('inc/pdo.php') ?>
 <?php include('inc/fonction.php') ?>
-<?php include('inc/header.php');
+<?php include('inc/header.php'); ?>
+<?php
 
 if (islogged()) {
 
@@ -90,10 +91,19 @@ if (islogged()) {
   // affichée les vaccins A FAIRE dans l'ordre du plus proche collunm Date
 
   ?>
+  <div class="background">
+    <img src="asset/images/bg-banner1.png" alt="">
+    <div class="contenu-image">
+      <p>Nous sommes un site de carnets de vaccination électronique, permettant de vous faciliter dans vos démarches de santé.</p>
+    </div>
+  </div>
+  <div class="wrapper-vaccins">
+
+
   <form class="" method="post">
-    <p>entré la date</p>
+    <p>Entrer la date</p>
     <input type="date" name="date" value=""><?php afficheErrors($errors,'date'); ?>
-    <p>vaccins</p>
+    <p>Vaccins</p>
     <select name="vaccins"><?php afficheErrors($errors,'vaccins'); ?>
 
       <?php

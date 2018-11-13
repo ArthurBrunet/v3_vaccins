@@ -48,10 +48,12 @@
             } ?></li>
           </ul>
 
-        </div>
-        </div>
-    </div>
+        
     <!-- <div class="clear"></div> -->
     </header>
-    <!-- <div class="block">
-    </div> -->
+    </div>
+    <div class="clear">
+
+    </div>
+    <div class="block">
+    </div>
