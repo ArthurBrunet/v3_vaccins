@@ -54,7 +54,7 @@ body{
   padding: 15px;
   margin: 0 10px 0 0;
 
-  color: black;
+  color: #3065b5;
   border-radius: 15px 15px;
   font-size: 1.3em;
 
@@ -69,37 +69,39 @@ body{
   height: 66px;
   width: 100%;
 }
+.accueil{
+  background-color: #F7FBFF;
+}
 .accueil .content{
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
 }
 .accueil .content1{
   height: 500px;
-  float: left;
   margin: 0  auto;
-  width: 33%;
-  background-color: #3DB8D7;
+  font-size: 1.5em;
+  width: 100%;
+  background-color: white;
 }
 
 .accueil .content2{
   height: 500px;
-  float: left;
   margin: 0  auto;
-  width: 33%;
-  background-color: #0392CE;
+  width: 100%;
+  background-color: #F7FBFF;
 }
 
 .accueil .content3{
   height: 500px;
-  float: left;
   margin: 0  auto;;
-  width: 33%;
-  background-color: #3065B5;
+  width: 100%;
+  background-color: white;
 }
 
 .accueil .content4{
   height: 500px;
   margin: auto;
+  background-color: #66D6D3;
 }
 
 

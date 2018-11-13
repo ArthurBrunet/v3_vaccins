@@ -68,7 +68,9 @@ if (count($errors) == 0) {
 
 include('inc/header.php');
 ?>
-
+<div class="background">
+  <img src="asset/images/bg-banner1.png" alt="">
+</div>
 <div class="wrapper">
   <form class="" method="post">
     <p>Email</p>

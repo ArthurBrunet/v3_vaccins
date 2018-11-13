@@ -7,7 +7,7 @@
     <section class="accueil">
 
           <div class="background">
-            <img src="asset/images/bg-banner.jpg" alt="">
+            <img src="asset/images/bg-banner1.png" alt="">
           </div>
           <div class="content">
             <div class="content1">
