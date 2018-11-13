@@ -73,28 +73,28 @@ body{
   background-color: #F7FBFF;
 }
 .accueil .content{
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
 }
 .accueil .content1{
   height: 500px;
   margin: 0  auto;
   font-size: 1.5em;
-  width: 80%;
+  width: 100%;
   background-color: white;
 }
 
 .accueil .content2{
   height: 500px;
   margin: 0  auto;
-  width: 80%;
+  width: 100%;
   background-color: #F7FBFF;
 }
 
 .accueil .content3{
   height: 500px;
   margin: 0  auto;;
-  width: 80%;
+  width: 100%;
   background-color: white;
 }
 
@@ -382,9 +382,4 @@ input[type="radio"]{
     width: 100%;
     z-index: 9999999999999;
 	}
-}
-@media screen and (max-height: 790px){
-  #header{
-    display: none;
-  }
 }
