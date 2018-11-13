@@ -15,6 +15,9 @@
     <div id="wraper">
 
     <header id="header">
+      <div class="center">
+
+
       <a href="#" class="header-hamburger"></a>
         <div class="logo">
             <img src="asset/images/logose.png" alt="">
@@ -22,17 +25,18 @@
         <div class="nav">
           <ul id="menu">
             <li><a href="index.php">Accueil</a></li>
+
             <li><a href="<?php if (isLogged()) {
               echo "MesVaccins.php";
             }else {
               echo "connection.php";
             } ?>">Mes vaccins</a></li>
-            <li><a href="Quisommesnous.php">Qui sommes-nous?</a></li>
-            <li><a href="Contact.php">Contact</a></li>
+
             <?php if (isLogged()) {
               ?><li><a href="deconnexion.php">Deconnexion</a></li><?php
             }else {
               ?><li><a href="connection.php">Connexion</a></li>
+
               <li><a href="inscription.php">Inscription</a></li><?php
             } ?>
             <li><?php if (isadmin()) {
@@ -43,9 +47,9 @@
           </ul>
 
         </div>
-
+        </div>
     </div>
-    <div class="clear"></div>
+    <!-- <div class="clear"></div> -->
     </header>
-    <div class="block">
-    </div>
+    <!-- <div class="block">
+    </div> -->

@@ -17,7 +17,7 @@
 
 
 <?php include('inc/headerb.php'); ?>
-
+<div class="col-lg-12 ui-sortable">
 <table class="table table-bordered table-condensed table-hover table-striped dataTable no-footer" style="text-align: center;">
     <tr>
         <th style="text-align: center;">Adresse Mail</th>
@@ -49,7 +49,7 @@
         } ?>
        
 </table>
-
+</div>
 
 
 
