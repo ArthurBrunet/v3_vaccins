@@ -14,15 +14,22 @@ if (!empty($_GET['id']) && is_numeric($_GET['id'])) {
 }
 $error = array();
 if (!empty($_POST['submittedmodifuser'])) {
-    $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
-    $error = veriftext($error, $email, 'email', 3,50);
-
-    if (isset($_POST['role'])){
-        $modifrole = $_POST['role'];
+    $email = $_POST['email'];
+    if (!empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        
     }else {
-          $error['role'] = 'Veuillez selectionnez une option';
+        $error['email'] = 'Veuillez renseigner une adresse mail';
     }
-
+    if (count($error) == 0) {
+        
+    }
+    $role = $_POST['role'];
+    $sql2 = "UPDATE v3_vac_users SET email = :email, role = :role, updated_at = NOW() WHERE id = :id";
+    $query2 = $pdo->prepare($sql2);
+    $query2->bindValue(':email', $email, PDO::PARAM_STR);
+    $query2->bindValue(':role', $role, PDO::PARAM_STR);
+    $query2->bindValue(':id', $id, PDO::PARAM_INT);
+    $query2->execute();
 
 
 }

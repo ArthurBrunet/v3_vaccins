@@ -1,6 +1,6 @@
 <?php include('../inc/pdo.php'); ?>
 <?php include('../inc/fonction.php'); ?>
-<?php if (isadmin()) { ?>
+<?php if(isadmin()) { ?>
 
 
 
@@ -25,6 +25,6 @@
 
  <?php }
  else {
-     header('Location: ../403.php');
+    header('Location: ../403.php');
  } 
  ?>

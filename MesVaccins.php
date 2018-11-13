@@ -102,11 +102,9 @@ if (islogged()) {
       foreach ($vaccins as $key) {
 
         if(!in_array($key['id'],$vaccinUser)){
-<<<<<<< HEAD
+
           ?><option value="<?= $key['id'] ?>"><?= $key['nom'] ?></option><?php
-=======
-          ?><option value="<?= $key['id'] ?>"><?= $key['nom']; ?></option><?php
->>>>>>> 24e86ad1a91a48bc1119404b2c3c0f653f05ea2e
+
         }
       }
 
@@ -130,7 +128,11 @@ if (islogged()) {
               ?><tr>
                   <td><?= $vvi['nom'] ?></td>
                   <td><?= $vvi['content'] ?></td>
-                  <td><?= $vvist ?></td>
+                  <td><?php if ($vvi['statuts'] == 0) {
+                    echo "recommander";
+                  }else {
+                    echo "Obligatoire";
+                  }?></td>
                   <td>A faire le : <?= $vvi['date'] ?></td>
               </tr> <?php
             }
@@ -141,7 +143,11 @@ if (islogged()) {
               ?><tr>
                   <td><?= $vvi['nom'] ?></td>
                   <td><?= $vvi['content'] ?></td>
-                  <td><?= $vvist ?></td>
+                  <td><?php if ($vvi['statuts'] == 0) {
+                    echo "recommander";
+                  }else {
+                    echo "Obligatoire";
+                  }?></td>
                   <td>Fais le : <?= $vvi['date'] ?></td>
                 </tr>
                   <?php
@@ -153,7 +159,11 @@ if (islogged()) {
               ?><tr>
                   <td><?= $vvi['nom'] ?></td>
                   <td><?= $vvi['content'] ?></td>
-                  <td><?= $vvist ?></td>
+                  <td><?php if ($vvi['statuts'] == 0) {
+                    echo "recommander";
+                  }else {
+                    echo "Obligatoire";
+                  }?></td>
                   <td>Fais le : <?= $vvi['date'] ?></td>
               </tr> <?php
             }
