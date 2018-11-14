@@ -387,6 +387,14 @@ input[type="radio"]{
 
 #footer{
     background-color: lime;
+    height: 250px;
+}
+#footer .wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+#footer .wrap img{
+  max-width: 10%;
 }
 
 

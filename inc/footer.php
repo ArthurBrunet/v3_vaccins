@@ -1,9 +1,9 @@
     <footer id="footer">
       <div class="wrap">
         <div class="img footer">
-          <!-- <img src="asset/images/profesorxavier.jpg" alt="professeur xavier">
+          <img src="asset/images/profesorxavier.jpg" alt="professeur xavier">
           <img src="asset/images/profesorxaviette.jpg" alt="professeur xaviette">
-          <img src="asset/images/profesorxaviou.jpg" alt="professeur xaviou"> -->
+          <img src="asset/images/profesorxaviou.jpg" alt="professeur xaviou">
         </div>
         <div class="contactnous">
 
