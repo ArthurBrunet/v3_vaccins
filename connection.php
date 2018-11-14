@@ -105,9 +105,8 @@ xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute">
 <div class="background">
   <img src="asset/images/bg-banner1.png" alt="">
   <div class="contenu-image">
-    <h1>Bienvenue sur A.B.A</h1>
-    <p>Le nouveau site de carnets de vaccination électronique, permettant de vous faciliter la vie dans vos démarches de santé.</p>
-    <p>Vous pourrez conserver la trace de tous vos vaccins reçus</p>  </div>
+    <p>Avant une première connexion, merci de vous inscrire</p>
+    </div>
 </div>
 <div class="boxlogin">
 
