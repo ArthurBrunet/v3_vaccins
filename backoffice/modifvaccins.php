@@ -70,32 +70,33 @@ if (!empty($_POST['submittedmodif'])) {
 
 
 <?php include('inc/headerb.php'); ?>
+    <div class="body collapse in col-lg-6 box col-lg-12" style="margin-left: 475px; margin-top: 150px;">
+        <form action="" method="post" class="form-horizontal">
+                <label for="nom">Nom du vaccin: </label>
+                <span><?php if (!empty($error['nom'])) { echo($error['nom']);} ?></span>
+                <br><input type="text" name="nom" id="nom" value="<?php if (!empty($_POST['nom'])) { echo($_POST['nom']);} else{ echo($modifvaccinsnom);} ?>" class="col-lg-8 form-control">
 
-<form action="" method="post" class="form-horizontal">
-        <label for="nom">Nom du vaccin: </label>
-        <span><?php if (!empty($error['nom'])) { echo($error['nom']);} ?></span>
-        <br><input type="text" name="nom" id="nom" value="<?php if (!empty($_POST['nom'])) { echo($_POST['nom']);} else{ echo($modifvaccinsnom);} ?>">
+                <br><label for="numerolot">Numero du lot: </label>
+                <br><input type="text" name="numerolot" id="numerolot" value="<?php if (!empty($_POST['numerolot'])) { echo($_POST['numerolot']);} else{ echo($modifvaccinslot);} ?>" class="col-lg-8 form-control">
 
-        <br><label for="numerolot">Numero du lot: </label>
-        <br><input type="text" name="numerolot" id="numerolot" value="<?php if (!empty($_POST['numerolot'])) { echo($_POST['numerolot']);} else{ echo($modifvaccinslot);} ?>">
-        
-        <br><label for="categorievac">Catégorie du vaccin: </label>
-        <span><?php if (!empty($error['categorievac'])) { echo($error['categorievac']);} ?></span>
-        <br><input type="radio" name="categorievac" id="categorievac" value="1"><label for="categorievac">Vivant</label>
-        <br><input type="radio" name="categorievac" id="categorievac" value="0"><label for="categorievac">Inactive</label>
+                <br><label for="categorievac">Catégorie du vaccin: </label>
+                <span><?php if (!empty($error['categorievac'])) { echo($error['categorievac']);} ?></span>
+                <br><input type="radio" name="categorievac" id="categorievac" value="1"><label for="categorievac">Vivant</label>
+                <br><input type="radio" name="categorievac" id="categorievac" value="0"><label for="categorievac">Inactive</label>
 
 
-        <br><label for="statuts">Statuts: </label>
-        <span><?php if (!empty($error['statuts'])) { echo($error['statuts']);} ?></span>
-        <br><input type="radio" name="statuts" id="statuts" value="1"><label for="statuts">Obligatoire</label>
-        <br><input type="radio" name="statuts" id="statuts" value="0"><label for="statuts">Recommander</label>
+                <br><label for="statuts">Statuts: </label>
+                <span><?php if (!empty($error['statuts'])) { echo($error['statuts']);} ?></span>
+                <br><input type="radio" name="statuts" id="statuts" value="1"><label for="statuts">Obligatoire</label>
+                <br><input type="radio" name="statuts" id="statuts" value="0"><label for="statuts">Recommander</label>
 
-        <br><label for="content">Description: </label>
-        <br><textarea name="content" id="content" cols="80" rows="5"><?php if (!empty($_POST['content'])) { echo($_POST['content']);} else{ echo($modifvaccinscontent);} ?></textarea>
+                <br><label for="content">Description: </label>
+                <br><textarea name="content" id="content" cols="80" rows="5" class="form-control"><?php if (!empty($_POST['content'])) { echo($_POST['content']);} else{ echo($modifvaccinscontent);} ?></textarea>
 
-        <br><input type="submit" name="submittedmodif" id="submittedmodif" value="Envoyer">
+                <br><input type="submit" name="submittedmodif" id="submittedmodif" value="Envoyer" class="btn btn-metis-5 btn-round">
 
-</form>
+        </form>
+    </div>
 
 
 

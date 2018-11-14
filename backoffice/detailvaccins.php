@@ -42,23 +42,24 @@
         }
 
         echo($detailvaccin['nom']) ?>: </h1>
-        
-        <table id="defaultTable" class="table responsive-table">
-            <tr>
-                <th>Nom</th>
-                <th>Description</th>
-                <th>Numero de lot</th>
-                <th>Date d'entrée</th>
-                <th>Date de modification</th>
-                <th>Catégorie</th>
-                <th>Statuts</th>
-            </tr>
-            
-            <?php 
-                    echo('<tr><td>'.$detailvaccin['nom'].'</td><td>'.$detailvaccin['content'].'</td><td>'.$detailvaccin['numerolot'].'</td><td>'.$datecreation.'</td><td>'.$modifvaccin.'</td><td>'.$detailvaccinc.'</td><td>'.$detailvaccinst.'</td></tr>');
-                }
-            ?>
-        </table>
+        <div class="body collapse in ">
+            <table id="defaultTable" class="table table-bordered responsive-table">
+                <tr>
+                    <th>Nom</th>
+                    <th>Description</th>
+                    <th>Numero de lot</th>
+                    <th>Date d'entrée</th>
+                    <th>Date de modification</th>
+                    <th>Catégorie</th>
+                    <th>Statuts</th>
+                </tr>
+
+                <?php
+                echo('<tr><td>'.$detailvaccin['nom'].'</td><td>'.$detailvaccin['content'].'</td><td>'.$detailvaccin['numerolot'].'</td><td>'.$datecreation.'</td><td>'.$modifvaccin.'</td><td>'.$detailvaccinc.'</td><td>'.$detailvaccinst.'</td></tr>');
+}
+                ?>
+            </table>
+        </div>
 
 
 
