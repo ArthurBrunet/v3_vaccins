@@ -19,8 +19,6 @@ if (!empty($_POST['submitted'])) {
           $query->execute();
       $user = $query->fetch();
 
-      debug($user);
-
   if (!empty($user)) {
 
     if (password_verify($password,$user['password'])) {
@@ -28,7 +26,7 @@ if (!empty($_POST['submitted'])) {
         $_SESSION['v3_user'] = array(
           'v3_id' => $user['id'], 'v3_email' => $user['email'], 'v3_role' => $user['role'], 'v3_ip' => $_SERVER['REMOTE_ADDR']
         );
-        header('Location: index.php');
+        header('Location: MesVaccins.php');
       }
     }else {
       $errors['password'] = 'votre mdp est incorrect';
@@ -108,15 +106,12 @@ xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute">
     <p>Avant une première connexion, merci de vous inscrire</p>
     </div>
 </div>
-<div class="boxlogin">
-
   <div class="wrapper">
 
     <div class="header">
-
       <h3 class="sign-in">Se connecter</h3>
       <div class="button"><a href="inscription.php">S'inscrire</a>
-
+        <div class="clear"></div>
       </div>
     </div>
      <div class="clear"></div>
@@ -129,7 +124,7 @@ xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute">
                       </g>
                     </svg>
            </label>
-          <input class="user-input" type="text" name="login" id="login" placeholder="Email"  />
+          <input class="user-input" type="text" name="login" id="login" placeholder="<?php if (empty($errors['login'])) { ?>Email<?php }else { afficheErrors($errors,'login'); } ?>"  />
         </div>
         <div>
           <label class="lock" for="password">
@@ -139,7 +134,7 @@ xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute">
                 </g>
               </svg>
           </label>
-          <input type="password" name="password" id="name" placeholder="" />
+          <input type="password" name="password" id="name" placeholder="<?php if (empty($errors['password'])) { ?>password<?php }else { afficheErrors($errors,'password'); } ?>" />
         </div>
        <div>
         <input type="submit" name="submitted" value="Se connecter"  />
@@ -153,14 +148,9 @@ xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute">
       <!-- </div> -->
         <!-- <span class="check-label">Remember me</span> -->
         <span class="forgot-label"><a href="passwordforget.php">Mot de passe oublié?</a></span>
-        <div class="clear"></div>
     </form>
     <div class="clear"></div>
   </div>
-  <div class="clear">
-
-  </div>
-</div>
 
 
 

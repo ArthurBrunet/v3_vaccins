@@ -29,9 +29,7 @@ function veriftext($error,$data,$key,$min,$max,$empty = true)
 
   // affiche les errors dans le html
   function afficheErrors($errors,$key){
-  ?>
-  <span class="errors"><?php if (!empty($errors[$key])) { echo $errors[$key]; } ?></span>
-  <?php
+   if (!empty($errors[$key])) { echo $errors[$key]; }
   }
 
   // generation token
@@ -109,4 +107,3 @@ $sql ="SELECT * FROM $from WHERE $where1";
 return $request;
 
 }
-
