@@ -26,9 +26,12 @@
         <th style="text-align: center;">Détail</th>
         <th style="text-align: center;">Modification</th>
         <th style="text-align: center;">Supprimer</th>
-
     </tr>
+
     <?php
+
+
+
         //boucle pour integrer nos données pour remplir notre liste
         foreach ($listvaccins as $listvaccin) {
             if($listvaccin['categorie'] == 1){ //Condition pour transformer les chiffres en BDD en variables sur la liste des vaccins
@@ -54,7 +57,6 @@
     ?>
 </table>
 </div>
-
 
 
 
