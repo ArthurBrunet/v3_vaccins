@@ -53,16 +53,16 @@ $error=array();
 
 
 <?php include('inc/headerb.php'); ?>
-<div class="body collapse in col-lg-6">
+<div class="body collapse in col-lg-6 box col-lg-12" style="margin-left: 475px; margin-top: 150px;">
 <form action="" method="post" class="form-horizontal">
 
-        <label for="nom" class="col-lg-4">Nom du vaccin: </label>
+        <label for="nom">Nom du vaccin: </label>
         <span> <?php if (!empty($error['nom'])) { echo($error['nom']); } ?></span>
         <br><input type="text" name="nom" id="nom" value="" class="col-lg-8 form-control">
 
         <br><label for="numerolot">Numero du lot: </label>
         <span> <?php if (!empty($error['numerolot'])) { echo($error['numerolot']); } ?></span>
-        <br><input type="text" name="numerolot" id="numerolot" placeholder="G215468">
+        <br><input type="text" name="numerolot" id="numerolot" placeholder="G215468" class="col-lg-8 form-control">
 
         <br><label for="categorievac">Catégorie du vaccin: </label>
         <span><?php if (!empty($error['categorievac'])) { echo($error['categorievac']);} ?></span>
@@ -77,9 +77,9 @@ $error=array();
 
         <br><label for="content">Description: </label>
         <span> <?php if (!empty($error['content'])) { echo($error['content']); } ?></span>
-        <br><textarea name="content" id="content" cols="80" rows="5" placeholder="Veuillez entrer la description du vaccin"></textarea>
+        <br><textarea name="content" id="content" cols="80" rows="5" placeholder="Veuillez entrer la description du vaccin" class="form-control"></textarea>
 
-        <br><input type="submit" name="submittedvaccin" id="submittedvaccin" value="Envoyer" class="btn btn-metis-5 btn-round">
+        <br><input type="submit" name="submittedvaccin" id="submittedvaccin" value="Envoyer" class="btn btn-metis-5 btn-round" style="margin: auto;">
 
 </form>
 </div>
