@@ -44,7 +44,7 @@
                     <td>'.$datecreationusers.'</td>
                     <td>'.$modifusers.'</td>
                     <td><a href="modifusers.php?id='.$listuser['id'].'">Modifier</a></td>
-                    <td><a href="deleteusers.php?id='.$listuser['id'].'">Supprimer</a></td>
+                    <td><a href="deleteusers.php?id='.$listuser['id'].'"  onclick="return confirm(\'Etes vous sur de vouloir supprimer cet utilisateur?\')">Supprimer</a></td>
 
             </tr>');
         } ?>

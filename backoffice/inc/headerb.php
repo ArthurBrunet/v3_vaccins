@@ -23,7 +23,6 @@
 
 </head>
 <body class="">
-    <div id="wraper">
         <header id="navbar-header">
             <nav class="navbar navbar-inverse navbar-static-top">
                 <ul class="nav navbar-nav">
