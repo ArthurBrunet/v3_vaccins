@@ -585,11 +585,7 @@ input[type="radio"]{
     position: absolute;
     text-align: center;
     line-height: 20px;
-<<<<<<< HEAD
-    top : 15%;
-=======
     top : 12%;
->>>>>>> 3abb321420be5055c612d37a9cf66dfc525b2201
     left : 17%;
     font-size: 1em;
     color: white;
