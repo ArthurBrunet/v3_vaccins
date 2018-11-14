@@ -22,14 +22,14 @@
 
 
 </head>
-<body class="">
+<body class="" style="background-image: linear-gradient(darkgray, #53504a)">
         <header id="navbar-header">
             <nav class="navbar navbar-inverse navbar-static-top">
                 <ul class="nav navbar-nav">
-                    <li><a href="dashboard.php">Acceuil</a></li>
-                    <li><a href="listvaccins.php">Les Vaccins</a></li>
-                    <li><a href="listusers.php">Les Utilisateurs</a></li>
+                    <li><a href="dashboard.php" style="font-size: 1.5em">Acceuil</a></li>
+                    <li><a href="listvaccins.php" style="font-size: 1.5em">Les Vaccins</a></li>
+                    <li><a href="listusers.php" style="font-size: 1.5em">Les Utilisateurs</a></li>
+                    <li><a href="http://localhost/projet%20carnet%20de%20vaccination/git/projetvaccination/index.php" style="font-size: 1.5em;">Page d'acceuil</a></li>
                 </ul>
             </nav>
         </header>
-            
