@@ -119,6 +119,7 @@ body{
 
   margin-top: 70px;
   padding-bottom: 70px;
+  margin-bottom: 70px;
 }
 .accueil h2{
   font-size: 1.3em;
@@ -128,13 +129,18 @@ body{
   width: 30%;
   margin-right: 25px;
   border: solid;
+  padding-bottom: 70px;
+  margin-bottom: 70px;
+
 }
 
 .accueil .content1 img{
   float: left;
   width: 30%;
+  max-width: 400px;
   margin-right: 25px;
   border: solid;
+
 }
 
 .accueil .content1 .text{
@@ -156,6 +162,7 @@ body{
   width: 35%;
   margin-left: 25px;
   border: solid;
+  max-width: 400px;
 }
 
 .accueil .content3{
@@ -168,19 +175,46 @@ body{
   padding-top: 70px;
   padding-bottom: 70px;
 }
+.accueil .content3 .titre{
+  font-size: 1.7em;
+  text-align: center;
+  padding-bottom: 40px;
+  text-decoration: underline;
+}
 .accueil .content3 img{
   float: left;
   width: 35%;
   margin-right: 25px;
   border: solid;
+
+}
+.accueil .content3 .question{
+  float: left;
+  width: 50%;
+  height: auto;
+  max-height: 1500px;
+  padding-top: 50px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 .accueil .content4{
-  height: 500px;
-  margin: auto;
+  height: auto;
+  margin: 0  auto;
+  line-height: 30px;
   width: 80%;
+  font-size: 1.2em;
+  padding-top: 70px;
+  padding-bottom: 70px;
 
 }
+
+.accueil .content4 h3{
+  text-align: center;
+  font-size: 1.5em;
+
+}
+
 
 
 
@@ -534,4 +568,53 @@ input[type="radio"]{
     font-size: 1em;
     color: white;
     width: 65%;
+}
+
+@media screen and (max-width: 530px) {
+  .background .contenu-image{
+    position: absolute;
+    text-align: center;
+    line-height: 20px;
+    top : 7%;
+    left : 15%;
+    font-size: 1em;
+    color: white;
+    width: 65%;
+}
+}
+
+@media screen and (max-width: 700px) {
+
+  .accueil .content1 img{
+    margin:  auto;
+    width: 100%;
+    float: none;
+    border: solid;
+
+  }
+  .accueil .content2 img{
+
+    width: 100%;
+    margin:  auto;
+    float: none;
+    border: solid;
+
+  }
+  .accueil .content3 img{
+
+    width: 100%;
+    margin:  auto;
+    float: none;
+    border: solid;
+
+  }
+  .accueil .content3 .question{
+    float: none;
+    width: 100%;
+    height: auto;
+    max-height: 1500px;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
 }

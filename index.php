@@ -45,70 +45,97 @@
     </div>
     <div class="container3">
 
+
             <div class="content3">
+              <p class="titre">Questions les plus fréquentes :</p>
               <img src="asset/images/image-articles3.jpg" alt="">
 
               <div class="text">
 
+
                 <h2>Je teste mes connaissances sur la vaccination</h2>
                 <p>La vaccination est une méthode permettant d’atténuer ou d’éviter la survenue d’une maladie infectieuse. Son principe est de stimuler nos propres défenses immunitaires contre un microbe donné, en injectant un microbe tué ou atténué, rendu inoffensif. Testez vos connaissances sur la vaccination.</p>
-                <h2>La vaccination pour certaines maladies est obligatoire en France : vrai ou faux ?</h2>
-                <p>Vrai : si certains vaccins sont conseillés mais non obligatoires, d’autres vaccins sont obligatoires en France. Il s’agit des vaccins contre la coqueluche, la diphtérie, Haemophilus influenzae b, l'hépatite B, le méningocoque C, le pneumocoque, la rougeole, la poliomyélite, les oreillons, la rubéole et le tétanos, auxquels s’ajoute la vaccination contre la fièvre jaune pour les personnes résidant en Guyane. Même si certaines maladies sont devenues rares, les microbes responsables continuent à circuler aussi bien dans le monde qu’en France.</p>
+                <div class="clear">
+
+                </div>
+                <div class="question"><h2>La vaccination pour certaines maladies est obligatoire en France : vrai ou faux ?</h2>
+                <p>Vrai : si certains vaccins sont conseillés mais non obligatoires, d’autres vaccins sont obligatoires en France. Il s’agit des vaccins contre la coqueluche, la diphtérie, Haemophilus influenzae b, l'hépatite B, le méningocoque C, le pneumocoque, la rougeole, la poliomyélite, les oreillons, la rubéole et le tétanos, auxquels s’ajoute la vaccination contre la fièvre jaune pour les personnes résidant en Guyane. Même si certaines maladies sont devenues rares, les microbes responsables continuent à circuler aussi bien dans le monde qu’en France.</p></div>
 
 
 
-                <h2>La vaccination a déjà permis d’éradiquer complètement une maladie : vrai ou faux ?</h2>
+                <div class="question"><h2>La vaccination a déjà permis d’éradiquer complètement une maladie : vrai ou faux ?</h2>
                 <p>Vrai : la variole, maladie grave et mortelle, a été totalement éradiquée de la planète grâce à des campagnes de vaccination de masse. La quasi-disparition en France de la plupart des maladies, comme la poliomyélite ou la diphtérie, est liée à la vaccination. Leur réapparition peut avoir lieu, comme pour la rougeole depuis 2008, si la population n’est pas suffisamment vaccinée.
-                    Pour la rougeole, le recours à deux doses de vaccin avant l’âge de 2 ans, une administration plus précoce de la deuxième dose de vaccin et le rattrapage chez les adolescents et jeunes adultes, sont actuellement préconisés par les autorités de santé.</p>
+                    Pour la rougeole, le recours à deux doses de vaccin avant l’âge de 2 ans, une administration plus précoce de la deuxième dose de vaccin et le rattrapage chez les adolescents et jeunes adultes, sont actuellement préconisés par les autorités de santé.</p></div>
+                <div class="clear">
 
-                <h2>Un rappel de vaccination est une injection de rattrapage lorsqu’une première vaccination n’a pas pu être effectuée : vrai ou faux ?</h2>
-                <p>Faux : la vaccination est souvent réalisée en plusieurs fois. Pour développer une immunité de base, plusieurs injections sont souvent nécessaires, trois injections à un mois d’intervalle avec rappel un an après par exemple. Ensuite, pour maintenir une protection de manière suffisante et durable, des rappels réguliers sont nécessaires selon le calendrier vaccinal.</p>
+                </div>
+                <div class="question"><h2>Un rappel de vaccination est une injection de rattrapage lorsqu’une première vaccination n’a pas pu être effectuée : vrai ou faux ?</h2>
+                <p>Faux : la vaccination est souvent réalisée en plusieurs fois. Pour développer une immunité de base, plusieurs injections sont souvent nécessaires, trois injections à un mois d’intervalle avec rappel un an après par exemple. Ensuite, pour maintenir une protection de manière suffisante et durable, des rappels réguliers sont nécessaires selon le calendrier vaccinal.</p></div>
 
-                <h2>La vaccination chez l’adulte est inutile si on a correctement été vacciné dans l’enfance :
+                <div class="question"><h2>La vaccination chez l’adulte est inutile si on a correctement été vacciné dans l’enfance :
                     vrai ou faux ?</h2>
-                <p>Faux : chez tous les adultes, des rappels de vaccination sont recommandés et doivent être réalisés à 25 ans, 45 ans et 65 ans, puis tous les 10 ans pour la diphtérie (D), le tétanos (T) et la poliomyélite (P). Un rappel de vaccination contre la coqueluche est recommandé une fois, chez tous les jeunes adultes avec le rappel DTP à 25 ans, ou avant, particulièrement si vous avez le projet d’avoir un enfant.</p>
+                <p>Faux : chez tous les adultes, des rappels de vaccination sont recommandés et doivent être réalisés à 25 ans, 45 ans et 65 ans, puis tous les 10 ans pour la diphtérie (D), le tétanos (T) et la poliomyélite (P). Un rappel de vaccination contre la coqueluche est recommandé une fois, chez tous les jeunes adultes avec le rappel DTP à 25 ans, ou avant, particulièrement si vous avez le projet d’avoir un enfant.</p></div>
+                <div class="clear">
 
-                <h2>Après 65 ans, il est recommandé de se faire vacciner contre la grippe tous les ans : vrai ou faux ?</h2>
-                <p>Vrai : après 65 ans, le vaccin contre la grippe doit être réalisé tous les ans car le virus de la grippe change régulièrement. Cette vaccination contre la grippe est recommandée chez les personnes âgées de plus de 65 ans, mais également chez les femmes enceintes et les personnes à risque, comme celles souffrant de maladies chroniques (maladies rénales, maladies  cardiovasculaires, asthme, diabète), y compris les enfants à partir de l'âge six mois.</p>
+                </div>
 
-                <h2>Lorsqu’un rappel de vaccination a été oublié, il faut recommencer la vaccination à zéro :
+                <div class="question"><h2>Après 65 ans, il est recommandé de se faire vacciner contre la grippe tous les ans : vrai ou faux ?</h2>
+                <p>Vrai : après 65 ans, le vaccin contre la grippe doit être réalisé tous les ans car le virus de la grippe change régulièrement. Cette vaccination contre la grippe est recommandée chez les personnes âgées de plus de 65 ans, mais également chez les femmes enceintes et les personnes à risque, comme celles souffrant de maladies chroniques (maladies rénales, maladies  cardiovasculaires, asthme, diabète), y compris les enfants à partir de l'âge six mois.</p></div>
+
+                <div class="question"><h2>Lorsqu’un rappel de vaccination a été oublié, il faut recommencer la vaccination à zéro :
                     vrai ou faux ?</h2>
-                <p>Faux : Lors d’une interruption du programme de vaccination, il suffit de reprendre la vaccination là où elle a été arrêtée, en réalisant le nombre d’injections nécessaires en fonction de l’âge.</p>
+                <p>Faux : Lors d’une interruption du programme de vaccination, il suffit de reprendre la vaccination là où elle a été arrêtée, en réalisant le nombre d’injections nécessaires en fonction de l’âge.</p></div>
+                <div class="clear">
 
-                <h2>Le vaccin contre la tuberculose (BCG), est obligatoire chez tous les enfants en France :
+                </div>
+
+                <div class="question"><h2>Le vaccin contre la tuberculose (BCG), est obligatoire chez tous les enfants en France :
                     vrai ou faux ?</h2>
-                <p>Faux : depuis 2007, ce vaccin n’est plus obligatoire. Mais il reste conseillé dans certaines situations et pour certaines professions exposées. La vaccination par le BCG est recommandée dès la naissance, chez tous les enfants exposés à un risque élevé de tuberculose (notamment tous les enfants résidant en Île-de-France et en Guyane). Elle peut être proposée jusqu’à 15 ans chez les enfants à risque élevé non encore vaccinés.</p>
+                <p>Faux : depuis 2007, ce vaccin n’est plus obligatoire. Mais il reste conseillé dans certaines situations et pour certaines professions exposées. La vaccination par le BCG est recommandée dès la naissance, chez tous les enfants exposés à un risque élevé de tuberculose (notamment tous les enfants résidant en Île-de-France et en Guyane). Elle peut être proposée jusqu’à 15 ans chez les enfants à risque élevé non encore vaccinés.</p></div>
 
-                <h2>Le vaccin contre la rubéole n’est intéressant que chez les enfants en bas âge : vrai ou faux ?</h2>
-                <p>Faux : le vaccin contre la rubéole est conseillé chez les adolescentes et les femmes en âge d’avoir des enfants, afin de prévenir une infection pendant la grossesse. Une rubéole survenant pendant la grossesse expose à un risque de malformation du bébé. Cette vaccination peut se faire en association avec la rougeole et les oreillons.</p>
+                <div class="question"><h2>Le vaccin contre la rubéole n’est intéressant que chez les enfants en bas âge : vrai ou faux ?</h2>
+                <p>Faux : le vaccin contre la rubéole est conseillé chez les adolescentes et les femmes en âge d’avoir des enfants, afin de prévenir une infection pendant la grossesse. Une rubéole survenant pendant la grossesse expose à un risque de malformation du bébé. Cette vaccination peut se faire en association avec la rougeole et les oreillons.</p></div>
+                <div class="clear">
 
-                <h2>Il faut éviter de vacciner les enfants avant l’âge d’un an qui sont encore trop fragiles :
+                </div>
+
+                <div class="question"><h2>Il faut éviter de vacciner les enfants avant l’âge d’un an qui sont encore trop fragiles :
                     vrai ou faux ?</h2>
-                <p>Faux : les bébés peuvent être vaccinés dès la naissance. Le calendrier vaccinal recommande d’ailleurs la vaccination dès l’âge de 2 mois. C’est donc parce que les bébés sont fragiles, qu’il convient de les protéger au plus tôt par la vaccination.</p>
+                <p>Faux : les bébés peuvent être vaccinés dès la naissance. Le calendrier vaccinal recommande d’ailleurs la vaccination dès l’âge de 2 mois. C’est donc parce que les bébés sont fragiles, qu’il convient de les protéger au plus tôt par la vaccination.</p></div>
 
-                <h2>Il y a des vaccins recommandés chez les jeunes parents : vrai ou faux ?</h2>
-                <p>Vrai : la vaccination contre la coqueluche est recommandée chez les adultes susceptibles de devenir parents, chez les membres de l’entourage familial d’un nouveau-né (grands parents), voire la personne qui assure la garde du nourrisson pendant les 6 premiers mois de vie.</p>
+                <div class="question"><h2>Il y a des vaccins recommandés chez les jeunes parents : vrai ou faux ?</h2>
+                <p>Vrai : la vaccination contre la coqueluche est recommandée chez les adultes susceptibles de devenir parents, chez les membres de l’entourage familial d’un nouveau-né (grands parents), voire la personne qui assure la garde du nourrisson pendant les 6 premiers mois de vie.</p></div>
+                <div class="clear">
 
-                <h2>Certains vaccins sont contre-indiqués pendant la grossesse : vrai ou faux ?</h2>
-                <p>Vrai : il s’agit des vaccins à base de virus vivants atténués. Chez la femme enceinte sont donc contre-indiqués les vaccins contre la rougeole, la rubéole, les oreillons, la varicelle, la coqueluche et celui contre la poliomyélite (vaccin par voie orale).</p>
+                </div>
 
-                <h2>Il est plus efficace et plus confortable de ne vacciner que pour une maladie à la fois :
+                <div class="question"><h2>Certains vaccins sont contre-indiqués pendant la grossesse : vrai ou faux ?</h2>
+                <p>Vrai : il s’agit des vaccins à base de virus vivants atténués. Chez la femme enceinte sont donc contre-indiqués les vaccins contre la rougeole, la rubéole, les oreillons, la varicelle, la coqueluche et celui contre la poliomyélite (vaccin par voie orale).</p></div>
+
+                <div class="question"><h2>Il est plus efficace et plus confortable de ne vacciner que pour une maladie à la fois :
                     vrai ou faux ?</h2>
-                <p>Faux : il existe des vaccins combinés qui sont tout aussi efficaces que les vaccins séparés pour acquérir une immunité contre différentes maladies : le vaccin Rougeole, Oreillons, Rubéole ou ROR ; le vaccin Diphtérie, Tétanos et Poliomyélite ou DTP. Il est même possible d'associer, sans les mélanger, plusieurs vaccins le même jour, mais en les injectant à différents endroits du corps.</p>
+                <p>Faux : il existe des vaccins combinés qui sont tout aussi efficaces que les vaccins séparés pour acquérir une immunité contre différentes maladies : le vaccin Rougeole, Oreillons, Rubéole ou ROR ; le vaccin Diphtérie, Tétanos et Poliomyélite ou DTP. Il est même possible d'associer, sans les mélanger, plusieurs vaccins le même jour, mais en les injectant à différents endroits du corps.</p></div>
+                <div class="clear">
 
-                <h2>Une réaction locale après injection d’un vaccin est possible : vrai ou faux ?</h2>
-                <p>Vrai : une réaction locale est possible après l’injection d’un vaccin avec l’apparition d’une boule rouge, quelquefois douloureuse. Ceci peut être associé à de la fièvre. Ne vous inquiétez pas, tout rentre dans l’ordre en quelques jours.</p>
+                </div>
+
+                <div class="question"><h2>Une réaction locale après injection d’un vaccin est possible : vrai ou faux ?</h2>
+                <p>Vrai : une réaction locale est possible après l’injection d’un vaccin avec l’apparition d’une boule rouge, quelquefois douloureuse. Ceci peut être associé à de la fièvre. Ne vous inquiétez pas, tout rentre dans l’ordre en quelques jours.</p></div>
 
             </div>
             </div>
     </div>
-<div class="container4">
-  <div class="content4">
+    <div class="clear">
 
-            </div>
-            <div class="clear"></div>
-            <div class="content4">
-                <h1>Ebola : où en est le vaccin ?</h1>
+    </div>
+<div class="container4">
+
+        <div class="content4">
+
+          <div class="text">
+
+                <h3>Actualités :</h3>
+                <h2>Ebola : où en est le vaccin ?</h2>
 
                 <p>Une nouvelle flambée de virus Ebola a été signalée en République démocratique du Congo (RDC) à la fin du mois d’avril. Si la situation est prise très au sérieux, les observateurs ont bon espoir qu’elle ne mènera pas à une épidémie d’envergure. Si nécessaire, une vaccination ciblée est possible. Elle se ferait dans le cadre d’un essai clinique et concernerait uniquement les personnes exposées au virus.
 
@@ -132,7 +159,7 @@
 
 
                     C’est pourquoi les études se poursuivent en Guinée, au Libéria et en Sierra Leone. Ainsi, « avec l’Inserm nous menons un travail sur 5 000 personnes dont 1 000 enfants, avec 2 vaccins et plusieurs stratégies », poursuit-il. « Nous espérons notamment découvrir combien de temps les vaccins sont efficaces. » Outre celui de Merck, un autre candidat vaccin de Johnson & Johnson fait l’objet de ces travaux scientifiques. Car « il serait bon d’avoir plusieurs vaccins, pour ne pas être dépendant d’éventuelles ruptures de stock ou d’approvisionnement », conclut le Pr Yazdanpanah.</p>
-
+</div>
   </div>
 </div>
 

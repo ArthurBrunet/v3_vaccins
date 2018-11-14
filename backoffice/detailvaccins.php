@@ -23,7 +23,7 @@
 
 <?php include('inc/headerb.php'); ?>
 
-    <h1>Détail du vaccin <?php foreach ($detailvaccins as $detailvaccin) { // Mon foreach est en haut car je voulais faire apparaitre le nom du vaccin dans le titre
+    <h1 style="text-align: center;">Détail du vaccin <?php foreach ($detailvaccins as $detailvaccin) { // Mon foreach est en haut car je voulais faire apparaitre le nom du vaccin dans le titre
         $datecreation =  date('d/m/Y', strtotime($detailvaccin['created_at'])); //Création de la variable pour afficher la date de création en français
         if (!empty($detailvaccin['updated_at'])) { //Création de la variable modifier pour la date de modif dans la BDD et ne pas oublier que !empty veut dire la meeme chose que 'pas null'
             $modifvaccin = date('d/m/Y', strtotime($detailvaccin['updated_at']));
@@ -42,7 +42,7 @@
         }
 
         echo($detailvaccin['nom']) ?>: </h1>
-        <div class="body collapse in ">
+        <div class="body collapse in col-lg-10" style="position: relative; left: 7%;">
             <table id="defaultTable" class="table table-bordered responsive-table">
                 <tr>
                     <th>Nom</th>

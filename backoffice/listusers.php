@@ -25,8 +25,8 @@
         <th style="text-align: center;">Rôle</th>
         <th style="text-align: center;">Création du compte</th>
         <th style="text-align: center;">Modification du compte</th>
-        <th style="text-align: center;">Supprimer</th>
         <th style="text-align: center;">Modifier</th>
+        <th style="text-align: center;">Supprimer</th>
     </tr>
 
     <?php 
@@ -43,8 +43,9 @@
                     <td>'.$listuser['role'].'</td>
                     <td>'.$datecreationusers.'</td>
                     <td>'.$modifusers.'</td>
-                    <td><a href="deleteusers.php?id='.$listuser['id'].'">Supprimer</a></td>
                     <td><a href="modifusers.php?id='.$listuser['id'].'">Modifier</a></td>
+                    <td><a href="deleteusers.php?id='.$listuser['id'].'">Supprimer</a></td>
+
             </tr>');
         } ?>
        

@@ -93,8 +93,9 @@ if (!empty($_POST['submittedmodif'])) {
                 <br><label for="content">Description: </label>
                 <br><textarea name="content" id="content" cols="80" rows="5" class="form-control"><?php if (!empty($_POST['content'])) { echo($_POST['content']);} else{ echo($modifvaccinscontent);} ?></textarea>
 
-                <br><input type="submit" name="submittedmodif" id="submittedmodif" value="Envoyer" class="btn btn-metis-5 btn-round">
-
+            <div class="input" style="text-align: center;">
+            <br><input type="submit" name="submittedmodif" id="submittedmodif" value="Envoyer" class="btn btn-metis-5 btn-round">
+            </div>
         </form>
     </div>
 
