@@ -72,9 +72,7 @@ include('inc/header.php');
 <div class="background">
   <img src="asset/images/bg-banner1.png" alt="">
   <div class="contenu-image">
-    <h1>Bienvenue sur A.B.A</h1>
-    <p>Le nouveau site de carnets de vaccination électronique, permettant de vous faciliter la vie dans vos démarches de santé.</p>
-    <p>Vous pourrez conserver la trace de tous vos vaccins reçus</p>  </div>
+    </div>
 </div>
 <div class="wrapperinscription">
   <form class="" method="post">
