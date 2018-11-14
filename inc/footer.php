@@ -1,14 +1,16 @@
     <footer id="footer">
       <div class="wrap">
-        <div class="img footer">
-          <img src="asset/images/profesorxavier.jpg" alt="professeur xavier">
-          <img src="asset/images/profesorxaviette.jpg" alt="professeur xaviette">
-          <img src="asset/images/profesorxaviou.jpg" alt="professeur xaviou">
+        <div class="img-footer">
+          <p>Notre équipe</p>
+          <div class="clear"></div>
+          <img src="asset/images/people1.jpg" alt="professeur xavier">
+          <img src="asset/images/people2.jpg" alt="professeur xaviette">
+          <img src="asset/images/people3.jpg" alt="professeur xaviou">
         </div>
         <div class="contactnous">
 
-            <p>Entreprise A.B.A</p>
-            <p>Nous contacter</p>
+            <h1>Entreprise A.B.A</h1>
+            <p class="nous">Nous contacter</p>
             <p>tel : 02 35 70 04 04</p>
             <p>Mail : school@nfactory.io</p>
             <p>Adresse : 24 Place Saint Marc – Rouen | Normandie</p>
