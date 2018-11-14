@@ -105,56 +105,62 @@ xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute">
 <div class="background">
   <img src="asset/images/bg-banner1.png" alt="">
   <div class="contenu-image">
-    <p>Nous sommes un site de carnets de vaccination électronique, permettant de vous faciliter dans vos démarches de santé.</p>
+    <p>Avant une première connexion, merci de vous inscrire</p>
+    </div>
+</div>
+<div class="boxlogin">
+
+  <div class="wrapper">
+
+    <div class="header">
+
+      <h3 class="sign-in">Se connecter</h3>
+      <div class="button"><a href="inscription.php">S'inscrire</a>
+
+      </div>
+    </div>
+     <div class="clear"></div>
+    <form action="" method="post">
+        <div>
+           <label class="user" for="text">
+             <svg viewBox="0 0 32 32">
+                      <g filter="">
+                        <use xlink:href="#man-people-user"></use>
+                      </g>
+                    </svg>
+           </label>
+          <input class="user-input" type="text" name="login" id="login" placeholder="Email"  />
+        </div>
+        <div>
+          <label class="lock" for="password">
+            <svg viewBox="0 0 32 32">
+               <g filter="">
+                 <use xlink:href="#lock-locker"></use>
+                </g>
+              </svg>
+          </label>
+          <input type="password" name="password" id="name" placeholder="" />
+        </div>
+       <div>
+        <input type="submit" name="submitted" value="Se connecter"  />
+      </div>
+      <!-- <div class="radio-check">
+        <input type="radio" class="radio-no" id="no" name="remember" value="no" checked>
+        <label for="no"><i class="fa fa-times"></i></label>
+        <input type="radio" class="radio-yes" id="yes" name="remember" value="yes">
+        <label for="yes"><i class="fa fa-check"></i></label>
+        <span class="switch-selection"></span> -->
+      <!-- </div> -->
+        <!-- <span class="check-label">Remember me</span> -->
+        <span class="forgot-label"><a href="passwordforget.php">Mot de passe oublié?</a></span>
+        <div class="clear"></div>
+    </form>
+    <div class="clear"></div>
+  </div>
+  <div class="clear">
+
   </div>
 </div>
-<div class="wrapper">
-
-  <div class="header">
-
-    <h3 class="sign-in">Se connecter</h3>
-    <div class="button"><a href="inscription.php">S'inscrire</a>
-
-    </div>
-  </div>
-   <div class="clear"></div>
-  <form action="" method="post">
-      <div>
-         <label class="user" for="text">
-           <svg viewBox="0 0 32 32">
-                    <g filter="">
-                      <use xlink:href="#man-people-user"></use>
-                    </g>
-                  </svg>
-         </label>
-        <input class="user-input" type="text" name="login" id="login" placeholder="Email"  />
-      </div>
-      <div>
-        <label class="lock" for="password">
-          <svg viewBox="0 0 32 32">
-             <g filter="">
-               <use xlink:href="#lock-locker"></use>
-              </g>
-            </svg>
-        </label>
-        <input type="password" name="password" id="name" placeholder="" />
-      </div>
-     <div>
-      <input type="submit" name="submitted" value="Se connecter"  />
-    </div>
-    <div class="radio-check">
-      <input type="radio" class="radio-no" id="no" name="remember" value="no" checked>
-      <label for="no"><i class="fa fa-times"></i></label>
-      <input type="radio" class="radio-yes" id="yes" name="remember" value="yes">
-      <label for="yes"><i class="fa fa-check"></i></label>
-      <span class="switch-selection"></span>
-    </div>
-      <span class="check-label">Remember me</span>
-      <span class="forgot-label"><a href="passwordforget.php">Mot de passe oublié?</a></span>
-      <div class="clear"></div>
-  </form>
-</div>
-
 
 
 

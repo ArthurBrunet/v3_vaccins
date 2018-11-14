@@ -72,10 +72,9 @@ include('inc/header.php');
 <div class="background">
   <img src="asset/images/bg-banner1.png" alt="">
   <div class="contenu-image">
-    <p>Nous sommes un site de carnets de vaccination électronique, permettant de vous faciliter dans vos démarches de santé.</p>
-  </div>
+    </div>
 </div>
-<div class="wrapper">
+<div class="wrapperinscription">
   <form class="" method="post">
     <p>Email</p>
     <input type="text" name="email" value="<?php remplissageValue($_POST,'email'); ?>"><?php afficheErrors($errors,'email') ?>

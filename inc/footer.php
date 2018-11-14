@@ -1,8 +1,8 @@
+
     <footer id="footer">
       <div class="wrap">
         <div class="img-footer">
           <p>Notre équipe</p>
-          <div class="clear"></div>
           <img src="asset/images/people1.jpg" alt="professeur xavier">
           <img src="asset/images/people2.jpg" alt="professeur xaviette">
           <img src="asset/images/people3.jpg" alt="professeur xaviou">
@@ -19,6 +19,7 @@
 
 
       </div>
+      <div class="clear"></div>
     </footer>
 
 
