@@ -34,12 +34,14 @@
    width:300px; /* A toi de donner la bonne largeur */
    height:200px; /* A toi de donner la bonne hauteur */
    margin-left:-180px; /* -largeur/2 */
-   margin-top:-150px; /* -hauteur/2 */
-   text-align: center;">Êtes-vous sûr de vouloir supprimer ce vaccin définitivement de la Base De Données?</p>
+   margin-top:-250px; /* -hauteur/2 */
+   text-align: center;
+    color: red;
+    font-size: 1.7em;">Êtes-vous sûr de vouloir supprimer ce vaccin définitivement de la Base De Données?</p>
 <form action="" method="post" style="position:absolute;
    top:50%;
    left:50%;
-   width:300px; /* A toi de donner la bonne largeur */
+   width:800px; /* A toi de donner la bonne largeur */
    height:200px; /* A toi de donner la bonne hauteur */
    margin-left:-100px; /* -largeur/2 */
    margin-top:-100px; /* -hauteur/2 */">

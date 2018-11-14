@@ -53,11 +53,12 @@ $error=array();
 
 
 <?php include('inc/headerb.php'); ?>
-
+<div class="body collapse in col-lg-6">
 <form action="" method="post" class="form-horizontal">
-        <label for="nom">Nom du vaccin: </label>
+
+        <label for="nom" class="col-lg-4">Nom du vaccin: </label>
         <span> <?php if (!empty($error['nom'])) { echo($error['nom']); } ?></span>
-        <br><input type="text" name="nom" id="nom" value="">
+        <br><input type="text" name="nom" id="nom" value="" class="col-lg-8 form-control">
 
         <br><label for="numerolot">Numero du lot: </label>
         <span> <?php if (!empty($error['numerolot'])) { echo($error['numerolot']); } ?></span>
@@ -81,7 +82,7 @@ $error=array();
         <br><input type="submit" name="submittedvaccin" id="submittedvaccin" value="Envoyer" class="btn btn-metis-5 btn-round">
 
 </form>
-
+</div>
 
 
 
