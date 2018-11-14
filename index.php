@@ -16,7 +16,12 @@
   </div>
   <div class="content">
     <div class="container1">
+
       <div class="content1">
+        <img src="asset/images/image-artciles1.jpg" alt="">
+
+        <div class="text">
+
 
           <h1>A partir de 65 ans, je dois aussi me faire vacciner</h1>
           <p>Quand on évoque la vaccination, on pense nourrissons, enfants, adolescents. Or les seniors aussi doivent se faire vacciner. Notamment parce qu’ils sont particulièrement vulnérables aux infections et à leurs complications. Ils doivent impérativement faire le point avec leur médecin.
@@ -24,7 +29,7 @@
 
           Grippe, polio, tétanos, zona, affections à pneumocoques… A partir de 65 ans, les autorités de santé recommandent donc un rappel des vaccinations diphtérie, polio, tétanos. Puis un rappel tous les dix ans. Mais ce n’est pas tout. Elles insistent aussi sur la vaccination contre la grippe saisonnière qui est recommandée chaque année dans cette tranche d’âge pour éviter l’infection et les complications liées au virus. Elles recommandent également la vaccination contre le zona. Cette maladie causée par la réactivation du virus de la varicelle et du zona est parfois très douloureuse. Les patients décrivent des symptômes que les spécialistes appellent les névralgies post-zostériennes : ce sont des douleurs neuropathiques qui se manifestent sous la forme de décharges électriques, de picotements, de fourmillements, de sensations de brûlure. La vaccination contre les affections à pneumocoques fait l’objet d’une recommandation particulière chez tous les sujets à risque de présenter cette affection, ce qui est fréquemment le cas à partir de 65 ans.
               Comme pour l’ensemble de la population, il est vivement conseillé aux personnes de 65 ans et plus d’aborder la question des vaccinations avec leur médecin traitant. mmunitaire humain en le préparant au mieux contre les attaques de certains agents pathogènes tels que virus, bactéries ou autres micro-organismes. Son action pourrait être comparable à celle d'un cours d'autodéfense: tout individu préparé et entraîné de façon conforme ne sera pas surpris par une éventuelle attaque et réagira de façon correcte.</p>
-
+        </div>
         </div>
       </div>
 
@@ -142,4 +147,4 @@
 <!-- Nous mettrons tout les composants de l'acceuil dans ce commentaire et nous ferons la pratique quand tout sera décidé. -->
 
 
-<?php include('inc/footer.php');
+<?php include('inc/footer.php'); ?>
