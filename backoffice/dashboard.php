@@ -8,8 +8,38 @@
 
 <?php include('inc/headerb.php'); ?>
 
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi fugiat deleniti eos! Corporis, commodi soluta, quasi sapiente laboriosam reiciendis dolores, error enim repellat illum quis rem vel deserunt? Totam, mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laudantium recusandae, adipisci et vel architecto quam delectus iure autem laboriosam quasi soluta accusantium reprehenderit quas fugiat! Optio sint ex nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sapiente tenetur voluptatum. Natus corrupti, aperiam animi illum provident unde, ad nesciunt hic harum laudantium fugiat, obcaecati omnis sed repellat culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil exercitationem assumenda reprehenderit, harum perferendis quas dolores at mollitia velit eveniet id ducimus saepe architecto, nam hic amet suscipit qui eligendi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora pariatur nulla cupiditate obcaecati facere beatae esse, magni labore non id hic debitis vitae veniam quisquam, sunt enim similique perferendis voluptatem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum doloribus nostrum culpa, corrupti nobis sed voluptatem quis sequi veritatis maxime aperiam laborum expedita nisi magni voluptatibus. Deleniti fugit veniam obcaecati! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum quia nihil magni ullam voluptate adipisci sit repellat aliquid ipsam reprehenderit obcaecati dolorem ex vitae nemo quae assumenda nostrum, vero delectus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia vitae vero eaque sunt dolorum, excepturi nemo maxime numquam a sapiente, saepe provident ad qui, necessitatibus alias voluptatibus dolores tempora repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita recusandae quod labore soluta sit, corporis fugiat, quae esse debitis quidem commodi voluptate culpa exercitationem magni rem minima molestiae illo minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati id impedit magnam, alias vero quibusdam rem asperiores, quis illo repudiandae iusto excepturi aut suscipit quam dolor fuga! Qui, repudiandae sequi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla laudantium enim excepturi, in et deserunt suscipit fugit labore quis alias nisi numquam illo ad cupiditate eius non, fugiat vitae! Omnis?</p>
-
+      <div class="text-center">
+          <ul class="stats_box">
+              <li>
+                  <div class="sparkline bar_week"></div>
+                  <div class="stat_text">
+                      <strong>2.345</strong>Weekly Visit
+                      <span class="percent down"> <i class="fa fa-caret-down"></i> -16%</span>
+                  </div>
+              </li>
+              <li>
+                  <div class="sparkline line_day"></div>
+                  <div class="stat_text">
+                      <strong>165</strong>Daily Visit
+                      <span class="percent up"> <i class="fa fa-caret-up"></i> +23%</span>
+                  </div>
+              </li>
+              <li>
+                  <div class="sparkline pie_week"></div>
+                  <div class="stat_text">
+                      <strong>$2 345.00</strong>Weekly Sale
+                      <span class="percent"> 0%</span>
+                  </div>
+              </li>
+              <li>
+                  <div class="sparkline stacked_month"></div>
+                  <div class="stat_text">
+                      <strong>$678.00</strong>Monthly Sale
+                      <span class="percent down"> <i class="fa fa-caret-down"></i> -10%</span>
+                  </div>
+              </li>
+          </ul>
+      </div>
 
 
 

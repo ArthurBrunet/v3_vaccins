@@ -48,7 +48,7 @@
                         <td>'.$listvaccinst.'</td>
                         <td><a href="detailvaccins.php?id='.$listvaccin['id'].'">Détail</a></td>
                         <td><a href="modifvaccins.php?id='.$listvaccin['id'].'">Modifier</a></td>
-                        <td><a href="deletevaccins.php?id='.$listvaccin['id'].'">Supprimer</a></td>
+                        <td><a href="deletevaccins.php?id='.$listvaccin['id'].'" onclick="return confirm(\'Etes-vous sûr de vouloir supprimer définitevement ce vaccin?\')">Supprimer</a></td>
                     </tr>');
         }
     ?>
