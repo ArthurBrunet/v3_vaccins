@@ -5,5 +5,5 @@ pdo.php
 # ignore les fichiers ds_store
 *.DS_Store
 #ignore fichiers xml et iml
-*.xml
-*.iml
+.idea
+
