@@ -50,8 +50,9 @@ if (!empty($_GET['email']) && !empty($_GET['token'])) {
     <div class="background">
       <img src="asset/images/bg-banner1.png" alt="">
       <div class="contenu-image">
-        <p>Nous sommes un site de carnets de vaccination électronique, permettant de vous faciliter dans vos démarches de santé.</p>
-      </div>
+        <h1>Bienvenue sur A.B.A</h1>
+        <p>Le nouveau site de carnets de vaccination électronique, permettant de vous faciliter la vie dans vos démarches de santé.</p>
+        <p>Vous pourrez conserver la trace de tous vos vaccins reçus</p>      </div>
     </div>
     <form class="" method="post">
       <input type="password" name="password" value=""><?php afficheErrors($errors,'password'); ?>
