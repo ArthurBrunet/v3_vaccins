@@ -20,42 +20,37 @@
       <div class="content1">
         <img src="asset/images/image-artciles1.jpg" alt="">
 
+
         <div class="text">
 
 
-          <h1>A partir de 65 ans, je dois aussi me faire vacciner</h1>
+          <h2>A partir de 65 ans, je dois aussi me faire vacciner</h2>
           <p>Quand on évoque la vaccination, on pense nourrissons, enfants, adolescents. Or les seniors aussi doivent se faire vacciner. Notamment parce qu’ils sont particulièrement vulnérables aux infections et à leurs complications. Ils doivent impérativement faire le point avec leur médecin.
           Pourquoi se faire vacciner ? Avec l’âge, le système immunitaire aussi vieillit. Il perd alors ses capacités de défense contre les virus et les bactéries. L’organisme des seniors risque ainsi d’être moins réactif, laissant passer plus facilement les agents pathogènes extérieurs. Voilà pourquoi les personnes de 65 ans et plus doivent elles aussi veiller à se faire vacciner pour rester en bonne santé et se protéger contre de nombreuses maladies infectieuses. D’autant plus que ces infections peuvent provoquer des complications dont le retentissement est particulièrement important chez les personnes âgées. Et l’impact sera encore plus marqué en cas de de maladies chroniques comme le diabète, l’asthme ou l’hypertension artérielle…
-
-          Grippe, polio, tétanos, zona, affections à pneumocoques… A partir de 65 ans, les autorités de santé recommandent donc un rappel des vaccinations diphtérie, polio, tétanos. Puis un rappel tous les dix ans. Mais ce n’est pas tout. Elles insistent aussi sur la vaccination contre la grippe saisonnière qui est recommandée chaque année dans cette tranche d’âge pour éviter l’infection et les complications liées au virus. Elles recommandent également la vaccination contre le zona. Cette maladie causée par la réactivation du virus de la varicelle et du zona est parfois très douloureuse. Les patients décrivent des symptômes que les spécialistes appellent les névralgies post-zostériennes : ce sont des douleurs neuropathiques qui se manifestent sous la forme de décharges électriques, de picotements, de fourmillements, de sensations de brûlure. La vaccination contre les affections à pneumocoques fait l’objet d’une recommandation particulière chez tous les sujets à risque de présenter cette affection, ce qui est fréquemment le cas à partir de 65 ans.
-              Comme pour l’ensemble de la population, il est vivement conseillé aux personnes de 65 ans et plus d’aborder la question des vaccinations avec leur médecin traitant. mmunitaire humain en le préparant au mieux contre les attaques de certains agents pathogènes tels que virus, bactéries ou autres micro-organismes. Son action pourrait être comparable à celle d'un cours d'autodéfense: tout individu préparé et entraîné de façon conforme ne sera pas surpris par une éventuelle attaque et réagira de façon correcte.</p>
+          </p>
         </div>
         </div>
       </div>
 
     <div class="container2">
         <div class="content2">
+          <img src="asset/images/image-articles2.jpg" alt="">
 
-
-            <h1>Les voyages lointains, ça se prépare</h1>
+          <div class="text">
+            <h2>Les voyages lointains, ça se prépare</h2>
             <p>Vous avez prévu de partir en voyage ? L’excitation ne doit pas faire oublier que la belle saison est également celle des accidents. Pour vous en prémunir, il est indispensable de bien vous préparer. Surtout si vous partez pour une destination lointaine. Voici quelques précautions utiles avant le grand départ …</p>
             <p>Avant tout départ, vérifiez que vous êtes bien à jour de vos vaccinations de base : tétanos, polio, hépatite B, coqueluche, diphtérie, ROR (rougeole, oreillons, rubéole)…  Pour les autres, n’oubliez pas que les pays ne sont pas égaux en matière de santé publique ! Voilà pourquoi certaines vaccinations sont plus spécialement recommandées dans certaines régions du monde. En cas de doute adressez-vous à votre médecin.</p>
-
-            <p>Vous souffrez d’une maladie chronique telle que le diabète, l’asthme, l’hypertension artérielle, une maladie cardiaque ou un excès de cholestérol ?  La plupart des destinations exotiques vous restent accessibles. Même lorsque la maladie est bien stabilisée, l’avion, la longueur du vol et l’altitude peuvent modifier cet état de stabilité. Il est donc fortement recommandé de demander l’avis à son médecin, afin que toutes les précautions soient prises.</p>
-
-            <p>En cas de diabète insulinodépendant, vous devrez ajuster votre traitement en fonction des fuseaux horaires. Au-delà de trois heures de décalage, votre médecin vous aidera à aménager les horaires d’injection sans pour autant modifier le protocole thérapeutique. Vous changerez le rythme des injections d’insuline le jour du départ et, pendant quelques jours, augmenterez le rythme des auto-contrôles glycémiques.  Emportez quelques doses de sucre ! Si un incident venait à déplacer l’heure d’un repas, elles vous permettront de prévenir un accident hypoglycémique.</p>
-
-                    <p>Enfin, certains documents peuvent être aussi importants que votre passeport : votre carte de diabétique ; une ordonnance de secours et un certificat médical rédigé en Anglais. Il attestera votre maladie et la nécessité de transporter des seringues !</p>
-
-
+        </div>
         </div>
     </div>
     <div class="container3">
 
             <div class="content3">
+              <img src="asset/images/image-articles3.jpg" alt="">
 
+              <div class="text">
 
-                <h1>Je teste mes connaissances sur la vaccination</h1>
+                <h2>Je teste mes connaissances sur la vaccination</h2>
                 <p>La vaccination est une méthode permettant d’atténuer ou d’éviter la survenue d’une maladie infectieuse. Son principe est de stimuler nos propres défenses immunitaires contre un microbe donné, en injectant un microbe tué ou atténué, rendu inoffensif. Testez vos connaissances sur la vaccination.</p>
                 <h2>La vaccination pour certaines maladies est obligatoire en France : vrai ou faux ?</h2>
                 <p>Vrai : si certains vaccins sont conseillés mais non obligatoires, d’autres vaccins sont obligatoires en France. Il s’agit des vaccins contre la coqueluche, la diphtérie, Haemophilus influenzae b, l'hépatite B, le méningocoque C, le pneumocoque, la rougeole, la poliomyélite, les oreillons, la rubéole et le tétanos, auxquels s’ajoute la vaccination contre la fièvre jaune pour les personnes résidant en Guyane. Même si certaines maladies sont devenues rares, les microbes responsables continuent à circuler aussi bien dans le monde qu’en France.</p>
@@ -104,7 +99,7 @@
                 <h2>Une réaction locale après injection d’un vaccin est possible : vrai ou faux ?</h2>
                 <p>Vrai : une réaction locale est possible après l’injection d’un vaccin avec l’apparition d’une boule rouge, quelquefois douloureuse. Ceci peut être associé à de la fièvre. Ne vous inquiétez pas, tout rentre dans l’ordre en quelques jours.</p>
 
-
+            </div>
             </div>
     </div>
 <div class="container4">
