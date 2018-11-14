@@ -72,14 +72,15 @@ include('inc/header.php');
 <div class="background">
   <img src="asset/images/bg-banner1.png" alt="">
   <div class="contenu-image">
+    <p>Inscriver vous !</p>
     </div>
 </div>
 <div class="wrapperinscription">
   <form class="" method="post">
     <p>Email</p>
-    <input type="text" name="email" value="<?php remplissageValue($_POST,'email'); ?>"><?php afficheErrors($errors,'email') ?>
+    <input type="email" name="email" value="<?php remplissageValue($_POST,'email'); ?>"placeholder="<?php afficheErrors($errors,'email'); ?>">
     <p>Mot de passe</p>
-    <input type="password" name="password" value=""><?php afficheErrors($errors,'password') ?>
+    <input type="password" name="password" value="" placeholder="<?php afficheErrors($errors,'password') ?>">
     <p>Confirmation du mot de passe</p>
     <input type="password" name="password2" value="">
     <input type="submit" name="submitted" value="S'incrire !">

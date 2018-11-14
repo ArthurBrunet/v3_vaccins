@@ -167,28 +167,14 @@ if (islogged()) {
                     <?php
               }
             }
-
-            foreach ($verifVacId as $vvi) {
-              if (!empty($vvi['fait']) && $vvi['fait'] == 'yes') {
-                ?><tr>
-                    <td><?= $vvi['nom'] ?></td>
-                    <td><?= $vvi['content'] ?></td>
-                    <td><?php if ($vvi['statuts'] == 0) {
-                      echo "Recommander";
-                    }else {
-                      echo "Obligatoire";
-                    }?></td>
-                    <td>Fais le : <?= $vvi['date'] ?></td>
-                </tr> <?php
-              }
-            }
+  }
             ?>
     </table>
 
     <?php
 
 
-  }
+
 
 
 
