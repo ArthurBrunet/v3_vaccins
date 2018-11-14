@@ -7,8 +7,11 @@
     <title><?php $title ?></title>
     <link rel="stylesheet" href="asset/slicknav.css" />
     <link rel="stylesheet" href="asset/style.css">
-    <link rel="stylesheet" href="/css/master.css">
+    <!-- <link rel="stylesheet" href="/css/master.css"> -->
     <link rel="icon" type="image/ico" href="asset/images/medical-history.ico">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+
 
 
 </head>
@@ -48,7 +51,7 @@
             } ?></li>
           </ul>
 
-        
+
     <!-- <div class="clear"></div> -->
     </header>
     </div>
