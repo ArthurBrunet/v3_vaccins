@@ -14,7 +14,7 @@ body{
 #header{
     height: 100px;
     width: 100%;
-    position: fixed;
+    position: absolute;
     line-height: 100%;
 }
 #header .center{
@@ -70,7 +70,6 @@ body{
   width: 100%;
 }
 .accueil{
-<<<<<<< HEAD
   /* background-color: #F7FBFF; */
 }
 
@@ -87,13 +86,27 @@ body{
   font-size: 1.7em;
   color: white;
   width: 50%;
-=======
-  background-color: #F7FBFF;
->>>>>>> 3be62c56f1826c9fafb26fe15b47a8969a3701d3
+
 }
 .accueil .content{
   width: 100%;
   margin: 0 auto;
+}
+.accueil .container1{
+  width: 100%;
+
+}
+.accueil .container2{
+  width: 100%;
+  background-color: #F7FBFF;
+}
+.accueil .container3{
+  width: 100%;
+
+}
+.accueil .container4{
+  width: 100%;
+
 }
 .accueil .content1{
   height: 500px;
@@ -107,7 +120,6 @@ body{
   height: 500px;
   margin: 0  auto;
   width: 80%;
-  background-color: #F7FBFF;
 }
 
 .accueil .content3{
@@ -402,4 +414,13 @@ input[type="radio"]{
     width: 100%;
     z-index: 9999999999999;
 	}
+  .background .contenu-image{
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    top : 15%;
+    left : 15%;
+    font-size: 1.7em;
+    color: white;
+    width: 65%;
 }

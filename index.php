@@ -142,4 +142,4 @@
 <!-- Nous mettrons tout les composants de l'acceuil dans ce commentaire et nous ferons la pratique quand tout sera décidé. -->
 
 
-<?php include('inc/footer.php'); ?>
+<?php include('inc/footer.php');
