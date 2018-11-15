@@ -101,7 +101,7 @@ if (islogged()) {
   <div class="wrapper-vaccins">
 
 
-  <form class="" method="post">
+  <form class="form_vaccins" method="post">
     <p>Entrer la date</p>
     <input type="date" name="date" value=""><?php afficheErrors($errors,'date'); ?>
     <p>Vaccins</p>
@@ -114,7 +114,9 @@ if (islogged()) {
 
         if(!in_array($key['id'],$vaccinUser)){
 
-          ?><option value="<?= $key['id'] ?>"><?= $key['nom'] ?></option><?php
+          ?><option value="<?= $key['id'] ?>"><?= $key['nom'] ?><?php if (!empty($key['Rappel'])) {
+            echo "|| rappel tout les ".$key['Rappel'].'mois';
+          } ?></option><?php
 
         }
       }
@@ -128,7 +130,7 @@ if (islogged()) {
   <?php
   if (!empty($verifVacId)) {
     ?>
-    <table class="" style="text-align: center;">
+    <table class="mesvaccins" style="text-align: center;">
         <tr>
             <th style="text-align: center;">Nom du vaccin</th>
             <th style="text-align: center;">Le contenue</th>
@@ -153,7 +155,7 @@ if (islogged()) {
             }
 
             foreach ($verifVacId as $vvi) {
-              if (!empty($vvi['fait']) && $vvi['fait'] == 'yes') {
+              if (!empty($vvi['fait']) && $vvi['fait'] == 'yes' && !empty($vvi['Rappel'])) {
                 ?><tr>
                     <td><?= $vvi['nom'] ?></td>
                     <td><?= $vvi['content'] ?></td>
@@ -163,6 +165,24 @@ if (islogged()) {
                       echo "Obligatoire";
                     }?></td>
                     <td>Fais le : <?= $vvi['date'] ?></td>
+                    <td>recommander de le refaire dans <?= $vvi['Rappel'] ?> mois.</td>
+                  </tr>
+                    <?php
+              }
+            }
+
+            foreach ($verifVacId as $vvi) {
+              if (!empty($vvi['fait']) && $vvi['fait'] == 'yes' && empty($vvi['Rappel'])) {
+                ?><tr>
+                    <td><?= $vvi['nom'] ?></td>
+                    <td><?= $vvi['content'] ?></td>
+                    <td><?php if ($vvi['statuts'] == 0) {
+                      echo "recommander";
+                    }else {
+                      echo "Obligatoire";
+                    }?></td>
+                    <td>Fais le : <?= $vvi['date'] ?></td>
+                    <td>recommander de le refaire dans <?= $vvi['Rappel'] ?> mois.</td>
                   </tr>
                     <?php
               }

@@ -15,6 +15,7 @@
     margin-top: 0.188em; }
 
 .slicknav_menu {
+
   *zoom: 1; }
   .slicknav_menu .slicknav_menutxt {
     display: block;
@@ -76,6 +77,8 @@
   float: left; }
 
 .slicknav_menu {
+  z-index: 9999999999999999999999999999999999999999;
+
   font-size: 16px;
   box-sizing: border-box;
   /* background: #66D6D3; */
@@ -100,15 +103,16 @@
 
 .slicknav_nav {
   color: #fff;
-  background-color: black;
+  /* background-color: black; */
   margin: 0;
   padding: 0;
   font-size: 0.875em;
   list-style: none;
-  overflow: hidden;
+  overflow: visible;
+  z-index: 9999999999999999999999999999999999999999;
 width: 10%;}
   .slicknav_nav ul {
-
+    z-index: 999999999999999999999999999999999999999999999;
     list-style: none;
     overflow: hidden;
     padding: 0;
@@ -126,7 +130,8 @@ width: 10%;}
     padding: 0px 10px;
     margin: 2px 5px;
     text-decoration: none;
-    color: white;
+    color: black;
+
   /* float: right; */
 }
     .slicknav_nav a:hover {
