@@ -155,7 +155,7 @@ if (islogged()) {
             }
 
             foreach ($verifVacId as $vvi) {
-              if (!empty($vvi['fait']) && $vvi['fait'] == 'yes' && $vvi['Rappel'] != O)) {
+              if (!empty($vvi['fait']) && $vvi['fait'] == 'yes' && $vvi['Rappel'] != 0) {
                 ?><tr>
                     <td><?= $vvi['nom'] ?></td>
                     <td><?= $vvi['content'] ?></td>

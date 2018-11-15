@@ -40,6 +40,13 @@
         }else {
             $detailvaccinst = 'Recommander';
         }
+        if ($detailvaccin['Rappel'] == 0){
+
+        }else{
+            $rappelvaccin = $detailvaccin['Rappel'];
+        }
+
+
 
         echo($detailvaccin['nom']) ?>: </h1>
         <div class="body collapse in">
@@ -50,12 +57,13 @@
                     <th>Numero de lot</th>
                     <th>Date d'entrée</th>
                     <th>Date de modification</th>
+                    <th>Rappel (mois)</th>
                     <th>Catégorie</th>
                     <th>Statuts</th>
                 </tr>
 
                 <?php
-                echo('<tr><td>'.$detailvaccin['nom'].'</td><td>'.$detailvaccin['content'].'</td><td>'.$detailvaccin['numerolot'].'</td><td>'.$datecreation.'</td><td>'.$modifvaccin.'</td><td>'.$detailvaccinc.'</td><td>'.$detailvaccinst.'</td></tr>');
+                echo('<tr><td>'.$detailvaccin['nom'].'</td><td>'.$detailvaccin['content'].'</td><td>'.$detailvaccin['numerolot'].'</td><td>'.$datecreation.'</td><td>'.$modifvaccin.'</td><td>'.$rappelvaccin.'</td><td>'.$detailvaccinc.'</td><td>'.$detailvaccinst.'</td></tr>');
 }
                 ?>
             </table>
