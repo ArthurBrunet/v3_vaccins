@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a14aeb6-afa7-4bb2-81b9-1e050bb4c7b0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backoffice/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backoffice/asset/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/asset/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backoffice/asset/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/asset/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backoffice/detailvaccins.php" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/detailvaccins.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backoffice/inc/footerb.php" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/inc/footerb.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backoffice/inc/headerb.php" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/inc/headerb.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backoffice/listvaccins.php" beforeDir="false" afterPath="$PROJECT_DIR$/backoffice/listvaccins.php" afterDir="false" />
     </list>
@@ -46,16 +48,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="3" />
+          <entry key="css" value="8" />
           <entry key="gitignore" value="1" />
-          <entry key="php" value="27" />
+          <entry key="php" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="3" />
+          <entry key="CSS" value="8" />
           <entry key="Git file" value="1" />
-          <entry key="PHP" value="27" />
+          <entry key="PHP" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.test" />
@@ -71,17 +73,17 @@
       <usages-collector id="statistics.php.composer.actions" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="203" />
+          <entry key="CSS" value="223" />
           <entry key="Git file" value="7" />
-          <entry key="HTML" value="10" />
-          <entry key="PHP" value="4774" />
+          <entry key="HTML" value="15" />
+          <entry key="PHP" value="5249" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="203" />
+          <entry key="css" value="223" />
           <entry key="gitignore" value="7" />
-          <entry key="php" value="4784" />
+          <entry key="php" value="5264" />
         </counts>
       </usages-collector>
     </session>
@@ -91,17 +93,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2869">
+            <state relative-caret-position="2785">
               <caret line="145" selection-start-line="145" selection-end-line="145" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backoffice/inc/headerb.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+            <state relative-caret-position="466">
+              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -110,60 +112,61 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backoffice/inc/footerb.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="6" selection-start-column="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backoffice/detailvaccins.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1232">
-              <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
+            <state relative-caret-position="368">
+              <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
               <folding>
                 <element signature="e#495#522#0#HTML" expanded="true" />
-                <element signature="e#1782#1819#0#HTML" expanded="true" />
+                <element signature="e#2562#2610#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backoffice/listusers.php">
+        <entry file="file://$PROJECT_DIR$/backoffice/asset/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="51" column="8" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+            <state relative-caret-position="294">
+              <caret line="73" column="6" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backoffice/newvaccins.php">
+        <entry file="file://$PROJECT_DIR$/backoffice/asset/css/metisMenu.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backoffice/asset/css/style-switcher.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="81" selection-start-line="81" selection-end-line="82" />
-              <folding>
-                <element signature="e#1954#2000#0#HTML" expanded="true" />
-                <element signature="e#3680#3707#0#HTML" expanded="true" />
-                <element signature="e#3780#3801#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="575">
+              <caret line="199" column="6" selection-start-line="199" selection-start-column="1" selection-end-line="199" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backoffice/modifvaccins.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="72" selection-start-line="72" selection-end-line="73" />
-              <folding>
-                <element signature="e#2531#2577#0#HTML" expanded="true" />
-                <element signature="e#4422#4449#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/backoffice/asset/css/resetb.css">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backoffice/modifusers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="-346">
+              <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
               <folding>
                 <element signature="e#1180#1232#0#HTML" expanded="true" />
                 <element signature="e#1266#1293#0#HTML" expanded="true" />
@@ -177,12 +180,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backoffice/listvaccins.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+            <state relative-caret-position="690">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
               <folding>
                 <element signature="e#401#428#0#HTML" expanded="true" />
                 <element signature="e#457#502#0#HTML" expanded="true" />
                 <element signature="e#569#614#0#HTML" expanded="true" />
+                <element signature="e#736#763#0#HTML" expanded="true" />
                 <element signature="e#786#813#0#HTML" expanded="true" />
                 <element signature="e#845#872#0#HTML" expanded="true" />
                 <element signature="e#904#931#0#HTML" expanded="true" />
@@ -195,16 +199,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backoffice/detailusers.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>responsive</find>
+      <find>table-res</find>
+      <find>@media</find>
+      <find>body</find>
+      <find>media</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -222,15 +226,16 @@
         <option value="$PROJECT_DIR$/backoffice/modifvaccins.php" />
         <option value="$PROJECT_DIR$/backoffice/detailusers.php" />
         <option value="$PROJECT_DIR$/backoffice/modifusers.php" />
-        <option value="$PROJECT_DIR$/backoffice/asset/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/backoffice/listusers.php" />
         <option value="$PROJECT_DIR$/backoffice/deleteusers.php" />
         <option value="$PROJECT_DIR$/backoffice/deletevaccins.php" />
-        <option value="$PROJECT_DIR$/backoffice/detailvaccins.php" />
-        <option value="$PROJECT_DIR$/backoffice/inc/footerb.php" />
         <option value="$PROJECT_DIR$/backoffice/dashboard.php" />
         <option value="$PROJECT_DIR$/backoffice/listvaccins.php" />
+        <option value="$PROJECT_DIR$/backoffice/asset/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/backoffice/detailvaccins.php" />
+        <option value="$PROJECT_DIR$/backoffice/asset/css/main.css" />
         <option value="$PROJECT_DIR$/backoffice/inc/headerb.php" />
+        <option value="$PROJECT_DIR$/backoffice/inc/footerb.php" />
       </list>
     </option>
   </component>
@@ -280,7 +285,7 @@
               <item name="projetvaccination" type="462c0819:PsiDirectoryNode" />
               <item name="backoffice" type="462c0819:PsiDirectoryNode" />
               <item name="asset" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projetvaccination" type="b2602c69:ProjectViewProjectNode" />
@@ -297,7 +302,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.PHP" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -330,12 +335,12 @@
       <workItem from="1542124247642" duration="324000" />
       <workItem from="1542127292679" duration="4763000" />
       <workItem from="1542138103634" duration="2579000" />
-      <workItem from="1542179445309" duration="31485000" />
+      <workItem from="1542179445309" duration="36737000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46959000" />
+    <option name="totallyTimeSpent" value="52211000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -348,7 +353,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13059701" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -414,40 +418,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backoffice/asset/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backoffice/detailusers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
           <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backoffice/modifvaccins.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="72" selection-start-line="72" selection-end-line="73" />
-          <folding>
-            <element signature="e#2531#2577#0#HTML" expanded="true" />
-            <element signature="e#4422#4449#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backoffice/newvaccins.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="81" selection-start-line="81" selection-end-line="82" />
-          <folding>
-            <element signature="e#1954#2000#0#HTML" expanded="true" />
-            <element signature="e#3680#3707#0#HTML" expanded="true" />
-            <element signature="e#3780#3801#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -458,39 +432,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backoffice/modifusers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#1180#1232#0#HTML" expanded="true" />
-            <element signature="e#1266#1293#0#HTML" expanded="true" />
-            <element signature="e#1449#1465#0#HTML" expanded="true" />
-            <element signature="e#1787#1837#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backoffice/deleteusers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backoffice/detailvaccins.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
-          <folding>
-            <element signature="e#495#522#0#HTML" expanded="true" />
-            <element signature="e#1782#1819#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backoffice/inc/footerb.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/backoffice/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -506,14 +453,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/backoffice/listusers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backoffice/modifvaccins.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="72" selection-start-line="72" selection-end-line="73" />
+          <folding>
+            <element signature="e#2531#2577#0#HTML" expanded="true" />
+            <element signature="e#4422#4449#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backoffice/newvaccins.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="914">
+          <caret line="81" selection-start-line="81" selection-end-line="82" />
+          <folding>
+            <element signature="e#1954#2000#0#HTML" expanded="true" />
+            <element signature="e#3680#3707#0#HTML" expanded="true" />
+            <element signature="e#3780#3801#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backoffice/modifusers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-346">
+          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+          <folding>
+            <element signature="e#1180#1232#0#HTML" expanded="true" />
+            <element signature="e#1266#1293#0#HTML" expanded="true" />
+            <element signature="e#1449#1465#0#HTML" expanded="true" />
+            <element signature="e#1787#1837#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2785">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/backoffice/listvaccins.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+        <state relative-caret-position="690">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
           <folding>
             <element signature="e#401#428#0#HTML" expanded="true" />
             <element signature="e#457#502#0#HTML" expanded="true" />
             <element signature="e#569#614#0#HTML" expanded="true" />
+            <element signature="e#736#763#0#HTML" expanded="true" />
             <element signature="e#786#813#0#HTML" expanded="true" />
             <element signature="e#845#872#0#HTML" expanded="true" />
             <element signature="e#904#931#0#HTML" expanded="true" />
@@ -525,28 +523,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/backoffice/asset/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2869">
-          <caret line="145" selection-start-line="145" selection-end-line="145" />
+        <state relative-caret-position="28">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backoffice/listusers.php">
+    <entry file="file://$PROJECT_DIR$/backoffice/detailvaccins.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="51" column="8" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+        <state relative-caret-position="368">
+          <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+          <folding>
+            <element signature="e#495#522#0#HTML" expanded="true" />
+            <element signature="e#2562#2610#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backoffice/asset/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="73" column="6" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backoffice/asset/css/metisMenu.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backoffice/asset/css/style-switcher.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="199" column="6" selection-start-line="199" selection-start-column="1" selection-end-line="199" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backoffice/asset/css/resetb.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/backoffice/inc/headerb.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        <state relative-caret-position="466">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
           <folding>
             <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backoffice/inc/footerb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>

@@ -1,3 +1,4 @@
+</div>
 <footer class="Footer bg-dark dker">
             <p>Ceci est mon footer</p>
         </footer>

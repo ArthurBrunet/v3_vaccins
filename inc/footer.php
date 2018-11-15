@@ -35,7 +35,7 @@
     	$(function(){
     		$('#menu').slicknav();
     	});
-      jQuery(".").fitText();
+      jQuery('').fitText();
     </script>
 
 

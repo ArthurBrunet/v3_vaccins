@@ -128,6 +128,8 @@ body{
 }
 .accueil h2{
   font-size: 1.3em;
+  color: #559CCA;
+  padding-bottom: 15px;
 }
 .accueil .content1 .image{
   float: left;
@@ -496,6 +498,15 @@ input[type="radio"]{
   cursor:pointer;
 }
 
+.form_vaccins{
+  margin-top: -400px;
+  
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 
 
 
@@ -560,6 +571,31 @@ input[type="radio"]{
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 1278px) {
+
+.wrapper{
+  max-width: 400px;
+  width:100%;
+
+  margin-top: -300px;
+  margin-bottom: 40px;
+}
+.boxlogin{
+  max-width: 100%;
+  background-color: white;
+}
+
+/* .wrapperinscription{
+  max-width: 300px;
+  width:100%;
+  z-index: 99999;
+  background-color: white;
+  margin:20px auto;
+  margin-top: -330px;
+  margin-bottom: 79px;
+} */
+}
+
 @media screen and (max-width: 1410px) {
 /* .wrapper{
   max-width: 300px;
@@ -618,18 +654,7 @@ input[type="radio"]{
     width: 65%;
 }
 
-@media screen and (max-width: 530px) {
-  .background .contenu-image{
-    position: absolute;
-    text-align: center;
-    line-height: 20px;
-    top : 7%;
-    left : 15%;
-    font-size: 1em;
-    color: white;
-    width: 65%;
-}
-}
+
 
 @media screen and (max-width: 700px) {
 
@@ -666,21 +691,23 @@ input[type="radio"]{
     padding-bottom: 20px;
   }
 }
-@media screen and (max-width: 775px) {
+
+@media screen and (max-width: 755px) {
 
 .wrapper{
-  max-width: 100px;
-  width:100%;
-  /* margin:20px auto; */
-  margin-top: -200px;
-  margin-bottom: 90px;
+  max-width: 400px;
+  width:75%;
+  height: 300px;
+
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .boxlogin{
   max-width: 100%;
   background-color: white;
 }
 
-.wrapperinscription{
+/* .wrapperinscription{
   max-width: 300px;
   width:100%;
   z-index: 99999;
@@ -688,5 +715,17 @@ input[type="radio"]{
   margin:20px auto;
   margin-top: -330px;
   margin-bottom: 79px;
+} */
+}
+@media screen and (max-width: 530px) {
+  .background .contenu-image{
+    position: absolute;
+    text-align: center;
+    line-height: 20px;
+    top : 7%;
+    left : 15%;
+    font-size: 1em;
+    color: white;
+    width: 65%;
 }
 }

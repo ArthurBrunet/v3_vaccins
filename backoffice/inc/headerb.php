@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php $title ?></title>
+    <link rel="stylesheet" href="../asset/css/resetb.css">
     <!-- Boostrap css -->
     <link rel="stylesheet" href="asset/css/bootstrap.css">
     <!-- Font style -->
@@ -23,6 +24,7 @@
 
 </head>
 <body class="" style="background-image: linear-gradient(darkgray, #53504a)">
+<div class="wrapper">
         <header id="navbar-header">
             <nav class="navbar navbar-inverse navbar-static-top">
                 <ul class="nav navbar-nav">

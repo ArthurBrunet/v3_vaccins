@@ -106,7 +106,7 @@ xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute">
     <p>Avant une première connexion, merci de vous inscrire</p>
     </div>
 </div>
-  <div class="wrapper">
+  <div class="wrapper" id="wrapper">
 
     <div class="header">
       <h3 class="sign-in">Se connecter</h3>
