@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php $title ?></title>
-    <link rel="stylesheet" href="../asset/css/resetb.css">
     <!-- Boostrap css -->
     <link rel="stylesheet" href="asset/css/bootstrap.css">
     <!-- Font style -->
@@ -24,14 +23,13 @@
 
 </head>
 <body class="" style="background-image: linear-gradient(darkgray, #53504a)">
-<div class="wrapper">
         <header id="navbar-header">
             <nav class="navbar navbar-inverse navbar-static-top">
                 <ul class="nav navbar-nav">
                     <li><a href="dashboard.php" style="font-size: 1.5em">Acceuil</a></li>
                     <li><a href="listvaccins.php" style="font-size: 1.5em">Les Vaccins</a></li>
                     <li><a href="listusers.php" style="font-size: 1.5em">Les Utilisateurs</a></li>
-                    <li><a href="http://localhost/projet%20carnet%20de%20vaccination/git/projetvaccination/index.php" style="font-size: 1.5em;">Page d'acceuil</a></li>
+                    <li><a href="../index.php" style="font-size: 1.5em">Page Acceuil</a></li>
                 </ul>
             </nav>
         </header>
