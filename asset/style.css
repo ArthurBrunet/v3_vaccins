@@ -123,6 +123,8 @@ body{
 }
 .accueil h2{
   font-size: 1.3em;
+  color: #559CCA;
+  padding-bottom: 15px;
 }
 .accueil .content1 .image{
   float: left;
@@ -643,7 +645,7 @@ input[type="radio"]{
 @media screen and (max-width: 775px) {
 
 .wrapper{
-  max-width: 100px;
+  max-width: 200px;
   width:100%;
   /* margin:20px auto; */
   margin-top: -200px;

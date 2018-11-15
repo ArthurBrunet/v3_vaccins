@@ -14,6 +14,7 @@
       <p>Vous pourrez conserver la trace de tous vos vaccins reçus</p>
     </div>
   </div>
+
   <div class="content">
     <div class="container1">
 
@@ -47,7 +48,7 @@
 
 
             <div class="content3">
-              <p class="titre">Questions les plus fréquentes :</p>
+              <p class="titre">FAQ :</p>
               <img src="asset/images/image-articles3.jpg" alt="">
 
               <div class="text">
@@ -148,7 +149,7 @@
 
                 Mais, pour Rebecca Grais, « il ne sera peut-être pas nécessaire d’en arriver là puisque très peu de cas ont été confirmés ». En outre, « la période de 21 jours sans nouveau cas confirmé sera bientôt achevée, ce 29 mai ». Néanmoins, l’OMS assure prendre cette flambée très au sérieux. « Nous avons appris à ne jamais, au grand jamais, prendre Ebola à la légère », souligne le Dr Peter Salama, directeur exécutif du programme d’urgence en santé de l’OMS.</p>
 
-
+              </br>
                 <h2>Les défis logistiques et médicaux</h2>
 
 
