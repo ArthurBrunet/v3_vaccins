@@ -94,13 +94,13 @@ if (islogged()) {
   <div class="background">
     <img src="asset/images/bg-banner1.png" alt="">
     <div class="contenu-image">
-      <p>Ajouter, .</p>    </div>
+      <h1>Bienvenue sur A.B.A</h1>
+      <p>Le nouveau site de carnets de vaccination électronique, permettant de vous faciliter la vie dans vos démarches de santé.</p>
+      <p>Vous pourrez conserver la trace de tous vos vaccins reçus</p>    </div>
   </div>
-
-
-
-
   <div class="wrapper-vaccins">
+
+
   <form class="form_vaccins" method="post">
     <p>Entrer la date</p>
     <input type="date" name="date" value=""><?php afficheErrors($errors,'date'); ?>
@@ -126,36 +126,17 @@ if (islogged()) {
 
     </select>
     <input type="submit" name="submitted" value="Ajouter">
-    <div class="clear"></div>
   </form>
-  </div>
   <?php
   if (!empty($verifVacId)) {
-
-    $test = 0;
     ?>
-
-    <div class="wrapper_mesvaccins">
-      <p style="text-align: center;">Vos prochain vaccins</p>
-    <table class="blueTable" style="text-align: center;">
-      <thead>
+    <table class="mesvaccins" style="text-align: center;">
         <tr>
             <th style="text-align: center;">Nom du vaccin</th>
             <th style="text-align: center;">Le contenue</th>
             <th style="text-align: center;">Statuts</th>
             <th style="text-align: center;">Date</th>
-            <th style="text-align: center;">Rappel</th>
-            <th style="text-align: center;">Supprimer</th>
         </tr>
-      </thead>
-      <tfoot>
-        <!-- <tr>
-          <td colspan="5">
-            <div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
-          </td>
-        </tr> -->
-      </tfoot>
-      <tbody>
         <?php
             //boucle pour integrer nos données pour remplir notre liste
             foreach ($verifVacId as $vvi) {
@@ -169,59 +150,13 @@ if (islogged()) {
                       echo "Obligatoire";
                     }?></td>
                     <td>A faire le : <?= $vvi['date'] ?></td>
-                    <?php if ($vvi['Rappel'] != 0) {
-                      ?>
-                      <td>recommander de le refaire dans <?= $vvi['Rappel'] ?> mois.</td><?php
-                    }else{
-                      ?><td>pas de recommandation</td> <?php
-                    } ?>
-                    <td><a href="deletevacuser.php?id=<?= $vvi['id']; ?>" onclick="return confirm('Etes-vous sûr de vouloir supprimer ce vaccin?')">Supprimer</a></td>
                 </tr> <?php
-                $test = 1;
               }
               }
-              if ($test == 0) {
-                ?>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <?php
-            }
-            $test = 0;
-            ?>
-          </tbody>
-    </table>
-    <p style="text-align: center;">Mes rappels</p>
-    <table class="blueTable" style="text-align: center;">
-      <thead>
-        <tr>
-            <th style="text-align: center;">Nom du vaccin</th>
-            <th style="text-align: center;">Le contenue</th>
-            <th style="text-align: center;">Statuts</th>
-            <th style="text-align: center;">Date</th>
-            <th style="text-align: center;">Rappel</th>
-            <th style="text-align: center;">Supprimer</th>
-        </tr>
-      </thead>
-      <tfoot>
-        <!-- <tr>
-          <td colspan="6">
-            <div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
-          </td>
-        </tr> -->
-      </tfoot>
-      <tbody>
-    <?php
 
             foreach ($verifVacId as $vvi) {
               if (!empty($vvi['fait']) && $vvi['fait'] == 'yes' && $vvi['Rappel'] != 0) {
-                ?>
-                <tr>
+                ?><tr>
                     <td><?= $vvi['nom'] ?></td>
                     <td><?= $vvi['content'] ?></td>
                     <td><?php if ($vvi['statuts'] == 0) {
@@ -231,50 +166,10 @@ if (islogged()) {
                     }?></td>
                     <td>Fais le : <?= $vvi['date'] ?></td>
                     <td>recommander de le refaire dans <?= $vvi['Rappel'] ?> mois.</td>
-                    <td><a href="deletevacuser.php?id=<?= $vvi['id']; ?>" onclick="return confirm('Etes-vous sûr de vouloir supprimer ce vaccin?')">Supprimer</a></td>
-                  </tr>
-                    <?php
-                    $test = 1;
-              }
-            }
-            if ($test == 0) {
-              ?>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
               </tr>
               <?php
           }
-          $test = 0;
-            ?>
-          </tbody>
-        </table>
-
-
-        <p style="text-align: center;">Vos vaccins effectués</p>
-      <table class="blueTable" style="text-align: center;">
-        <thead>
-        <tr>
-            <th style="text-align: center;">Nom du vaccin</th>
-            <th style="text-align: center;">Le contenue</th>
-            <th style="text-align: center;">Statuts</th>
-            <th style="text-align: center;">Date</th>
-            <th style="text-align: center;">Supprimer</th>
-        </tr>
-      </thead>
-      <tfoot>
-        <!-- <tr>
-          <td colspan="6">
-            <div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
-          </td>
-        </tr> -->
-      </tfoot>
-      <tbody>
-        <?php
+            }
 
             foreach ($verifVacId as $vvi) {
               if (!empty($vvi['fait']) && $vvi['fait'] == 'yes' && $vvi['Rappel'] == 0) {
@@ -287,29 +182,13 @@ if (islogged()) {
                       echo "Obligatoire";
                     }?></td>
                     <td>Fais le : <?= $vvi['date'] ?></td>
-                    <td><a href="deletevacuser.php?id=<?= $vvi['id']; ?>" onclick="return confirm('Etes-vous sûr de vouloir supprimer ce vaccin?')">Supprimer</a></td>
-                  </tr>
-                    <?php
-                    $test = 1;
-              }
-            }
-            if ($test == 0) {
-              ?>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
               </tr>
               <?php
           }
-          $test = 0;
+            }
   }
             ?>
-          </tbody>
       </table>
-      </div>
 
     <?php
 
