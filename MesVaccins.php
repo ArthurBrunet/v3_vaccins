@@ -96,9 +96,11 @@ if (islogged()) {
     <div class="contenu-image">
       <p>Ajouter, .</p>    </div>
   </div>
+
+
+
+
   <div class="wrapper-vaccins">
-
-
   <form class="form_vaccins" method="post">
     <p>Entrer la date</p>
     <input type="date" name="date" value=""><?php afficheErrors($errors,'date'); ?>
@@ -133,7 +135,9 @@ if (islogged()) {
     $test = 0;
     ?>
     <p>Vos prochain vaccins</p>
-    <table class="mesvaccins" style="text-align: center;">
+    <div class="wrapper_mesvaccins">
+    <table class="blueTable" style="text-align: center;">
+      <thead>
         <tr>
             <th style="text-align: center;">Nom du vaccin</th>
             <th style="text-align: center;">Le contenue</th>
@@ -142,6 +146,15 @@ if (islogged()) {
             <th style="text-align: center;">Rappel</th>
             <th style="text-align: center;">Supprimer</th>
         </tr>
+      </thead>
+      <tfoot>
+        <!-- <tr>
+          <td colspan="5">
+            <div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
+          </td>
+        </tr> -->
+      </tfoot>
+      <tbody>
         <?php
             //boucle pour integrer nos données pour remplir notre liste
             foreach ($verifVacId as $vvi) {
@@ -180,13 +193,11 @@ if (islogged()) {
             }
             $test = 0;
             ?>
+          </tbody>
     </table>
-
-
-
-
     <p>Mes rappel</p>
-    <table class="mesvaccins" style="text-align: center;">
+    <table class="blueTable" style="text-align: center;">
+      <thead>
         <tr>
             <th style="text-align: center;">Nom du vaccin</th>
             <th style="text-align: center;">Le contenue</th>
@@ -195,11 +206,21 @@ if (islogged()) {
             <th style="text-align: center;">Rappel</th>
             <th style="text-align: center;">Supprimer</th>
         </tr>
+      </thead>
+      <tfoot>
+        <!-- <tr>
+          <td colspan="6">
+            <div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
+          </td>
+        </tr> -->
+      </tfoot>
+      <tbody>
     <?php
 
             foreach ($verifVacId as $vvi) {
               if (!empty($vvi['fait']) && $vvi['fait'] == 'yes' && $vvi['Rappel'] != 0) {
-                ?><tr>
+                ?>
+                <tr>
                     <td><?= $vvi['nom'] ?></td>
                     <td><?= $vvi['content'] ?></td>
                     <td><?php if ($vvi['statuts'] == 0) {
@@ -229,13 +250,13 @@ if (islogged()) {
           }
           $test = 0;
             ?>
+          </tbody>
         </table>
 
 
-
-
         <p>Vos vaccins effectués</p>
-      <table class="mesvaccins" style="text-align: center;">
+      <table class="blueTable" style="text-align: center;">
+        <thead>
         <tr>
             <th style="text-align: center;">Nom du vaccin</th>
             <th style="text-align: center;">Le contenue</th>
@@ -243,6 +264,15 @@ if (islogged()) {
             <th style="text-align: center;">Date</th>
             <th style="text-align: center;">Supprimer</th>
         </tr>
+      </thead>
+      <tfoot>
+        <!-- <tr>
+          <td colspan="6">
+            <div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
+          </td>
+        </tr> -->
+      </tfoot>
+      <tbody>
         <?php
 
             foreach ($verifVacId as $vvi) {
@@ -276,8 +306,11 @@ if (islogged()) {
           $test = 0;
   }
             ?>
+          </tbody>
       </table>
-      <?php
+      </div>
+
+    <?php
 
 
 
