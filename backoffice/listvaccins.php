@@ -13,9 +13,9 @@
 ?>
 
 <?php include('inc/headerb.php'); ?>
-<h1 class="text-primary">Listing des vaccins</h1>
-<p>Voici un listing de tout les vaccins figurant sur le site.</p>
-<p>Si vous souhaitez ajouter un nouveau alors il vous suffit de <a href="newvaccins.php">Cliquez ici</a> </p>
+<h1 class="text-primary" style="text-align: center;">Listing des vaccins</h1>
+<p style="text-align: center; font-size: 1.2em;">Voici un listing de tout les vaccins figurant sur le site.</p>
+<p style="text-align: center; font-size: 1.2em;">Si vous souhaitez ajouter un nouveau alors il vous suffit de <a href="newvaccins.php">Cliquez ici</a> </p>
 <div class="col-lg-12 ui-sortable">
 <table class="table table-bordered table-condensed table-hover table-striped dataTable no-footer" style="text-align: center;">
     <tr>
@@ -26,9 +26,12 @@
         <th style="text-align: center;">Détail</th>
         <th style="text-align: center;">Modification</th>
         <th style="text-align: center;">Supprimer</th>
-
     </tr>
+
     <?php
+
+
+
         //boucle pour integrer nos données pour remplir notre liste
         foreach ($listvaccins as $listvaccin) {
             if($listvaccin['categorie'] == 1){ //Condition pour transformer les chiffres en BDD en variables sur la liste des vaccins
@@ -54,7 +57,6 @@
     ?>
 </table>
 </div>
-
 
 
 

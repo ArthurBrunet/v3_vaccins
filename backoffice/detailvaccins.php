@@ -42,8 +42,8 @@
         }
 
         echo($detailvaccin['nom']) ?>: </h1>
-        <div class="body collapse in col-lg-10" style="position: relative; left: 7%;">
-            <table id="defaultTable" class="table table-bordered responsive-table">
+        <div class="body collapse in">
+            <table id="defaultTable" class="table table-bordered table-responsive">
                 <tr>
                     <th>Nom</th>
                     <th>Description</th>
@@ -61,6 +61,7 @@
             </table>
         </div>
 
+    <div style="position: absolute; bottom: 50px; right: 0;"><a href="listvaccins.php" >Retour</a></div>
 
 
 <?php include('inc/footerb.php'); ?>

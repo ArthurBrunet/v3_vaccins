@@ -25,7 +25,7 @@
 
       <a href="#" class="header-hamburger"></a>
         <div class="logo">
-          <a href="index.php"><img src="asset/images/logose.png" alt=""></a>
+          <a href="index.php"><img src="asset/images/medical-history.svg" alt=""></a>
         </div>
         <div class="nav">
           <ul id="menu">
