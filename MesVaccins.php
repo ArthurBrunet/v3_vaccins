@@ -134,8 +134,9 @@ if (islogged()) {
 
     $test = 0;
     ?>
-    <p>Vos prochain vaccins</p>
+
     <div class="wrapper_mesvaccins">
+      <p style="text-align: center;">Vos prochain vaccins</p>
     <table class="blueTable" style="text-align: center;">
       <thead>
         <tr>
@@ -195,7 +196,7 @@ if (islogged()) {
             ?>
           </tbody>
     </table>
-    <p>Mes rappel</p>
+    <p style="text-align: center;">Mes rappels</p>
     <table class="blueTable" style="text-align: center;">
       <thead>
         <tr>
@@ -254,7 +255,7 @@ if (islogged()) {
         </table>
 
 
-        <p>Vos vaccins effectués</p>
+        <p style="text-align: center;">Vos vaccins effectués</p>
       <table class="blueTable" style="text-align: center;">
         <thead>
         <tr>
