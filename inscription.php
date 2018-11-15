@@ -72,7 +72,7 @@ include('inc/header.php');
 <div class="background">
   <img src="asset/images/bg-banner1.png" alt="">
   <div class="contenu-image">
-    <p>Inscriver vous !</p>
+    <p>Inscrivez-vous !</p>
     </div>
 </div>
 <div class="wrapperinscription">

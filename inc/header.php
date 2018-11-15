@@ -45,7 +45,7 @@
               <li><a href="inscription.php">Inscription</a></li><?php
             } ?>
             <li><?php if (isadmin()) {
-              echo '<a href ="../projetvaccination/backoffice/dashboard.php">Backoffice</a>';
+              echo '<a href ="backoffice/dashboard.php">Backoffice</a>';
             }else {
 
             } ?></li>

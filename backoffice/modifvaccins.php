@@ -16,6 +16,7 @@ if (!empty($_GET['id']) && is_numeric($_GET['id'])) {
     $modifvaccinsnom = $modifvaccins['nom'];
     $modifvaccinscontent = $modifvaccins['content'];
     $modifvaccinslot = $modifvaccins['numerolot'];
+    $rappelvaccins = $modifvaccins['Rappel'];
 
 }else {
     header('Location: ../404.php');
@@ -33,6 +34,13 @@ if (!empty($_POST['submittedmodif'])) {
 
     $modifnumerolot = $_POST['numerolot'];
     $error = veriftext($error,$modifnumerolot,'numerolot',3,8,$empty = true);
+
+    // Definition de la variable rappel
+    if (is_numeric($_POST['rappel'])){
+        $rappelvaccin = $_POST['rappel'];
+    }else{
+        $error['rappel'] = 'Veuillez entrer un nombre';
+    }
     //on créer des conditions pour les boutons input pour afficher une erreur
     if (isset($_POST['categorievac'])){
         $categorievac = $_POST['categorievac'];
@@ -46,13 +54,14 @@ if (!empty($_POST['submittedmodif'])) {
     }
     //on fait appel a une requete pour la modif
     if (count($error)==0) {
-        $sql2 = "UPDATE `v3_vac_vaccins` SET `nom`= :nom,`content`= :content,`numerolot`= :numerolot,`updated_at`= NOW(),`categorie`= :categorievac,`statuts`= :statutsvac WHERE id = :id";
+        $sql2 = "UPDATE `v3_vac_vaccins` SET `nom`= :nom,`content`= :content,`numerolot`= :numerolot, Rappel = :rappel, `updated_at`= NOW(),`categorie`= :categorievac,`statuts`= :statutsvac WHERE id = :id";
         $query2 = $pdo->prepare($sql2);
         $query2->bindValue(':nom', $modifnom, PDO::PARAM_STR);
         $query2->bindValue(':content', $modifcontent, PDO::PARAM_STR);
         $query2->bindValue(':numerolot', $modifnumerolot, PDO::PARAM_STR);
         $query2->bindValue(':categorievac', $categorievac, PDO::PARAM_STR);
         $query2->bindValue(':statutsvac', $modifstatuts, PDO::PARAM_STR);
+        $query2->bindValue(':rappel', $rappelvaccin, PDO::PARAM_INT);
         $query2->bindValue(':id', $id, PDO::PARAM_INT);
         $query2->execute();
         header('Location: listvaccins.php');
@@ -89,6 +98,10 @@ if (!empty($_POST['submittedmodif'])) {
                 <span><?php if (!empty($error['statuts'])) { echo($error['statuts']);} ?></span>
                 <br><input type="radio" name="statuts" id="statuts" value="1"><label for="statuts">Obligatoire</label>
                 <br><input type="radio" name="statuts" id="statuts" value="0"><label for="statuts">Recommander</label>
+
+                <br><label for="rappel">Rappel du vaccin, si pas de rappel ne pas remplir:</label>
+                <span><?php if (!empty($error['rappel'])) {echo $error['rappel'];}?></span>
+                <br><input type="number" name="rappel" placeholder="Veuillez entrer le nombre de mois" value="<?php if (!empty($_POST['rappel'])) { echo($_POST['rappel']);} else{ echo($rappelvaccins);} ?>" class="form-control col-lg-6 ">
 
                 <br><label for="content">Description: </label>
                 <br><textarea name="content" id="content" cols="80" rows="5" class="form-control"><?php if (!empty($_POST['content'])) { echo($_POST['content']);} else{ echo($modifvaccinscontent);} ?></textarea>
