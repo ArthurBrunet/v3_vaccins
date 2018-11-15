@@ -129,7 +129,10 @@ if (islogged()) {
   </div>
   <?php
   if (!empty($verifVacId)) {
+
+    $test = 0;
     ?>
+    <p>Vos prochain vaccins</p>
     <table class="mesvaccins" style="text-align: center;">
         <tr>
             <th style="text-align: center;">Nom du vaccin</th>
@@ -160,10 +163,29 @@ if (islogged()) {
                     } ?>
                     <td><a href="deletevacuser.php?id=<?= $vvi['id']; ?>" onclick="return confirm('Etes-vous sûr de vouloir supprimer ce vaccin?')">Supprimer</a></td>
                 </tr> <?php
+                $test = 1;
               }
+              }
+              if ($test == 0) {
+                ?>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <?php
             }
+            $test = 0;
             ?>
     </table>
+
+
+
+
+    <p>Mes rappel</p>
     <table class="mesvaccins" style="text-align: center;">
         <tr>
             <th style="text-align: center;">Nom du vaccin</th>
@@ -190,10 +212,29 @@ if (islogged()) {
                     <td><a href="deletevacuser.php?id=<?= $vvi['id']; ?>" onclick="return confirm('Etes-vous sûr de vouloir supprimer ce vaccin?')">Supprimer</a></td>
                   </tr>
                     <?php
+                    $test = 1;
               }
             }
+            if ($test == 0) {
+              ?>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <?php
+          }
+          $test = 0;
             ?>
         </table>
+
+
+
+
+        <p>Vos vaccins effectués</p>
       <table class="mesvaccins" style="text-align: center;">
         <tr>
             <th style="text-align: center;">Nom du vaccin</th>
@@ -218,13 +259,25 @@ if (islogged()) {
                     <td><a href="deletevacuser.php?id=<?= $vvi['id']; ?>" onclick="return confirm('Etes-vous sûr de vouloir supprimer ce vaccin?')">Supprimer</a></td>
                   </tr>
                     <?php
+                    $test = 1;
               }
             }
+            if ($test == 0) {
+              ?>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <?php
+          }
+          $test = 0;
   }
             ?>
       </table>
-
-    <?php
+      <?php
 
 
 
