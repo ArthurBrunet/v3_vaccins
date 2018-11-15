@@ -101,7 +101,7 @@ if (islogged()) {
   <div class="wrapper-vaccins">
 
 
-  <form class="" method="post">
+  <form class="form_vaccins" method="post">
     <p>Entrer la date</p>
     <input type="date" name="date" value=""><?php afficheErrors($errors,'date'); ?>
     <p>Vaccins</p>
@@ -128,7 +128,7 @@ if (islogged()) {
   <?php
   if (!empty($verifVacId)) {
     ?>
-    <table class="" style="text-align: center;">
+    <table class="mesvaccins" style="text-align: center;">
         <tr>
             <th style="text-align: center;">Nom du vaccin</th>
             <th style="text-align: center;">Le contenue</th>
