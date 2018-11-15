@@ -322,6 +322,17 @@ html, body {background:white;font-family: 'Roboto', sans-serif;}
   text-decoration: none;
   color: white;
 }
+.wrapperinscription p {
+  color:white;
+}
+
+.wrapper ::placeholder{
+  color: white;
+  opacity: 0.5;
+}
+.wrapperinscription ::placeholder{
+  color: red;
+}
 
 .wrapperinscription{
     max-width: 300px;
@@ -406,9 +417,6 @@ input[type="text"]:focus, input[type="password"]:focus,input[type="email"]:focus
 
 }
 
-.wrapper [placeholder]{
-  color: white;
-}
 input[type="text"]{
   background:transparent;
   border:2px solid white;

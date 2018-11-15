@@ -136,6 +136,7 @@ if (islogged()) {
             <th style="text-align: center;">Le contenue</th>
             <th style="text-align: center;">Statuts</th>
             <th style="text-align: center;">Date</th>
+            <th style="text-align: center;">Rappel</th>
         </tr>
         <?php
             //boucle pour integrer nos données pour remplir notre liste
@@ -155,7 +156,7 @@ if (islogged()) {
             }
 
             foreach ($verifVacId as $vvi) {
-              if (!empty($vvi['fait']) && $vvi['fait'] == 'yes' && $vvi['Rappel'] != O)) {
+              if (!empty($vvi['fait']) && $vvi['fait'] == 'yes' && $vvi['Rappel'] != 0) {
                 ?><tr>
                     <td><?= $vvi['nom'] ?></td>
                     <td><?= $vvi['content'] ?></td>
