@@ -466,13 +466,14 @@ body:not(.sidebar-left-mini) #menu .nav-header {
    ========================================================================== */
 .Footer,
 #footer {
+  height: 100px;
   margin: 0 auto;
   color: #f4f4f4;
   border-top: 1px solid #222;
 }
 .Footer p,
 #footer p {
-  padding: 1.2rem 0;
+  padding: 3em 0 0 0;
   margin: 0;
   text-align: center;
 }

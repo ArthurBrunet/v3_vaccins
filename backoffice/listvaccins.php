@@ -4,20 +4,40 @@
 
 <!-- Requete pour appeler la table de la vaccination -->
 <?php
-    $sql = "SELECT * FROM v3_vac_vaccins";
+
+    $sql = "SELECT COUNT(*) FROM v3_vac_vaccins";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    $count = $stmt->fetchColumn();
+    //debug($count);
+
+    $num = 10;
+    $page = 1;
+    $offset = 0;
+
+    //écrasée par celui de l'URL si get['page'] n'est pas vide
+    if (!empty($_GET['page'])){
+        $page = $_GET['page'];
+        $offset = $page * $num - $num;
+    }
+
+    $sql = "SELECT * FROM v3_vac_vaccins ORDER BY nom DESC
+            LIMIT $offset,$num";
     $query = $pdo->prepare($sql);
     $query->execute();
     $listvaccins = $query->fetchAll();
     // debug($listvaccins);
 
-?>
+
+    ?>
 
 <?php include('inc/headerb.php'); ?>
 <h1 class="text-primary" style="text-align: center;">Listing des vaccins</h1>
 <p style="text-align: center; font-size: 1.2em;">Voici un listing de tout les vaccins figurant sur le site.</p>
 <p style="text-align: center; font-size: 1.2em;">Si vous souhaitez ajouter un nouveau alors il vous suffit de <a href="newvaccins.php">Cliquez ici</a> </p>
 <div class="col-lg-12 ui-sortable">
-<table class="table table-bordered table-condensed table-striped dataTable no-footer" style="text-align: center;">
+    <?php paginationIdea($page,$num,$count) ?>
+    <table class="table table-bordered table-condensed table-striped dataTable no-footer" style="text-align: center;">
     <tr>
         <th style="text-align: center;">Nom du vaccin</th>
         <th style="text-align: center;">Numéro de lot</th>
@@ -56,6 +76,7 @@
         }
     ?>
 </table>
+    <?php paginationIdea($page,$num,$count) ?>
 </div>
 
 

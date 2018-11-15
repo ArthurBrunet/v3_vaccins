@@ -33,18 +33,17 @@ include('inc/header.php');
 <div class="background">
   <img src="asset/images/bg-banner1.png" alt="">
   <div class="contenu-image">
-    <h1>Bienvenue sur A.B.A</h1>
-    <p>Le nouveau site de carnets de vaccination électronique, permettant de vous faciliter la vie dans vos démarches de santé.</p>
-    <p>Vous pourrez conserver la trace de tous vos vaccins reçus</p>  </div>
+    <p>Veuillez rentrez votre email pour changez votre mot de passe.</p>
+  </div>
 </div>
-<div class="wrapper">
+<div class="wrapperemail">
 
 
-<form class="" method="post">
-  <label for="">email *</label>
-  <input type="email" name="email" value="<?php if (!empty($_POST['email'])) {echo $_POST['email']; } ?>">
-  <input type="submit" name="submitted" value="Modifier mot de passe">
-</form>
+  <form class="" method="post">
+    <label for="">email *</label>
+    <input type="email" name="email" value="<?php if (!empty($_POST['email'])) {echo $_POST['email']; } ?>">
+    <input type="submit" name="submitted" value="Modifier mot de passe">
+  </form>
 </div>
 
 <?php
