@@ -115,7 +115,7 @@ if (islogged()) {
         if(!in_array($key['id'],$vaccinUser)){
 
           ?><option value="<?= $key['id'] ?>"><?= $key['nom'] ?><?php if ($key['Rappel'] != 0) {
-            echo "|| rappel tout les ".$key['Rappel'].'mois';
+            echo " || rappel tout les ".$key['Rappel'].'mois';
           } ?></option><?php
 
         }
@@ -152,7 +152,7 @@ if (islogged()) {
                     <td>A faire le : <?= $vvi['date'] ?></td>
                 </tr> <?php
               }
-            }
+              }
 
             foreach ($verifVacId as $vvi) {
               if (!empty($vvi['fait']) && $vvi['fait'] == 'yes' && $vvi['Rappel'] != 0) {
@@ -166,9 +166,9 @@ if (islogged()) {
                     }?></td>
                     <td>Fais le : <?= $vvi['date'] ?></td>
                     <td>recommander de le refaire dans <?= $vvi['Rappel'] ?> mois.</td>
-                  </tr>
-                    <?php
-              }
+              </tr>
+              <?php
+          }
             }
 
             foreach ($verifVacId as $vvi) {
@@ -182,13 +182,13 @@ if (islogged()) {
                       echo "Obligatoire";
                     }?></td>
                     <td>Fais le : <?= $vvi['date'] ?></td>
-                  </tr>
-                    <?php
-              }
+              </tr>
+              <?php
+          }
             }
   }
             ?>
-    </table>
+      </table>
 
     <?php
 
