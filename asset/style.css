@@ -318,6 +318,10 @@ html, body {background:white;font-family: 'Roboto', sans-serif;}
   margin-top: -420px;
   margin-bottom: 161px;
 }
+.wrapper-vaccins{
+  margin-top: -370px;
+  margin-bottom: 136px;
+}
 .wrapper a{
   text-decoration: none;
   color: white;

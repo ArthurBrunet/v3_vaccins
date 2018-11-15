@@ -94,9 +94,7 @@ if (islogged()) {
   <div class="background">
     <img src="asset/images/bg-banner1.png" alt="">
     <div class="contenu-image">
-      <h1>Bienvenue sur A.B.A</h1>
-      <p>Le nouveau site de carnets de vaccination électronique, permettant de vous faciliter la vie dans vos démarches de santé.</p>
-      <p>Vous pourrez conserver la trace de tous vos vaccins reçus</p>    </div>
+      <p>Ajouter, .</p>    </div>
   </div>
   <div class="wrapper-vaccins">
 
@@ -115,7 +113,7 @@ if (islogged()) {
         if(!in_array($key['id'],$vaccinUser)){
 
           ?><option value="<?= $key['id'] ?>"><?= $key['nom'] ?><?php if ($key['Rappel'] != 0) {
-            echo "|| rappel tout les ".$key['Rappel'].'mois';
+            echo " || rappel tout les ".$key['Rappel'].'mois';
           } ?></option><?php
 
         }
@@ -126,7 +124,9 @@ if (islogged()) {
 
     </select>
     <input type="submit" name="submitted" value="Ajouter">
+    <div class="clear"></div>
   </form>
+  </div>
   <?php
   if (!empty($verifVacId)) {
     ?>
@@ -137,6 +137,7 @@ if (islogged()) {
             <th style="text-align: center;">Statuts</th>
             <th style="text-align: center;">Date</th>
             <th style="text-align: center;">Rappel</th>
+            <th style="text-align: center;">Supprimer</th>
         </tr>
         <?php
             //boucle pour integrer nos données pour remplir notre liste
@@ -151,9 +152,28 @@ if (islogged()) {
                       echo "Obligatoire";
                     }?></td>
                     <td>A faire le : <?= $vvi['date'] ?></td>
+                    <?php if ($vvi['Rappel'] != 0) {
+                      ?>
+                      <td>recommander de le refaire dans <?= $vvi['Rappel'] ?> mois.</td><?php
+                    }else{
+                      ?><td>pas de recommandation</td> <?php
+                    } ?>
+                    <td><a href="deletevacuser.php?id=<?= $vvi['id']; ?>" onclick="return confirm('Etes-vous sûr de vouloir supprimer ce vaccin?')">Supprimer</a></td>
                 </tr> <?php
               }
             }
+            ?>
+    </table>
+    <table class="mesvaccins" style="text-align: center;">
+        <tr>
+            <th style="text-align: center;">Nom du vaccin</th>
+            <th style="text-align: center;">Le contenue</th>
+            <th style="text-align: center;">Statuts</th>
+            <th style="text-align: center;">Date</th>
+            <th style="text-align: center;">Rappel</th>
+            <th style="text-align: center;">Supprimer</th>
+        </tr>
+    <?php
 
             foreach ($verifVacId as $vvi) {
               if (!empty($vvi['fait']) && $vvi['fait'] == 'yes' && $vvi['Rappel'] != 0) {
@@ -167,10 +187,22 @@ if (islogged()) {
                     }?></td>
                     <td>Fais le : <?= $vvi['date'] ?></td>
                     <td>recommander de le refaire dans <?= $vvi['Rappel'] ?> mois.</td>
+                    <td><a href="deletevacuser.php?id=<?= $vvi['id']; ?>" onclick="return confirm('Etes-vous sûr de vouloir supprimer ce vaccin?')">Supprimer</a></td>
                   </tr>
                     <?php
               }
             }
+            ?>
+        </table>
+      <table class="mesvaccins" style="text-align: center;">
+        <tr>
+            <th style="text-align: center;">Nom du vaccin</th>
+            <th style="text-align: center;">Le contenue</th>
+            <th style="text-align: center;">Statuts</th>
+            <th style="text-align: center;">Date</th>
+            <th style="text-align: center;">Supprimer</th>
+        </tr>
+        <?php
 
             foreach ($verifVacId as $vvi) {
               if (!empty($vvi['fait']) && $vvi['fait'] == 'yes' && $vvi['Rappel'] == 0) {
@@ -183,13 +215,14 @@ if (islogged()) {
                       echo "Obligatoire";
                     }?></td>
                     <td>Fais le : <?= $vvi['date'] ?></td>
+                    <td><a href="deletevacuser.php?id=<?= $vvi['id']; ?>" onclick="return confirm('Etes-vous sûr de vouloir supprimer ce vaccin?')">Supprimer</a></td>
                   </tr>
                     <?php
               }
             }
   }
             ?>
-    </table>
+      </table>
 
     <?php
 
