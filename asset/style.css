@@ -714,15 +714,14 @@ input[type="radio"]{
   background-color: white;
 }
 
-/* .wrapperinscription{
-  max-width: 300px;
-  width:100%;
-  z-index: 99999;
-  background-color: white;
-  margin:20px auto;
-  margin-top: -330px;
-  margin-bottom: 79px;
-} */
+.wrapperinscription{
+    max-width: 400px;
+    width:75%;
+    height: 300px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
 }
 @media screen and (max-width: 530px) {
   .background .contenu-image{
