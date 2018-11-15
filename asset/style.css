@@ -427,7 +427,7 @@ table.blueTable tfoot .links a{
 }
 
 .wrapperinscription{
-    max-width: 300px;
+    max-width: 400px;
     width:100%;
     background-color: #1d5a6a;
     padding: 25px;
@@ -786,8 +786,28 @@ input[type="radio"]{
     color: white;
     width: 65%;
 }
+/* .wrapper-vaccins{
+  max-width: 300px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+  height: 300px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+} */
 
+@media screen and (max-width: 1010px){
+  .wrapperinscription{
+      max-width: 400px;
+      width:80%;
+      height: 300px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-top: -420px;
+      margin-bottom: 119px;
 
+  }
+}
 
 @media screen and (max-width: 700px) {
 
@@ -842,7 +862,7 @@ input[type="radio"]{
 
 .wrapperinscription{
     max-width: 400px;
-    width:75%;
+    width:80%;
     height: 300px;
     margin-top: 40px;
     margin-bottom: 40px;
