@@ -78,7 +78,7 @@ include('inc/header.php');
 <div class="wrapperinscription">
   <form class="" method="post">
     <p>Email</p>
-    <input type="email" name="email" value="<?php remplissageValue($_POST,'email'); ?>"placeholder="<?php afficheErrors($errors,'email'); ?>">
+    <input type="email" name="email" value="<?php if (empty($verifEmail)) { remplissageValue($_POST,'email'); } ?>"placeholder="<?php afficheErrors($errors,'email'); ?>">
     <p>Mot de passe</p>
     <input type="password" name="password" value="" placeholder="<?php afficheErrors($errors,'password') ?>">
     <p>Confirmation du mot de passe</p>

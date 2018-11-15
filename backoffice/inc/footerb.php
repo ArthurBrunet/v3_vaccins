@@ -1,4 +1,4 @@
-</div>
+
 <footer class="Footer bg-dark dker">
             <p>Ceci est mon footer</p>
         </footer>
@@ -9,10 +9,10 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
     <!-- MetisMenu -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/metisMenu/1.1.3/metisMenu.min.js"></script>
+    <script src="asset/js/metisMenu.js"></script>
 
     <!-- Screenfull -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/screenfull.js/2.0.0/screenfull.min.js"></script>
+    <script src="asset/js/screenfull.js"></script>
 
     <!-- Metis core scripts -->
     <script src="asset/js/core.min.js"></script>

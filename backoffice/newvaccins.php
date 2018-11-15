@@ -18,6 +18,13 @@ $error=array();
         $numerolot = trim(strip_tags($_POST['numerolot']));
         $error = veriftext($error,$numerolot,'numerolot',3,8);
 
+        // Definition de la variable rappel
+        if (is_numeric($_POST['rappel'])){
+            $rappelvaccin = $_POST['rappel'];
+        }else{
+            $error['rappel'] = 'Veuillez entrer un nombre';
+        }
+
         if (isset($_POST['categorievac'])){
             $categorievac = $_POST['categorievac'];
         }else {
@@ -31,14 +38,15 @@ $error=array();
    
                 //Requete pour remplir notre base de données des vaccins
                     if (count($error)==0) {
-                    $sql="INSERT INTO v3_vac_vaccins(nom, content, categorie, statuts, numerolot, created_at) VALUES ( :nom, :content, :categorievac, :statuts, :numerolot, NOW())";
+                    $sql="INSERT INTO v3_vac_vaccins(nom, content, categorie, statuts, numerolot, Rappel, created_at) VALUES ( :nom, :content, :categorievac, :statuts, :numerolot, :rappel, NOW())";
                     $query = $pdo->prepare($sql);
                     $query->bindValue(':nom', $nomvaccin, PDO::PARAM_STR);
                     $query->bindValue(':content', $contentvaccin, PDO::PARAM_STR);
                     $query->bindValue(':numerolot', $numerolot, PDO::PARAM_STR);
                     $query->bindValue(':categorievac', $categorievac, PDO::PARAM_STR);
                     $query->bindValue(':statuts', $modifstatuts, PDO::PARAM_STR);
-                    $query->execute();
+                    $query->bindValue(':rappel', $rappelvaccin, PDO::PARAM_INT);
+                        $query->execute();
                     header('Location: listvaccins.php');
                     }
     }
@@ -74,6 +82,10 @@ $error=array();
         <span><?php if (!empty($error['statuts'])) { echo($error['statuts']);} ?></span>
         <br><input type="radio" name="statuts" id="statuts" value="Obligatoire"><label for="statuts">Obligatoire</label>
         <br><input type="radio" name="statuts" id="statuts" value="Recommander"><label for="statuts">Recommander</label>
+
+        <br><label for="rappel">Rappel du vaccin, si pas de rappel ne pas remplir:</label>
+        <span><?php if (!empty($error['rappel'])) {echo $error['rappel'];}?></span>
+        <br><input type="number" name="rappel" placeholder="Veuillez entrer le nombre de mois" class="form-control col-lg-6 ">
 
         <br><label for="content">Description: </label>
         <span> <?php if (!empty($error['content'])) { echo($error['content']); } ?></span>
