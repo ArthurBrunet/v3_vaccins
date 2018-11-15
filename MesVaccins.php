@@ -69,7 +69,7 @@ if (islogged()) {
     <div class="background">
         <img src="asset/images/bg-banner1.png" alt="">
         <div class="contenu-image">
-            <p>Ajouter, .</p>    </div>
+            <p>Ajouter l'historique de vos vaccins et les prochains à venir.</p>    </div>
     </div>
 
 
