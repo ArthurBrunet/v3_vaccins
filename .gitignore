@@ -7,3 +7,6 @@ pdo.php
 #ignore fichiers xml et iml
 idea/
 vendor/
+composer.json
+composer.lock
+.idea/
