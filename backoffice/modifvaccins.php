@@ -79,7 +79,7 @@ if (!empty($_POST['submittedmodif'])) {
 
 
 <?php include('inc/headerb.php'); ?>
-    <div class="body collapse in col-lg-6 box col-lg-12" style="position: fixed; left: 20%; top: 20%; bottom: 20%; right: 20%;">
+    <div class="body collapse in col-lg-6 box col-lg-12" style="position: absolute; left: 20%; top: 20%; bottom: 20%; right: 20%;">
         <form action="" method="post" class="form-horizontal">
                 <label for="nom">Nom du vaccin: </label>
                 <span><?php if (!empty($error['nom'])) { echo($error['nom']);} ?></span>
@@ -104,7 +104,7 @@ if (!empty($_POST['submittedmodif'])) {
                 <br><input type="number" name="rappel" placeholder="Veuillez entrer le nombre de mois" value="<?php if (!empty($_POST['rappel'])) { echo($_POST['rappel']);} else{ echo($rappelvaccins);} ?>" class="form-control col-lg-6 ">
 
                 <br><label for="content">Description: </label>
-                <br><textarea name="content" id="content" cols="80" rows="5" class="form-control"><?php if (!empty($_POST['content'])) { echo($_POST['content']);} else{ echo($modifvaccinscontent);} ?></textarea>
+                <br><textarea name="content" id="content" cols="80" rows="3" class="form-control"><?php if (!empty($_POST['content'])) { echo($_POST['content']);} else{ echo($modifvaccinscontent);} ?></textarea>
 
             <div class="input" style="text-align: center;">
             <br><input type="submit" name="submittedmodif" id="submittedmodif" value="Envoyer" class="btn btn-metis-5 btn-round">

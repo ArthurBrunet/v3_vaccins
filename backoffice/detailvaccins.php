@@ -41,7 +41,7 @@
             $detailvaccinst = 'Recommander';
         }
         if ($detailvaccin['Rappel'] == 0){
-
+            $rappelvaccin = 'Il n\'y a pas de rappel pour ce vaccin';
         }else{
             $rappelvaccin = $detailvaccin['Rappel'];
         }
@@ -49,7 +49,7 @@
 
 
         echo($detailvaccin['nom']) ?>: </h1>
-        <div class="body collapse in">
+        <div class="body collapse in" style="position: absolute; left: 15%;">
             <table id="defaultTable" class="table table-bordered table-responsive">
                 <tr>
                     <th>Nom</th>
