@@ -19,7 +19,7 @@ if (!empty($_GET['id']) && is_numeric($_GET['id'])) {
 ?>
 
 <?php include('inc/headerb.php'); ?>
-<div class="col-lg-4 ui-sortable" style="position: relative; left: 31.5%;">
+<div class="col-lg-4 ui-sortable" style="position: absolute; left: 31.5%;">
 <table class="table table-bordered table-condensed table-hover table-striped dataTable no-footer">
     <tr>
         <th style="text-align: center;">Vaccins</th>

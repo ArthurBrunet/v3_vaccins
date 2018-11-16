@@ -61,8 +61,8 @@ $error=array();
 
 
 <?php include('inc/headerb.php'); ?>
-<div class="body collapse in col-lg-6 box col-lg-12" style="margin-left: 475px; margin-top: 150px;">
-<form action="" method="post" class="form-horizontal">
+    <div class="body collapse in col-lg-6 box col-lg-12" style="position: absolute; left: 20%; top: 20%; bottom: 20%; right: 20%;">
+    <form action="" method="post" class="form-horizontal">
 
         <label for="nom">Nom du vaccin: </label>
         <span> <?php if (!empty($error['nom'])) { echo($error['nom']); } ?></span>
@@ -89,7 +89,7 @@ $error=array();
 
         <br><label for="content">Description: </label>
         <span> <?php if (!empty($error['content'])) { echo($error['content']); } ?></span>
-        <br><textarea name="content" id="content" cols="80" rows="5" placeholder="Veuillez entrer la description du vaccin" class="form-control"></textarea>
+        <br><textarea name="content" id="content" cols="80" rows="3" placeholder="Veuillez entrer la description du vaccin" class="form-control"></textarea>
 
         <div class="input" style="text-align: center;">
         <br><input type="submit" name="submittedvaccin" id="submittedvaccin" value="Envoyer" class="btn btn-metis-5 btn-round" style="margin: auto;">
